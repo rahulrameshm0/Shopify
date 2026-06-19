@@ -4,3 +4,26 @@
     box-sizing: border-box;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+}
+
+.login{
+}
+
+input{
+    display: block;
+    border: none;
+    outline: none;
+    width: 150%;
+}
