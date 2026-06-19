@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Wix Madefor Text", sans-serif;
+    background-color: #4e4e4e;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.login-img {
+    width: 50%;
+}
+
+.login-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.login {
+    width: 50%;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-here a{
+    text-decoration: none;
+    color: #d6663c;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.form-section{
+    margin-top: 5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    background-color: #4e4e4e;
+}
+
+input::placeholder{
+    color: #cbcecf;
+}

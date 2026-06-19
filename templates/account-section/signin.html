@@ -9,8 +9,9 @@
     <link rel="stylesheet" href='{% static 'css/account-styling/signin.css' %}'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,20 +20,27 @@
     <div class="container">
 
         <div class="login-img">
-            <img class="e-img" src="{% static 'images/ecommerce.jpg' %}" alt="IMG">
+            <img class="e-img" src="{% static 'images/e-store.jpg' %}" alt="IMG">
         </div>
 
         <div class="login">
-            <form action="" method="POST">
-                <div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password">
-                </div>
-            </form>
+            <div class="signin-head">
+                <h2>Signin</h2>
+                <p class="register-here">If you don't have an account register <a href="{% url 'register' %}">Register Here !</a></p>
+            </div>
+
+            <div class="form-section">
+                <form action="" method="POST">
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </main>
