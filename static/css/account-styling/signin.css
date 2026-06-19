@@ -4,26 +4,43 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Bitcount Single", system-ui;
+    /*background-color: #343131;*/
+}
+
 .main {
     display: flex;
-    align-items: center;
     height: 100vh;
 }
 
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
-    width: 100%;
+    padding: 0 20rem;
 }
 
-.login{
+.login-img img{
+    width: 80%;
+    height: 40vh;
+    border-radius: 2rem;
 }
 
-input{
+
+.login input{
     display: block;
     border: none;
     outline: none;
-    width: 150%;
+    width: 120%;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    /*height: 100vh;*/
+    /*padding: 0 4rem;*/
 }

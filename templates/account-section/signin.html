@@ -5,8 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href='{% static 'css/account-styling/signin.css' %}'>
 
+    <link rel="stylesheet" href='{% static 'css/account-styling/signin.css' %}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,15 +19,19 @@
     <div class="container">
 
         <div class="login-img">
-            <img src="" alt="IMG">
+            <img class="e-img" src="{% static 'images/ecommerce.jpg' %}" alt="IMG">
         </div>
 
         <div class="login">
             <form action="" method="POST">
-                <label for="Email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email address">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                </div>
             </form>
         </div>
     </div>
