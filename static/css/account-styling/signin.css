@@ -157,6 +157,7 @@ body {
     transition: all 0.3s;
     font-size: 1.2rem;
     width: 80%;
+    margin-bottom: 3rem;
 }
 
 .login-btn:hover{
@@ -164,4 +165,37 @@ body {
     color: #76c3da;
     transform: scale(1.1);
     box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    margin-bottom: 2.6rem;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #408097;
+}
+
+.divider span {
+    color: #859ea3;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+
+.signin-with-other-account{
+    text-align: center;
+}
+
+.signin-with-other-account img{
+    height: 30px;
+    width: 30px;
+    margin: 1.2rem;
+    color: #4e4e4e;
+    border-radius: 5rem;
 }

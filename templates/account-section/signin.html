@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                             <input type="checkbox" id="remember"><label for="remember">Remember me</label>
                         </div>
                         <div class="forget-password">
-                            <a href="#">Forgot Password?</a>
+                            <a href="#">Forgot Password ?</a>
                         </div>
                     </div>
 
@@ -52,6 +53,19 @@
                 </form>
                 <button class="login-btn" type="submit">Login &rarr;</button>
             </div>
+
+             <div class="divider">
+                <hr>
+                    <span>or Continue with</span>
+                <hr>
+            </div>
+
+            <div class="signin-with-other-account">
+                <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S252893170%3A1781978588634698"><img src="{% static 'images/google.png' %}"></a>
+                <a href="https://www.icloud.com/"><img src="{% static 'images/apple.png' %}"></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'images/facebook.png' %}"></a>
+            </div>
+
         </div>
     </div>
 </main>
