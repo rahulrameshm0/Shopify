@@ -25,8 +25,8 @@ body {
 
 .login-img {
     width: 50%;
-    flex: 1 1 300px;
-    min-width: 300px;
+    flex: 1 1 450px;
+    min-width: 450px;
     /*background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);*/
     /*padding: 11.7rem 2rem;*/
     padding: 2rem;
@@ -41,8 +41,8 @@ body {
 
 .login {
     width: 50%;
-    min-width: 300px;
-    flex: 1 1 300px;
+    flex: 1 1 450px;
+    min-width: 450px;
     padding: 0 4rem;
     display: flex;
     flex-direction: column;
