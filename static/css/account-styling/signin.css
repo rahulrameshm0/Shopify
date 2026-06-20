@@ -49,7 +49,7 @@ body {
 .form-section form {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
 }
 
 .form-section{
@@ -75,4 +75,21 @@ input {
 
 input::placeholder{
     color: #cbcecf;
+}
+
+.sub-btn {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s;
+}
+
+.sub-btn:hover{
+    background-color: #ffb327;
+    transform: scale(1.1);
 }

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href='{% static 'css/account-styling/register.css' %}'>
+    <link rel="stylesheet" href="{% static 'css/account-styling/register.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,28 +23,37 @@
         </div>
 
         <div class="login">
-            <form action="" method="POST">
-                <div>
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Enter your username">
-                </div>
-                <div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address">
-                </div>
-                <div>
-                    <label for="telphone">Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
-                </div>
-            </form>
+            <div class="signin-head">
+                <h2>Sign Up</h2>
+                <p class="register-here">If you already have an account register <a href="{% url 'signin' %}">login here !</a></p>
+            </div>
+
+            <div class="registration-form">
+                <form action="" method="POST">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your username">
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    </div>
+                    <div>
+                        <label for="phone">Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
+                    </div>
+                </form>
+
+                <button class="sub-btn" type="submit">Sign Up &rarr;</button>
+            </div>
         </div>
     </div>
 </main>
