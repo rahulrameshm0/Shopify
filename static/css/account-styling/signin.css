@@ -114,11 +114,42 @@ body {
     border-bottom-color: #5fbbe1;
 }
 
+.remember-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.remember-wrap label{
+    display: inline !important;
+}
+
+.remember-wrap input {
+    margin-right: 0.5rem;
+    display: inline !important;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: none !important;
+    outline: none;
+    cursor: pointer;
+    font-size: 2.4rem;
+    vertical-align: middle;
+}
+
+.forget-password a{
+    text-decoration: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .login-btn {
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    margin-top: 1.4rem;
+    margin-top: 3.4rem;
     border: none;
     background: linear-gradient(#61bce3, #2a7fac, #257a8f);
     padding: 0.8rem 1rem;
@@ -132,4 +163,5 @@ body {
     background: linear-gradient(#459bbd, #17678a, #083d4c);
     color: #76c3da;
     transform: scale(1.1);
+    box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
 }

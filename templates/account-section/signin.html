@@ -4,6 +4,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Signin</title>
 
     <link rel="stylesheet" href="{% static 'css/account-styling/signin.css' %}">
@@ -37,6 +39,15 @@
                     <div>
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <div class="remember-wrap">
+                        <div>
+                            <input type="checkbox" id="remember"><label for="remember">Remember me</label>
+                        </div>
+                        <div class="forget-password">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+
                     </div>
                 </form>
                 <button class="login-btn" type="submit">Login &rarr;</button>
