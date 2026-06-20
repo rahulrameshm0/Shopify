@@ -7,25 +7,29 @@
 body {
     font-family: "Wix Madefor Text", sans-serif;
     background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);
+    background-attachment: fixed;
 }
 
 .main {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .login-img {
     width: 50%;
-    background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);
-    padding: 11.7rem 2rem;
-
+    flex: 1 1 300px;
+    min-width: 300px;
+    /*background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);*/
+    /*padding: 11.7rem 2rem;*/
+    padding: 2rem;
 }
 
 .login-img img {
@@ -38,6 +42,8 @@ body {
 
 .login {
     width: 50%;
+    min-width: 300px;
+    flex: 1 1 300px;
     padding: 0 4rem;
     display: flex;
     flex-direction: column;
@@ -86,7 +92,7 @@ body {
     color: #2d88b5;
 }
 
-input {
+.registration-form input {
     display: block;
     width: 100%;
     border: none;
@@ -95,10 +101,14 @@ input {
     padding: 8px 0;
     font-size: 1rem;
     background:none;
+    transition: border-bottom-color 0.3s ease;
 }
 
-input::placeholder{
+.registration-form input::placeholder{
     color: #859ea3;
+}
+.registration-form input:focus{
+    border-bottom-color: #5fbbe1;
 }
 
 .sub-btn {
