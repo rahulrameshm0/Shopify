@@ -95,12 +95,18 @@ body {
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 2px solid #408097;
     outline: none;
     padding: 8px 0;
     font-size: 1rem;
     background:none;
     transition: border-bottom-color 0.3s ease;
+}
+
+.registration-form,
+input[type=text],
+input[type=email],
+input[type=password]{
+    color: #408097;
 }
 
 .registration-form input::placeholder{
@@ -109,6 +115,48 @@ body {
 .registration-form input:focus{
     border-bottom-color: #5fbbe1;
 }
+
+.username-box,
+.email-box,
+.phone,
+.confirm-password-box{
+    border-bottom: 2px solid #408097;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #408097;
+}
+
+.confirm-password-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #408097;
+}
+
+.password-box img{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.confirm-password-box img{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.password-box img:hover{
+    cursor: pointer;
+}
+
+.confirm-password-box img:hover{
+    cursor: pointer;
+}
+
 
 .logout-btn {
     display: block;

@@ -32,23 +32,35 @@
                 <form action="" method="POST">
                     <div>
                         <label for="username">Username</label>
-                        <input type="text" name="username" id="username" placeholder="Enter your username">
+                        <div class="username-box">
+                            <input type="text" name="username" id="username" placeholder="Enter your username">
+                        </div>
                     </div>
                     <div>
                         <label for="Email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <div class="email-box">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        </div>
                     </div>
                     <div>
                         <label for="phone">Number</label>
-                        <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+                        <div class="phone">
+                            <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+                        </div>
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                        <div class="password-box">
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <img src="{% static 'images/eye-closed.png' %}" id="eye-icon">
+                        </div>
                     </div>
                     <div>
                         <label for="password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
+                        <div class="confirm-password-box">
+                            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
+                            <img src="{% static 'images/eye-closed.png' %}" id="eye-icon-2">
+                        </div>
                     </div>
                 </form>
                 <button class="logout-btn" type="submit">Sign Up &rarr;</button>
@@ -58,5 +70,11 @@
     </div>
 </main>
 
+<script>
+    const eyeOpensrc = "{% static 'images/eye.png' %}";
+    const eyeClosedsrc = "{% static 'images/eye-closed.png' %}";
+</script>
+
+<script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
