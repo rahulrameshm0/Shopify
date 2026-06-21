@@ -87,7 +87,6 @@ body {
 .form-section label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
     color: #2d88b5;
 }
 
@@ -96,15 +95,10 @@ body {
     width: 100%;
     border: none;
     background: none;
-    border-bottom: 2px solid #408097;
     outline: none;
     padding: 8px 0;
     font-size: 1rem;
     transition: border-bottom-color 0.5s ease;
-}
-
-.form-section input::placeholder{
-    color: #cbcecf;
 }
 
 .form-section input::placeholder{
@@ -114,11 +108,40 @@ body {
     border-bottom-color: #5fbbe1;
 }
 
+.form-section input[type=text]{
+    /*background-image: url('');*/
+}
+
+.email-box{
+    border-bottom: 2px solid #408097;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #408097;
+}
+
+.password-box img{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.password-box img:hover{
+    cursor: pointer;
+}
+
+.password-box input{
+    width: 100%;
+}
+
 .remember-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 0.5rem;
+    margin-top: -2.6rem;
 }
 
 .remember-wrap label{

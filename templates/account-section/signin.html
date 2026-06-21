@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 <body>
@@ -35,11 +34,17 @@
                 <form action="" method="POST">
                     <div>
                         <label for="Email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <div class="email-box">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        </div>
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                        <div class="password-box">
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <img src="{% static 'images/eye-closed.png' %}" id="eye-icon">
+                        </div>
+                    </div>
                     <div class="remember-wrap">
                         <div>
                             <input type="checkbox" id="remember"><label for="remember">Remember me</label>
@@ -47,8 +52,6 @@
                         <div class="forget-password">
                             <a href="#">Forgot Password ?</a>
                         </div>
-                    </div>
-
                     </div>
                 </form>
                 <button class="login-btn" type="submit">Login &rarr;</button>
@@ -70,5 +73,11 @@
     </div>
 </main>
 
+<script>
+    const eyeOpensrc = "{% static 'images/eye.png' %}";
+    const eyeClosedsrc = "{% static 'images/eye-closed.png' %}";
+</script>
+
+<script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
