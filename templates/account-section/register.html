@@ -30,6 +30,7 @@
 
             <div class="registration-form">
                 <form action="" method="POST">
+                    {% csrf_token %}
                     <div>
                         <label for="username">Username</label>
                         <div class="username-box">
