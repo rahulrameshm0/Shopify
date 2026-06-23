@@ -10,12 +10,20 @@ body {
     background-attachment: fixed;
 }
 
+.border{
+    background: linear-gradient(160deg, #274751, #2d515c, #065f83);
+    padding: 8rem;
+    box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
+    border-radius: 1.4rem;
+}
+
 .verification{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    box-shadow: 0 0.2rem 1rem 0.2rem #bababa;
 }
 
 .verification h1{
@@ -34,8 +42,7 @@ body {
 }
 
 .verification input{
-    display: block;
-    width: 100vh;
+    width: 100%;
     border: none;
     background: none;
     outline: none;
@@ -53,4 +60,27 @@ body {
 }
 .verification input[type=email]{
     color: #5fbbe1;
+}
+
+
+.reset-btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 3.4rem;
+    border: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #1a3a45;
+}
+
+.reset-btn:hover{
+    background: linear-gradient(#459bbd, #17678a, #083d4c);
+    color: #76c3da;
+    transform: scale(1.1);
+    box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
 }

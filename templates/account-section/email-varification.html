@@ -13,13 +13,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-<div class="verification">
-    <h1>Forgot password</h1>
-    <form method="POST" action="">
-        {% csrf_token %}
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email address">
-    </form>
-</div>
+
+<section>
+    <div class="verification">
+        <div class="border">
+            <h1>Forgot password</h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <button class="reset-btn" type="submit">Reset your password &rarr;</button>
+            </form>
+        </div>
+    </div>
+</section>
 </body>
 </html>
