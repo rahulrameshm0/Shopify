@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Wix Madefor Text", sans-serif;
+    background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);
+    background-attachment: fixed;
+}
+
+.verification{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.verification h1{
+    text-decoration: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2.4rem;
+}
+
+.verification label {
+    display: block;
+    font-weight: bold;
+    color: #2d88b5;
+}
+
+.verification input{
+    display: block;
+    width: 100vh;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    transition: border-bottom-color 0.5s ease;
+    border-bottom: 2px solid #408097;
+}
+
+.verification input::placeholder{
+    color: #859ea3;
+}
+.verification input:focus{
+    border-bottom-color: #5fbbe1;
+}
+.verification input[type=email]{
+    color: #5fbbe1;
+}

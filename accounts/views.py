@@ -7,3 +7,6 @@ def signin(request):
 
 def register(request):
     return render(request, 'account-section/register.html')
+
+def email_verification(request):
+    return render(request, 'account-section/email-varification.html')
