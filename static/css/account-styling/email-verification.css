@@ -10,8 +10,6 @@ body {
     background-attachment: fixed;
 }
 
-
-
 .verification{
     display: flex;
     justify-content: space-evenly;
@@ -23,16 +21,16 @@ body {
     min-width: 250px;
 }
 
-.fp-img img{
-    height: 600px;
-    width: 600px;
+.verification img{
+    width: 60vh;
 }
 
 .border{
     background: linear-gradient(160deg, #274751, #2d515c, #065f83);
+    /*background: url("{% static 'images/forgot-password.png' %}") 50% 0 no-repeat fixed;*/
     padding: 8rem;
-    box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
-    border-radius: 1.4rem;
+    box-shadow: 0 0.2rem 1rem 0.2rem #2d515c;
+    border-radius: 0.4rem;
 }
 
 .verification h1{
@@ -79,7 +77,7 @@ body {
     margin-top: 3.4rem;
     border: none;
     background: linear-gradient(#61bce3, #2a7fac, #257a8f);
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     transition: all 0.3s;
     font-size: 1.2rem;

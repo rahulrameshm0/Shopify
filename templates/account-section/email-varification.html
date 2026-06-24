@@ -18,8 +18,7 @@
 
 <section>
     <div class="verification">
-
-        <div class="fp-img">
+        <div>
             <img src="{% static 'images/forgot-password.png' %}" alt="forgot-password" srcset="">
         </div>
 
@@ -29,7 +28,7 @@
                 {% csrf_token %}
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email address">
-                <button class="reset-btn" type="submit">Reset your password &rarr;</button>
+                <button class="reset-btn" type="submit">Reset password &rarr;</button>
             </form>
         </div>
     </div>
