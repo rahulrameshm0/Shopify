@@ -64,8 +64,14 @@
                             <img src="{% static 'images/eye-closed.png' %}" id="eye-icon-2">
                         </div>
                     </div>
-                </form>
                 <button class="logout-btn" type="submit">Sign Up &rarr;</button>
+                </form>
+
+                {% for messages in message %}
+                    {% if message %}
+                        <p>{{ message }}</p>
+                    {% endif %}
+                {% endfor %}
             </div>
 
         </div>

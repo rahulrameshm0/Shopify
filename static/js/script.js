@@ -25,3 +25,11 @@ eyeIconConfirm.onclick = function(){
         eyeIconConfirm.src = eyeClosedsrc;
     }
 }
+
+//popup
+window.onload = function() {
+    const popup = document.getElementById('popup');
+    if (popup) {
+        popup.style.display = 'flex';  // ← this shows the popup
+    }
+}

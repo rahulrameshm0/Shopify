@@ -91,3 +91,31 @@ body {
     transform: scale(1.1);
     box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
 }
+
+/*popup*/
+
+  .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+  }
+
+.popup-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 320px;
+    width: 90%;
+}
+
+.popup-box p { margin-bottom: 1rem; }
+.popup-box button {
+    padding: 8px 24px;
+    cursor: pointer;
+}

@@ -35,9 +35,9 @@
                 <form action="" method="POST">
                     {% csrf_token %}
                     <div>
-                        <label for="Email">Email</label>
+                        <label for="Username">Username</label>
                         <div class="email-box">
-                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            <input type="text" name="username" id="username" placeholder="Enter your Username">
                         </div>
                     </div>
                     <div>
@@ -55,8 +55,14 @@
                             <a href="{% url 'email_verification' %}">Forgot Password ?</a>
                         </div>
                     </div>
-                </form>
                 <button class="login-btn" type="submit">Login &rarr;</button>
+                </form>
+
+                  {% for messages in message %}
+                    {% if message %}
+                        <p>{{ message }}</p>
+                    {% endif %}
+                {% endfor %}
             </div>
 
              <div class="divider">

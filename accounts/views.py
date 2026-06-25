@@ -1,12 +1,57 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout
+from  django.contrib.auth.models import User
 # Create your views here.
 
 def signin(request):
+    if request.method == "POST":
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        user = authenticate(username=username, password=password)
+
+        if user is not None:
+            login(request, user)
+            return redirect('dashboard')
+        else:
+            messages.error(request, "Username or Password is incorrect")
+            return redirect('signin')
+
     return render(request, 'account-section/signin.html')
 
 def register(request):
+    if request.method == "POST":
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        password = request.POST.get('password')
+        confirm_password = request.POST.get('confirm_password')
+
+        if User.objects.filter(username=username).exists():
+            messages.error(request, "This username already exits")
+            return redirect('signin')
+
+        if User.objects.filter(email=email).exists():
+            messages.error(request, "This email address already exists")
+            return redirect('signin')
+
+        if password != confirm_password:
+            messages.error(request, "Password is not matched")
+            return redirect('signin')
+
+        if len(username) and len(password) < 8:
+            messages.error(request, "The length of the password and username should be more than 8 characters")
+            return redirect('signin')
+        create_user = User.objects.create_user(username=username,email=email,password=password,phone=phone)
+        create_user.save()
+
+        return redirect('signin')
+
     return render(request, 'account-section/register.html')
 
 def email_verification(request):
     return render(request, 'account-section/email-varification.html')
+
+def dashboard(request):
+    return render(request, 'account-section/dashboard.html')
