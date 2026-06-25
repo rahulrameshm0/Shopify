@@ -6,7 +6,7 @@ from django.db import models
 class Accounts(models.Model):
     username = models.CharField(max_length=150, unique=True)
     email = models.EmailField(max_length=150, unique=True)
-    phone = models.CharField(max_length=150)
+    # phone = models.CharField(max_length=150)
     password = models.CharField(max_length=150)
     confirm_password = models.CharField(max_length=150)
 

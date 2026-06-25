@@ -44,12 +44,12 @@
                             <input type="email" name="email" id="email" placeholder="Enter your email address">
                         </div>
                     </div>
-                    <div>
-                        <label for="phone">Number</label>
-                        <div class="phone">
-                            <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
-                        </div>
-                    </div>
+{#                    <div>#}
+{#                        <label for="phone">Number</label>#}
+{#                        <div class="phone">#}
+{#                            <input type="text" name="phone" id="phone" placeholder="Enter your phone number">#}
+{#                        </div>#}
+{#                    </div>#}
                     <div>
                         <label for="password">Password</label>
                         <div class="password-box">
@@ -64,14 +64,14 @@
                             <img src="{% static 'images/eye-closed.png' %}" id="eye-icon-2">
                         </div>
                     </div>
+            {% if messages %}
+              {% for message in messages %}
+                <p style="color: red; text-align: center">{{ message }}</p>
+              {% endfor %}
+            {% endif %}
                 <button class="logout-btn" type="submit">Sign Up &rarr;</button>
                 </form>
 
-                {% for messages in message %}
-                    {% if message %}
-                        <p>{{ message }}</p>
-                    {% endif %}
-                {% endfor %}
             </div>
 
         </div>

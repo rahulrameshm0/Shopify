@@ -24,28 +24,31 @@ def register(request):
     if request.method == "POST":
         username = request.POST.get('username')
         email = request.POST.get('email')
-        phone = request.POST.get('phone')
+        # phone = request.POST.get('phone')
         password = request.POST.get('password')
-        confirm_password = request.POST.get('confirm_password')
+        confirm_password = request.POST.get('confirm-password')
 
         if User.objects.filter(username=username).exists():
             messages.error(request, "This username already exits")
-            return redirect('signin')
+            return redirect('register')
 
         if User.objects.filter(email=email).exists():
             messages.error(request, "This email address already exists")
-            return redirect('signin')
+            return redirect('register')
 
         if password != confirm_password:
             messages.error(request, "Password is not matched")
-            return redirect('signin')
+            return redirect('register')
+
+        # if len(phone) < 10:
+        #     messages.error(request, "The phone numbers should contain minimum 10 digits!")
 
         if len(username) and len(password) < 8:
             messages.error(request, "The length of the password and username should be more than 8 characters")
-            return redirect('signin')
-        create_user = User.objects.create_user(username=username,email=email,password=password,phone=phone)
-        create_user.save()
+            return redirect('register')
 
+        create_user = User.objects.create_user(username=username,email=email,password=password)
+        create_user.save()
         return redirect('signin')
 
     return render(request, 'account-section/register.html')

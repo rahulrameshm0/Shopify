@@ -107,6 +107,7 @@ input[type=text],
 input[type=email],
 input[type=password]{
     color: #408097;
+    background: none;
 }
 
 .registration-form input::placeholder{
@@ -162,7 +163,6 @@ input[type=password]{
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    margin-top: 1rem;
     border: none;
     background: linear-gradient(#61bce3, #2a7fac, #257a8f);
     padding: 0.8rem 1rem;
