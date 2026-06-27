@@ -11,7 +11,7 @@ urlpatterns = [
     # password  reset
     path('email_varification/',
          auth_views.PasswordResetView.as_view(template_name="account-section/email-varification.html"),
-         name="email_verification"),
+         name="email_varification"),
 
     path('password_reset_sent/',
          auth_views.PasswordResetDoneView.as_view(template_name="account-section/password-reset-sent.html"),

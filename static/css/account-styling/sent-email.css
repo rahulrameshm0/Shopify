@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Wix Madefor Text", sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);
+}
+.card h2{
+    text-decoration: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.message{
+    color: #306d81;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ .card {
+     background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);
+     border-radius: 16px;
+     padding: 2.5rem;
+     max-width: 400px;
+     box-shadow: 0 0.2rem 1rem 0.2rem #182c33;
+     width: 90%;
+     text-align: center;
+     /*border: 1px solid #eee;*/
+ }
+.icon-circle {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: #e6f4ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 28px;
+}
+.steps {
+    border: 1px solid #1a3a45;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    color: #247b9a;
+    font-size: 13px;
+}
+
+.steps p{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 13px;
+    color: #247b9a;
+}
+
+.redirect-link{
+    text-decoration: none;
+}
+
+.step:last-child { margin-bottom: 0; }
+.step-num {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: #182c33;
+    color: #254c59;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.try-again {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 1rem;
+    transition: all 0.3s;
+}
+
+.try-again:hover {
+    background: linear-gradient(#459bbd, #17678a, #083d4c);
+    color: #76c3da;
+    transform: scale(1.1);
+    box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
+}
