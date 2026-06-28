@@ -43,8 +43,12 @@ def register(request):
         # if len(phone) < 10:
         #     messages.error(request, "The phone numbers should contain minimum 10 digits!")
 
-        if len(username) and len(password) < 8:
-            messages.error(request, "The length of the password and username should be more than 8 characters")
+        if len(username) < 8:
+            messages.error(request, "The length of the username should be more than 8 characters")
+            return redirect('register')
+
+        if len(password):
+            messages.error(request, "The length of the password should be more than 8 characters")
             return redirect('register')
 
         create_user = User.objects.create_user(username=username,email=email,password=password)
