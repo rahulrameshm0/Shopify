@@ -47,7 +47,7 @@ def register(request):
             messages.error(request, "The length of the username should be more than 8 characters")
             return redirect('register')
 
-        if len(password):
+        if len(password) < 8:
             messages.error(request, "The length of the password should be more than 8 characters")
             return redirect('register')
 
