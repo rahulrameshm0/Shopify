@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Wix Madefor Text", sans-serif;
+    background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);
+    background-attachment: fixed;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.login {
+    width: 50%;
+    min-width: 450px;
+    flex: 1 1 450px;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-img {
+    width: 50%;
+    flex: 1 1 450px;
+    min-width: 450px;
+    /*background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);*/
+    /*padding: 11.7rem 2rem;*/
+    padding: 2rem;
+}
+
+
+.login-img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0.2rem 1rem 0.2rem #1a3a45;
+}
+
+
+.signin-head h2{
+    font-size: 2.5rem;
+    line-height: 2;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
+
+.signin-head{
+    background: linear-gradient(#b0c0c6, #d3d8da, #e4dddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
+
+.register-here a{
+    text-decoration: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form-section{
+    margin-top: 5rem;
+}
+
+.form-section label {
+    display: block;
+    font-weight: bold;
+    color: #2d88b5;
+}
+
+.form-section input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    transition: border-bottom-color 0.5s ease;
+}
+
+.form-section input::placeholder{
+    color: #859ea3;
+}
+.form-section input:focus{
+    border-bottom-color: #5fbbe1;
+}
+
+.form-section input[type=text]{
+    /*background-image: url('');*/
+}
+
+.email-box{
+    border-bottom: 2px solid #408097;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #408097;
+}
+
+.password-box img{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.password-box img:hover{
+    cursor: pointer;
+}
+
+.password-box input{
+    width: 100%;
+}
+
+.remember-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -2.6rem;
+}
+
+.remember-wrap label{
+    display: inline !important;
+}
+
+.remember-wrap input {
+    margin-right: 0.5rem;
+    display: inline !important;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: none !important;
+    outline: none;
+    cursor: pointer;
+    font-size: 2.4rem;
+    vertical-align: middle;
+}
+
+.forget-password a{
+    text-decoration: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.login-btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
+.login-btn:hover{
+    background: linear-gradient(#459bbd, #17678a, #083d4c);
+    color: #76c3da;
+    transform: scale(1.1);
+    box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    margin-bottom: 2.6rem;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #408097;
+}
+
+.divider span {
+    color: #859ea3;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+
+.signin-with-other-account{
+    text-align: center;
+}
+
+.signin-with-other-account img{
+    height: 30px;
+    width: 30px;
+    margin: 1.2rem;
+    color: #4e4e4e;
+    border-radius: 5rem;
+}

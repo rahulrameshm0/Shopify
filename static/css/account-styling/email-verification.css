@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Wix Madefor Text", sans-serif;
+    background: linear-gradient(160deg, #274751, #2d515c, #065f83);
+    background-attachment: fixed;
+}
+
+.verification{
+    display: flex;
+    justify-content: space-evenly;
+    /*flex-direction: column;*/
+    align-items: center;
+    min-height: 100vh;
+    box-shadow: 0 0.2rem 1rem 0.2rem #bababa;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.verification img{
+    width: 60vh;
+}
+
+.border{
+    background: linear-gradient(160deg, #274751, #2d515c, #065f83);
+    /*background: url("{% static 'images/forgot-password.png' %}") 50% 0 no-repeat fixed;*/
+    padding: 8rem;
+    box-shadow: 0 0.2rem 1rem 0.2rem #2d515c;
+    border-radius: 0.4rem;
+}
+
+.verification h1{
+    text-decoration: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2.4rem;
+}
+
+.verification label {
+    display: block;
+    font-weight: bold;
+    color: #2d88b5;
+}
+
+.verification input{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    transition: border-bottom-color 0.5s ease;
+    border-bottom: 2px solid #408097;
+}
+
+.verification input::placeholder{
+    color: #859ea3;
+}
+.verification input:focus{
+    border-bottom-color: #5fbbe1;
+}
+.verification input[type=email]{
+    color: #5fbbe1;
+}
+
+
+.reset-btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 3.4rem;
+    border: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #1a3a45;
+}
+
+.reset-btn:hover{
+    background: linear-gradient(#459bbd, #17678a, #083d4c);
+    color: #76c3da;
+    transform: scale(1.1);
+    box-shadow: 0 0.2rem 1rem 0.2rem #182a2e;
+}
+
+/*popup*/
+
+  .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+  }
+
+.popup-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 320px;
+    width: 90%;
+}
+
+.popup-box p { margin-bottom: 1rem; }
+.popup-box button {
+    padding: 8px 24px;
+    cursor: pointer;
+}

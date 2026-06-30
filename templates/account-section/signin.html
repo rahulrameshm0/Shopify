@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Signin</title>
+
+    <link rel="stylesheet" href="{% static 'css/account-styling/signin.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" href="{% static 'images/shopping-cart.png' %}">
+</head>
+
+<body>
+
+<main class="main">
+    <div class="container">
+
+        <div class="login-img">
+            <img class="e-img" src="{% static 'images/store.png' %}" alt="IMG">
+        </div>
+
+        <div class="login">
+            <div class="signin-head">
+                <h2>Login</h2>
+                <p class="register-here">If you don't have an account register <a href="{% url 'register' %}">Register Here !</a></p>
+            </div>
+
+            <div class="form-section">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div>
+                        <label for="Username">Username</label>
+                        <div class="email-box">
+                            <input type="text" name="username" id="username" placeholder="Enter your Username">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <div class="password-box">
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <img src="{% static 'images/eye-closed.png' %}" id="eye-icon">
+                        </div>
+                    </div>
+                    <div class="remember-wrap">
+                        <div>
+                            <input type="checkbox" id="remember"><label for="remember">Remember me</label>
+                        </div>
+                        <div class="forget-password">
+                            <a href="{% url 'email_varification' %}">Forgot Password ?</a>
+                        </div>
+                    </div>
+                    <button class="login-btn" type="submit">Login &rarr;</button>
+                </form>
+            {% if messages %}
+              {% for message in messages %}
+                <p style="color: red; text-align: center">{{ message }}</p><br>
+              {% endfor %}
+            {% endif %}
+            </div>
+
+
+             <div class="divider">
+                <hr>
+                    <span>or Continue with</span>
+                <hr>
+            </div>
+
+            <div class="signin-with-other-account">
+                <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S252893170%3A1781978588634698"><img src="{% static 'images/google.png' %}"></a>
+                <a href="https://www.icloud.com/"><img src="{% static 'images/apple.png' %}"></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'images/facebook.png' %}"></a>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<script>
+    const eyeOpensrc = "{% static 'images/eye.png' %}";
+    const eyeClosedsrc = "{% static 'images/eye-closed.png' %}";
+</script>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

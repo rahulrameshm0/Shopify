@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Reset</title>
+    <link rel="stylesheet" href="{% static 'css/account-styling/email-verification.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" href="{% static 'images/shopping-cart.png' %}">
+</head>
+<body>
+
+{% if messages %}
+    {% for message in messages %}
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <p>{{ message }}</p>
+            <button onclick="document.getElementById('popup').style.display='none'">OK</button>
+        </div>
+    </div>
+    {% endfor %}
+{% endif %}
+
+<section>
+    <div class="verification">
+        <div>
+            <img src="{% static 'images/forgot-password.png' %}" alt="forgot-password" srcset="">
+        </div>
+
+        <div class="border">
+            <h1>Forgot password</h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <button class="reset-btn" type="submit">Reset password &rarr;</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

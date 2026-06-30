@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="{% static 'css/account-styling/register.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="{% static 'images/shopping-cart.png' %}">
+</head>
+
+<body>
+<main class="main">
+    <div class="container">
+
+        <div class="login-img">
+            <img class="e-img" src="{% static 'images/store.png' %}" alt="IMG">
+        </div>
+
+        <div class="login">
+            <div class="register-head">
+                <h2>Sign Up</h2>
+                <p class="register-here">If you already have an account register <a href="{% url 'signin' %}">login here !</a></p>
+            </div>
+
+            <div class="registration-form">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div>
+                        <label for="username">Username</label>
+                        <div class="username-box">
+                            <input type="text" name="username" id="username" placeholder="Enter your username">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <div class="email-box">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        </div>
+                    </div>
+{#                    <div>#}
+{#                        <label for="phone">Number</label>#}
+{#                        <div class="phone">#}
+{#                            <input type="text" name="phone" id="phone" placeholder="Enter your phone number">#}
+{#                        </div>#}
+{#                    </div>#}
+                    <div>
+                        <label for="password">Password</label>
+                        <div class="password-box">
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <img src="{% static 'images/eye-closed.png' %}" id="eye-icon">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password">Confirm Password</label>
+                        <div class="confirm-password-box">
+                            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
+                            <img src="{% static 'images/eye-closed.png' %}" id="eye-icon-2">
+                        </div>
+                    </div>
+            {% if messages %}
+              {% for message in messages %}
+                <p style="color: red; text-align: center">{{ message }}</p>
+              {% endfor %}
+            {% endif %}
+                <button class="logout-btn" type="submit">Sign Up &rarr;</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<script>
+    const eyeOpensrc = "{% static 'images/eye.png' %}";
+    const eyeClosedsrc = "{% static 'images/eye-closed.png' %}";
+</script>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

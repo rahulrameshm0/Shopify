@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Wix Madefor Text", sans-serif;
+    background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);
+    background-attachment: fixed;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.login-img {
+    width: 50%;
+    flex: 1 1 450px;
+    min-width: 450px;
+    /*background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);*/
+    /*padding: 11.7rem 2rem;*/
+    padding: 2rem;
+}
+
+.login-img img {
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+    box-shadow: 0 0.2rem 1rem 0.2rem #1a3a45;
+}
+
+.login {
+    width: 50%;
+    flex: 1 1 450px;
+    min-width: 450px;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.register-head h2{
+    font-size: 2.5rem;
+    line-height: 2;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
+
+.register-head{
+    background: linear-gradient(#b0c0c6, #d3d8da, #e4dddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
+
+.register-here a{
+    text-decoration: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.registration-form{
+    margin-top: 5rem;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2d88b5;
+}
+
+.registration-form input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    background:none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.registration-form,
+input[type=text],
+input[type=email],
+input[type=password]{
+    color: #408097;
+    background: none;
+}
+
+.registration-form input::placeholder{
+    color: #859ea3;
+}
+.registration-form input:focus{
+    border-bottom-color: #5fbbe1;
+}
+
+.username-box,
+.email-box,
+.phone,
+.confirm-password-box{
+    border-bottom: 2px solid #408097;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #408097;
+}
+
+.confirm-password-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #408097;
+}
+
+.password-box img{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.confirm-password-box img{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.password-box img:hover{
+    cursor: pointer;
+}
+
+.confirm-password-box img:hover{
+    cursor: pointer;
+}
+
+
+.logout-btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(#61bce3, #2a7fac, #257a8f);
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.3s;
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+.logout-btn:hover{
+    background: linear-gradient(#459bbd, #17678a, #083d4c);
+    color: #76c3da;
+    transform: scale(1.1);
+}
