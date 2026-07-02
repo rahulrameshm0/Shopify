@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/dashboard/navbar.css' %}">
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <div class="navbar">
+        <div class="dash-left">
+            <span><ion-icon name="reorder-three-outline"></ion-icon></span>
+            <h2>Dashboard</h2>
+
+        </div>
+
+        <div class="dash-right">
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon></a>
+            <span><a href="#"><img src="#" alt="profile">Admin</a></span>
+        </div>
+    </div>
+</nav>
+
+
+{% block content %}
+{% endblock content %}
+</body>
+
+</html>
+

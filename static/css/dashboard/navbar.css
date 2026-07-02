@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Wix Madefor Text", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.navbar .dash-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar .dash-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
