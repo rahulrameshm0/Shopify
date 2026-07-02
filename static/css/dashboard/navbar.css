@@ -12,7 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
 }
 
 .navbar .dash-left{
@@ -25,4 +25,15 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.dash-right img{
+    /*border: 1px solid #1f6073;*/
+    text-decoration: none;
+    border-radius: 100%;
+    width: 30px;
+}
+
+.dash-right a{
+    text-decoration: none;
 }
