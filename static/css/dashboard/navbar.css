@@ -21,6 +21,13 @@ body{
     gap: 1rem;
 }
 
+.dash-left a{
+    color: #4ac1f7;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    /*border: 1px solid #1b1b1b;*/
+}
+
 .navbar .dash-right{
     display: flex;
     align-items: center;
