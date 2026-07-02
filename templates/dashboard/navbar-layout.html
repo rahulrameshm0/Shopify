@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" xmlns:a="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -20,23 +20,38 @@
 <nav>
     <div class="navbar">
         <div class="dash-left">
-            <a href="#"><ion-icon name="reorder-three-outline"></ion-icon></a>
+            <a href="#" id="menu-toggle" onclick="toggleSidebar(); return false;">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </a>
             <h2>Dashboard</h2>
-
         </div>
 
         <div class="dash-right">
-            <a href="#" id="toggle-icon"><ion-icon name="notifications-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon></a>
             <span><a href="#"><img src="{% static 'images/img.png' %}" alt="profile"></a></span>
             <a href="#">Admin</a>
         </div>
     </div>
 </nav>
 
+<div class="sidebar" id="sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Products</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+</div>
 
-{% block content %}
-{% endblock content %}
+<div class="main-content" id="mainContent">
+    {% block content %}
+    {% endblock content %}
+</div>
+
+<script>
+    function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('open');
+        document.getElementById('mainContent').classList.toggle('shifted');
+    }
+</script>
 </body>
 
 </html>
-
