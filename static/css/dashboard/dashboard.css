@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.admin-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4ac1f7;
+    opacity: 2;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100vw;
+    min-width: 320px;
+}
+
+.computer-img img{
+    max-width: 80%;
+    background: none;
+}

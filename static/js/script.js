@@ -26,10 +26,8 @@ eyeIconConfirm.onclick = function(){
     }
 }
 
-//popup
-window.onload = function() {
-    const popup = document.getElementById('popup');
-    if (popup) {
-        popup.style.display = 'flex';  // ← this shows the popup
+//sidebar toggle
+function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('open');
+        document.getElementById('mainContent').classList.toggle('shifted');
     }
-}

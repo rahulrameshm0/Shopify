@@ -2,7 +2,23 @@
 {% load static %}
 
 {% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/dashboard/dashboard.css' %}">
+</head>
 
-    <h1>Dashboard</h1>
+<main>
+    <section>
+        <div class="admin-view">
+            <div class="welcome-page">
+                <h1>Welcome back Admin</h1>
+                <p>Here is what happening with your store today</p>
+            </div>
+
+            <div class="computer-img">
+                <img src="{% static 'images/laptop.png' %}" alt="pc">
+            </div>
+        </div>
+    </section>
+</main>
 
 {% endblock content %}
