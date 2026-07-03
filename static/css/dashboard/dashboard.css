@@ -9,6 +9,10 @@ body{
     max-width: 100%;
 }
 
+.container-1{
+    margin-bottom: 4rem;
+}
+
 .admin-view{
     display: flex;
     align-items: center;
@@ -24,4 +28,39 @@ body{
 .computer-img img{
     max-width: 80%;
     background: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 352px;
+}
+
+.card-1{
+    /*border: 1px solid #ba2121;*/
+    /*padding: 1rem;*/
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    padding: 2rem 6rem;
+
+}
+.card-2{
+    /*border: 1px solid #ba2121;*/
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    padding: 2rem 6rem;
+
+}
+
+#orderChart{
+    width:260px !important;
+    height:260px !important;
+    margin:auto;
+}
+
+#salesChart{
+    width:100% !important;
+    height:300px !important;
 }
