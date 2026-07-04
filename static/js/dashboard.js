@@ -21,7 +21,31 @@ new Chart(orderChart,{
     data:{
         labels:["Pending", "Processing", "Delivered", "Cancelled"],
         datasets:[{
-            data:[15, 30, 45, 10]
+            data:[15, 30, 45, 10],
+            backgroundColor: [
+                "#F59E0B",   // Orange
+                "#3B82F6",   // Blue
+                "#8B5CF6",   // Purple
+                "#22C55E",   // Green
+                "#EF4444"    // Red
+            ],
+
+            borderColor: "#ffffff",
+            borderWidth: 3,
+            hoverOffset: 5
         }]
+    },
+
+    options: {
+        responsive: true,
+        cutout: "60%",
+        plugins: {
+            legend: {
+                display: false
+            },
+            tooltip: {
+                enabled: true
+            }
+        }
     }
 });

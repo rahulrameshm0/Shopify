@@ -33,9 +33,10 @@ body{
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     min-width: 352px;
+    /*gap: 3rem;*/
 }
 
 .card-1{
@@ -43,7 +44,7 @@ body{
     /*padding: 1rem;*/
     background:white;
     box-shadow:0 5px 15px rgba(0,0,0,.08);
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
 
 }
 .card-2{
@@ -63,4 +64,75 @@ body{
 #salesChart{
     width:100% !important;
     height:300px !important;
+}
+
+.order-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    gap:40px;
+}
+
+.chart{
+    position:relative;
+    width:280px;
+    height:280px;
+}
+
+.chart-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.chart-center h2{
+    margin:0;
+    font-size:40px;
+}
+
+.chart-center p{
+    margin:0;
+    color:gray;
+}
+
+.order-details{
+    flex:1;
+}
+
+.status{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0;
+}
+
+.dot{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.pending{
+    background:#F4A621;
+}
+
+.processing{
+    background:#3B82F6;
+}
+
+.shipped{
+    background:#8B5CF6;
+}
+
+.delivered{
+    background:#49C37B;
+}
+
+.cancelled{
+    background:#EF4444;
 }
