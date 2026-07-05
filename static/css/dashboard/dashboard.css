@@ -136,3 +136,126 @@ body{
 .cancelled{
     background:#EF4444;
 }
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.cards-1,
+.cards-2,
+.cards-3,
+.cards-4{
+    font-size: 0.8rem;
+}
+
+.cards-1{
+    background-color: #7676ba;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-1 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+}
+.cards-1 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #7676ba;
+    background-color: #7676ba;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #5e5ebf;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
+
+
+.cards-2{
+    background-color: #a8e183;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-2 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.orders{
+    display: flex;
+    align-items: center;
+}
+.cards-2 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #9eed6c;
+    background-color: #a8e183;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #88e44d;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
+
+
+.cards-3{
+    background-color: #8363c6;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-3 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.customers{
+    display: flex;
+    align-items: center;
+}
+.cards-3 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #793fec;
+    background-color: #703fec;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #7e3fec;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
+
+
+.cards-4{
+    background-color: #ffb327;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-4 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.revenue{
+    display: flex;
+    align-items: center;
+}
+.cards-4 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ecab3f;
+    background-color: #ecab3f;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #ecab3f;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
