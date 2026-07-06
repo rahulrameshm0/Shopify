@@ -36,6 +36,7 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     min-width: 352px;
+    margin-bottom: 3rem;
     /*gap: 3rem;*/
 }
 
