@@ -259,3 +259,25 @@ body{
     padding: 0.6rem;
     border-radius: 16px;
 }
+
+.table-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order-heading{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.products-heading{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
