@@ -92,6 +92,11 @@ nav {
     background-color: #2f3e2f;
 }
 
+.logout-link{
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
 /* --- Main content --- */
 .main-content {
     margin-top: 60px;    /* clears fixed navbar */
