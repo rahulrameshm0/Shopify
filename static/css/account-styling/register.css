@@ -24,9 +24,7 @@ body {
 }
 
 .login-img {
-    width: 50%;
     flex: 1 1 450px;
-    min-width: 450px;
     /*background: linear-gradient(160deg, #1b4f5e 0%, #1a3a45 100%);*/
     /*padding: 11.7rem 2rem;*/
     padding: 2rem;
@@ -34,20 +32,19 @@ body {
 
 .login-img img {
     width: 100%;
-    height: 100%;
-    /*object-fit: cover;*/
+    height: auto;
     box-shadow: 0 0.2rem 1rem 0.2rem #1a3a45;
+    display: block;
 }
 
 .login {
-    width: 50%;
+    /*width: 50%;*/
     flex: 1 1 450px;
     min-width: 450px;
     padding: 0 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .register-head h2{
@@ -177,3 +174,6 @@ input[type=password]{
     color: #76c3da;
     transform: scale(1.1);
 }
+
+
+/*Media Query*/
