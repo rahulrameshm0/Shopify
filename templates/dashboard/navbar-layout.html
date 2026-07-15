@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/dashboard/navbar.css' %}">
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="{% static 'images/shopping-cart.png' %}">
+</head>
+
+<body>
+
+<nav>
+    <div class="navbar">
+        <div class="dash-left">
+            <a href="#" id="menu-toggle" onclick="toggleSidebar(); return false;">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </a>
+            <h2>Shopify</h2>
+        </div>
+
+        <div class="dash-right">
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon></a>
+            <span><a href="#"><img src="{% static 'images/img.png' %}" alt="profile"></a></span>
+            <a href="#">Admin</a>
+        </div>
+    </div>
+</nav>
+
+<aside>
+    <div class="side-bar">
+        <div class="sidebar" id="sidebar">
+            <div class="list-section">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+
+            </div>
+            <div class="logout-link">
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<div class="main-content" id="mainContent">
+    {% block content %}
+    {% endblock content %}
+</div>
+
+<!--Script tag-->
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

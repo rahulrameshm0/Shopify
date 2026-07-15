@@ -61,4 +61,4 @@ def email_verification(request):
     return render(request, 'account-section/email-varification.html')
 
 def dashboard(request):
-    return render(request, 'account-section/dashboard.html')
+    return render(request, 'dashboard/dashboard.html')

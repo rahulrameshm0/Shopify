@@ -1,0 +1,197 @@
+{% extends "dashboard/navbar-layout.html" %}
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/dashboard/dashboard.css' %}">
+</head>
+
+<main>
+    <section class="container-1">
+        <div class="admin-view">
+            <div class="welcome-page">
+                <h1>Welcome back Admin</h1>
+                <p>Here is what happening with your store today</p>
+            </div>
+
+            <div class="computer-img">
+                <img src="{% static 'images/laptop.png' %}" alt="pc">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="cards">
+            <div class="cards-1">
+                <div class="products">
+                    <img src="{% static 'images/box.png' %}">
+                    <h3>Total Products</h3>
+                </div>
+                <h4>125</h4>
+            </div>
+
+            <div class="cards-2">
+                <div class="orders">
+                    <img src="{% static 'images/check-out.png' %}">
+                    <h3>Total Orders</h3>
+                </div>
+                <h4>320</h4>
+            </div>
+
+            <div class="cards-3">
+                <div class="customers">
+                    <img src="{% static 'images/end.png' %}">
+                    <h3>Total Customers</h3>
+                </div>
+                <h4>215</h4>
+            </div>
+
+               <div class="cards-4">
+                <div class="revenue">
+                    <img src="{% static 'images/revenue.png' %}">
+                    <h3>Total Revenue</h3>
+                </div>
+                <h4>21,515$</h4>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+        <div class="card-1">
+            <h5>Sales Overview</h5>
+            <canvas id="salesChart"></canvas>
+        </div>
+
+       <div class="card-2">
+           <h5>Order Status</h5>
+
+           <div class="order-container">
+               <div class="chart">
+                   <canvas id="orderStatusChart"></canvas>
+                   <div class="chart-center">
+                        <h2>320</h2>
+                        <p>Total Orders</p>
+                    </div>
+                </div>
+
+                <div class="order-details">
+                    <div class="status">
+                        <div>
+                            <span class="dot pending"></span>
+                            Pending
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div>
+                            <span class="dot processing"></span>
+                            Processing
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div>
+                            <span class="dot shipped"></span>
+                            Shipped
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div>
+                            <span class="dot delivered"></span>
+                            Delivered
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div>
+                            <span class="dot cancelled"></span>
+                            Cancelled
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="table-items">
+            <div class="order-table">
+                <div class="order-heading">
+                    <h3>Recent Order</h3>
+                    <button>View All</button>
+                </div>
+                <div>
+                   <table style="width:100%">
+                      <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                      </tr>
+                      <tr>
+                        <td>#152447</td>
+                        <td>Manu</td>
+                        <td>23.11.1998</td>
+                        <td>740$</td>
+                        <td>Shipped</td>
+                      </tr>
+                      <tr>
+                        <td>#152447</td>
+                        <td>Manu</td>
+                        <td>23.11.1998</td>
+                        <td>740$</td>
+                        <td>Shipped</td>
+                      </tr>
+                      <tr>
+                        <td>#152447</td>
+                        <td>Manu</td>
+                        <td>23.11.1998</td>
+                        <td>740$</td>
+                        <td>Shipped</td>
+                      </tr>
+                   </table>
+                </div>
+            </div>
+
+            <div class="selling-products">
+                <div class="products-heading">
+                    <h3>Top Selling products</h3>
+                    <button>View All</button>
+                </div>
+                <div>
+                    <table style="width:100%">
+                      <tr>
+                        <th>Products</th>
+                        <th>Sold</th>
+                        <th>Revenue</th>
+
+                      </tr>
+                      <tr>
+                        <td>Wireless headphones</td>
+                        <td>72</td>
+                        <td>74,200$</td>
+                      </tr>
+                      <tr>
+                        <td>Iphone 16 ProMax</td>
+                        <td>152</td>
+                        <td>154,200$</td>
+                      </tr>
+                      <tr>
+                        <td>Galaxy S23</td>
+                        <td>72</td>
+                        <td>894,200$</td>
+                      </tr>
+                   </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{% static 'js/dashboard.js' %}"></script>
+{% endblock content %}

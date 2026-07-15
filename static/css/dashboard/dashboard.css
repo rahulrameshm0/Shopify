@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.container-1{
+    margin-bottom: 4rem;
+}
+
+.admin-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4ac1f7;
+    opacity: 2;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100vw;
+    min-width: 320px;
+}
+
+.computer-img img{
+    max-width: 80%;
+    background: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 352px;
+    margin-bottom: 3rem;
+    /*gap: 3rem;*/
+}
+
+.card-1{
+    /*border: 1px solid #ba2121;*/
+    /*padding: 1rem;*/
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    padding: 2rem 4rem;
+
+}
+.card-2{
+    /*border: 1px solid #ba2121;*/
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    padding: 2rem 6rem;
+
+}
+
+#orderChart{
+    width:260px !important;
+    height:260px !important;
+    margin:auto;
+}
+
+#salesChart{
+    width:100% !important;
+    height:300px !important;
+}
+
+.order-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    gap:40px;
+}
+
+.chart{
+    position:relative;
+    width:280px;
+    height:280px;
+}
+
+.chart-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.chart-center h2{
+    margin:0;
+    font-size:40px;
+}
+
+.chart-center p{
+    margin:0;
+    color:gray;
+}
+
+.order-details{
+    flex:1;
+}
+
+.status{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0;
+}
+
+.dot{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.pending{
+    background:#F4A621;
+}
+
+.processing{
+    background:#3B82F6;
+}
+
+.shipped{
+    background:#8B5CF6;
+}
+
+.delivered{
+    background:#49C37B;
+}
+
+.cancelled{
+    background:#EF4444;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.cards-1,
+.cards-2,
+.cards-3,
+.cards-4{
+    font-size: 0.8rem;
+}
+
+.cards-1{
+    background-color: #7676ba;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-1 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+}
+.cards-1 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #7676ba;
+    background-color: #7676ba;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #5e5ebf;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
+
+
+.cards-2{
+    background-color: #a8e183;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-2 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.orders{
+    display: flex;
+    align-items: center;
+}
+.cards-2 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #9eed6c;
+    background-color: #a8e183;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #88e44d;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
+
+
+.cards-3{
+    background-color: #8363c6;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-3 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.customers{
+    display: flex;
+    align-items: center;
+}
+.cards-3 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #793fec;
+    background-color: #703fec;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #7e3fec;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
+
+
+.cards-4{
+    background-color: #ffb327;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.cards-4 h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.revenue{
+    display: flex;
+    align-items: center;
+}
+.cards-4 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ecab3f;
+    background-color: #ecab3f;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem #ecab3f;
+    padding: 0.6rem;
+    border-radius: 16px;
+}
+
+.table-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.order-heading,
+.products-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*gap: 5rem;*/
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+.order-heading button,
+.products-heading button{
+    border: 1px solid #acdaac;
+    background: transparent;
+    padding: 0.2rem 0.6rem;
+    color: #acdaac;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
