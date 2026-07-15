@@ -34,7 +34,7 @@
                         <div class="sparkle"></div>
                         <span class="eyebrow">Wearables</span>
                         <h3 style="font-size:var(--text-xl); line-height:1.15">Explore<br/>Apple Watch</h3>
-                        <a href="product.html" class="shop-now">Shop Now
+                        <a href="{% url 'shopping' %}" class="shop-now">Shop Now
                             <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                 <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                       stroke-linecap="round" stroke-linejoin="round"/>
@@ -49,7 +49,7 @@
                         <div class="sparkle"></div>
                         <span class="eyebrow">Latest Phones</span>
                         <h3 style="font-size:var(--text-xl); line-height:1.15">Galaxy S24<br/>Ultra · 5G</h3>
-                        <a href="product.html" class="shop-now">Shop Now
+                        <a href="{% url 'products' %}" class="shop-now">Shop Now
                             <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                 <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                       stroke-linecap="round" stroke-linejoin="round"/>
@@ -65,7 +65,7 @@
                             <div class="sparkle"></div>
                             <span class="eyebrow">Cameras</span>
                             <h3 style="font-size:var(--text-lg); line-height:1.2">Samsung<br/>Gear Camera</h3>
-                            <a href="product.html" class="shop-now">Shop Now
+                            <a href="{% url 'products' %}" class="shop-now">Shop Now
                                 <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                     <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                           stroke-linecap="round" stroke-linejoin="round"/>
@@ -80,7 +80,7 @@
                             <div class="sparkle"></div>
                             <span class="eyebrow">Audio</span>
                             <h3 style="font-size:var(--text-lg); line-height:1.2">Beats<br/>Studio Buds</h3>
-                            <a href="product.html" class="shop-now">Shop Now
+                            <a href="{% url 'products' %}" class="shop-now">Shop Now
                                 <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                     <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                           stroke-linecap="round" stroke-linejoin="round"/>
@@ -95,7 +95,7 @@
                             <div class="sparkle"></div>
                             <span class="eyebrow">DSLR</span>
                             <h3 style="font-size:var(--text-lg); line-height:1.2">Hero Camera<br/>X-Series</h3>
-                            <a href="product.html" class="shop-now">Shop Now
+                            <a href="{% url 'products' %}" class="shop-now">Shop Now
                                 <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                     <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                           stroke-linecap="round" stroke-linejoin="round"/>
@@ -116,7 +116,7 @@
             <div class="container">
                 <div class="section-head">
                     <h2>Trending Products</h2>
-                    <a href="shop.html" class="view-all">View all
+                    <a href="{% url 'products' %}" class="view-all">View all
                         <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                             <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.8"
                                   stroke-linecap="round" stroke-linejoin="round"/>
@@ -141,10 +141,10 @@
                                  alt="Galaxy Note 20 Ultra 5G"/>
                         </div>
                         <div class="stock"><span class="dot"></span>In stock · 52 items</div>
-                        <a href="product.html" class="name">Galaxy Note 20 Ultra 5G</a>
+                        <a href="{% url 'shopping' %}" class="name">Galaxy Note 20 Ultra 5G</a>
                         <div class="price"><span class="now">$2,780</span></div>
                         <div class="stars">★★★★★ <span class="count">(56)</span></div>
-                        <a href="cart.html" class="btn">Order now →</a>
+                        <a href="{% url 'cart' %}" class="btn">Order now →</a>
                     </article>
 
                     <article class="product-card">
@@ -155,10 +155,10 @@
                                  alt="iPad 10th Generation"/>
                         </div>
                         <div class="stock"><span class="dot"></span>In stock · 32 items</div>
-                        <a href="product.html" class="name">iPad 10th Generation</a>
+                        <a href="{% url 'products' %}" class="name">iPad 10th Generation</a>
                         <div class="price"><span class="now">$1,780</span><span class="was">$1,980</span></div>
                         <div class="stars">★★★★★ <span class="count">(124)</span></div>
-                        <a href="cart.html" class="btn">Order now →</a>
+                        <a href="{% url 'cart' %}" class="btn">Order now →</a>
                     </article>
 
                     <article class="product-card">
@@ -168,10 +168,10 @@
                                  alt="Galaxy Note 20 Ultra 5G mint"/>
                         </div>
                         <div class="stock"><span class="dot"></span>In stock · 41 items</div>
-                        <a href="product.html" class="name">Galaxy Note 20 Ultra 5G</a>
+                        <a href="{% url 'products' %}" class="name">Galaxy Note 20 Ultra 5G</a>
                         <div class="price"><span class="now">$2,780</span></div>
                         <div class="stars">★★★★☆ <span class="count">(89)</span></div>
-                        <a href="cart.html" class="btn">Order now →</a>
+                        <a href="{% url 'cart' %}" class="btn">Order now →</a>
                     </article>
 
                     <article class="product-card">
@@ -182,10 +182,10 @@
                                  alt="Samsung S21 Ultra"/>
                         </div>
                         <div class="stock"><span class="dot"></span>In stock · 24 items</div>
-                        <a href="product.html" class="name">Samsung S21 Ultra</a>
+                        <a href="{% url 'products' %}" class="name">Samsung S21 Ultra</a>
                         <div class="price"><span class="now">$2,780</span></div>
                         <div class="stars">★★★★★ <span class="count">(212)</span></div>
-                        <a href="cart.html" class="btn">Order now →</a>
+                        <a href="{% url 'cart' %}" class="btn">Order now →</a>
                     </article>
 
                     <article class="product-card">
@@ -195,10 +195,10 @@
                                  alt="Samsung Galaxy Note 20"/>
                         </div>
                         <div class="stock"><span class="dot"></span>In stock · 67 items</div>
-                        <a href="product.html" class="name">Samsung Galaxy Note 20</a>
+                        <a href="{% url 'products' %}" class="name">Samsung Galaxy Note 20</a>
                         <div class="price"><span class="now">$2,780</span></div>
                         <div class="stars">★★★★★ <span class="count">(98)</span></div>
-                        <a href="cart.html" class="btn">Order now →</a>
+                        <a href="{% url 'cart' %}" class="btn">Order now →</a>
                     </article>
                 </div>
             </div>
@@ -211,7 +211,7 @@
                     <article class="discount-card discount-card--watch">
                         <span class="meta">THIS WEEK ONLY</span>
                         <h3>Mega Discounts<br/><span class="pct">50% Off</span></h3>
-                        <a href="shop.html" class="shop-now">Shop Now
+                        <a href="{% url 'cart' %}" class="shop-now">Shop Now
                             <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                                 <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.8"
                                       stroke-linecap="round" stroke-linejoin="round"/>
@@ -224,7 +224,7 @@
                     <article class="discount-card discount-card--airpods">
                         <span class="meta">LIMITED EDITION</span>
                         <h3>Studio Buds Pro<br/><span class="pct">30% Off</span></h3>
-                        <a href="shop.html" class="shop-now">Shop Now
+                        <a href="{% url 'cart' %}" class="shop-now">Shop Now
                             <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                                 <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.8"
                                       stroke-linecap="round" stroke-linejoin="round"/>
@@ -243,7 +243,7 @@
             <div class="container">
                 <div class="section-head">
                     <h2>Shop by category</h2>
-                    <a href="shop.html" class="view-all">View all products
+                    <a href="{% url 'shopping' %}" class="view-all">View all products
                         <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                             <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.8"
                                   stroke-linecap="round" stroke-linejoin="round"/>
@@ -251,35 +251,35 @@
                     </a>
                 </div>
                 <div class="cats-grid">
-                    <a href="shop.html" class="cat-tile">
+                    <a href="{% url 'shopping' %}" class="cat-tile">
                         <div class="pic"><img
                                 src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&q=80&auto=format&fit=crop"
                                 alt=""/></div>
                         <div class="name">Watch</div>
                         <div class="count">28 Products</div>
                     </a>
-                    <a href="shop.html" class="cat-tile">
+                    <a href="{% url 'shopping' %}" class="cat-tile">
                         <div class="pic"><img
                                 src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=300&q=80&auto=format&fit=crop"
                                 alt=""/></div>
                         <div class="name">Camera</div>
                         <div class="count">42 Products</div>
                     </a>
-                    <a href="shop.html" class="cat-tile">
+                    <a href="{% url 'shopping' %}" class="cat-tile">
                         <div class="pic"><img
                                 src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300&q=80&auto=format&fit=crop"
                                 alt=""/></div>
                         <div class="name">Smart Phone</div>
                         <div class="count">76 Products</div>
                     </a>
-                    <a href="shop.html" class="cat-tile">
+                    <a href="{% url 'shopping' %}" class="cat-tile">
                         <div class="pic"><img
                                 src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=300&q=80&auto=format&fit=crop"
                                 alt=""/></div>
                         <div class="name">Accessories</div>
                         <div class="count">112 Products</div>
                     </a>
-                    <a href="shop.html" class="cat-tile">
+                    <a href="{% url 'shopping' %}" class="cat-tile">
                         <div class="pic"><img
                                 src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=300&q=80&auto=format&fit=crop"
                                 alt=""/></div>
@@ -295,7 +295,7 @@
             <div class="container">
                 <div class="section-head">
                     <h2>Just for you</h2>
-                    <a href="shop.html" class="view-all">More picks
+                    <a href="{% url 'shopping' %}" class="view-all">More picks
                         <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                             <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.8"
                                   stroke-linecap="round" stroke-linejoin="round"/>
@@ -311,7 +311,7 @@
                             <div class="stock">IN STOCK · 12</div>
                             <div class="name">Apple Airpods V57</div>
                             <div class="price">$680</div>
-                            <a href="cart.html" class="btn">Order Now</a>
+                            <a href="{% url 'cart' %}" class="btn">Order Now</a>
                         </div>
                     </article>
                     <article class="compact-card">
@@ -322,7 +322,7 @@
                             <div class="stock">IN STOCK · 8</div>
                             <div class="name">Apple MacBook Pro</div>
                             <div class="price">$2,780</div>
-                            <a href="cart.html" class="btn">Order Now</a>
+                            <a href="{% url 'cart' %}" class="btn">Order Now</a>
                         </div>
                     </article>
                     <article class="compact-card">
@@ -333,7 +333,7 @@
                             <div class="stock">IN STOCK · 24</div>
                             <div class="name">Power Wired Controller</div>
                             <div class="price">$190</div>
-                            <a href="cart.html" class="btn">Order Now</a>
+                            <a href="{% url 'cart' %}" class="btn">Order Now</a>
                         </div>
                     </article>
                     <article class="compact-card">
@@ -344,7 +344,7 @@
                             <div class="stock">IN STOCK · 36</div>
                             <div class="name">Gaming Mouse Pro</div>
                             <div class="price">$190</div>
-                            <a href="cart.html" class="btn">Order Now</a>
+                            <a href="{% url 'cart' %}" class="btn">Order Now</a>
                         </div>
                     </article>
                 </div>
