@@ -15,3 +15,6 @@ def cart(request):
 
 def contacts(request):
     return render(request, "contacts/contacts.html")
+
+def wishlist(request):
+    return render(request, "wishlist/wishlist.html")
