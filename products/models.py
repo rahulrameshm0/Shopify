@@ -6,7 +6,7 @@ class Products(models.Model):
     name = models.CharField(max_length=260)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     brand = models.CharField(max_length=150)
-    price = models.DecimalField(max_length=20, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField()
     image = models.ImageField(upload_to="products/")
     description = models.TextField()
