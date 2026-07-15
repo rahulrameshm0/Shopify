@@ -1,0 +1,92 @@
+{% load static %}
+
+<!-- Header -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Shopify — Tech &amp; Gadgets Ecommerce HTML Template</title>
+    <link rel="icon" href="{% static 'images/shopping-cart.png' %}">
+    <meta name="description"
+          content="Sprylo is a free modern HTML template for tech and electronics stores — multi-color bento hero, indigo primary palette, Plus Jakarta + Outfit + Roboto Mono pair, 5 fully responsive pages, no framework, no build step."/>
+    <meta name="theme-color" content="#4F46E5"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Outfit:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"/>
+    <link rel="stylesheet" href="{% static 'css/home/home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/home/responsive.css' %}"/>
+</head>
+
+<body>
+
+
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+        <a href="#" class="brand"><span class="brand-mark">S</span> Shopify</a>
+        <button class="drawer-close" aria-label="Close menu">Close ✕</button>
+    </div>
+
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'shopping' %}">Shop</a>
+    <a href="{% url 'products' %}">Products</a>
+    <a href="{% url 'cart' %}">Cart</a>
+    <a href="{% url 'contacts' %}">Contact</a>
+    <a href="{% url 'home' %}">Logout</a>
+    <a href="{% url 'cart' %}" class="btn btn--indigo" style="margin-top:var(--s5); justify-content:center">View cart →</a>
+</div>
+
+
+<header class="site-header">
+    <div class="container">
+        <a href="{% url 'home' %}" class="brand">
+            <span class="brand-mark">S</span>
+            Shopify
+        </a>
+
+        <div class="main-nav">
+            <a href="{% url 'home' %}" aria-current="page">Home</a>
+            <a href="{% url 'shopping' %}">Shop</a>
+            <a href="{% url 'products' %}">Products</a>
+            <a href="{% url 'cart' %}">Cart</a>
+            <a href="{% url 'contacts' %}">Contact</a>
+        </div>
+
+        <div class="icon-row">
+            <a href="#" class="icon-btn" aria-label="Account">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 4-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+            <a href="{% url 'wishlist' %}" class="icon-btn" aria-label="Wishlist">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+                <span class="count">3</span>
+            </a>
+            <a href="{% url 'cart' %}" class="icon-btn icon-btn--cart" aria-label="Cart">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2l-2 5v13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7l-2-5z"/>
+                    <path d="M4 7h16"/>
+                    <path d="M16 11a4 4 0 0 1-8 0"/>
+                </svg>
+                <span class="count">2</span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">≡</button>
+        </div>
+    </div>
+</header>
+
+</body>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
