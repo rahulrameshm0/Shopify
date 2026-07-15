@@ -1,5 +1,5 @@
 /* =============================================================
-   SPRYLO — Tech &amp; Gadgets Ecommerce HTML Template
+   Shopify — Tech &amp; Gadgets Ecommerce HTML Template
    White surface · indigo primary · multi-color bento product cards
    ============================================================= */
 
@@ -236,53 +236,6 @@ input, select, textarea {
     font-weight: 800;
     font-size: 18px;
     box-shadow: var(--shadow-indigo);
-}
-
-.search {
-    position: relative;
-    max-width: 560px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.search input {
-    width: 100%;
-    padding: 14px 56px 14px 20px;
-    border: 1px solid var(--rule-strong);
-    border-radius: 999px;
-    background: var(--bg);
-    font-size: var(--text-base);
-    transition: border-color 180ms var(--ease), background 180ms var(--ease);
-}
-
-.search input::placeholder {
-    color: var(--ink-faint);
-}
-
-.search input:focus {
-    outline: 0;
-    background: var(--paper);
-    border-color: var(--indigo);
-    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
-}
-
-.search button {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 42px;
-    height: 42px;
-    background: var(--indigo);
-    color: var(--paper);
-    border-radius: 999px;
-    display: grid;
-    place-items: center;
-    transition: background 180ms var(--ease);
-}
-
-.search button:hover {
-    background: var(--indigo-deep);
 }
 
 .icon-row {
@@ -761,38 +714,6 @@ input, select, textarea {
 
 .section-head .view-all:hover {
     gap: 12px;
-}
-
-/* ---------- Tabs (category filter) ---------- */
-.tabs {
-    display: flex;
-    gap: var(--s6);
-    margin-bottom: var(--s6);
-    border-bottom: 1px solid var(--rule);
-}
-
-.tab {
-    font-weight: 600;
-    font-size: var(--text-sm);
-    color: var(--fg-mute);
-    padding: 12px 0;
-    position: relative;
-    cursor: pointer;
-}
-
-.tab.is-active {
-    color: var(--indigo);
-}
-
-.tab.is-active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    height: 2px;
-    background: var(--indigo);
-    border-radius: 2px;
 }
 
 /* ---------- Product card ---------- */
