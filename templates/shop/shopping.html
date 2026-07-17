@@ -6,52 +6,150 @@
         <section class="section">
             <div class="container">
                 <div class="shop-layout">
-                    <aside class="filters" aria-label="Filters">
+                    <form method="GET" class="filters" aria-label="Filters">
+
+                        <!-- Category -->
                         <div class="filter-block">
                             <h3>Category</h3>
-                            <label><input type="checkbox" checked> Smartphones <span class="ct">76</span></label>
-                            <label><input type="checkbox"> Laptops &amp; Desktops <span class="ct">42</span></label>
-                            <label><input type="checkbox"> Smart Watches <span class="ct">28</span></label>
-                            <label><input type="checkbox"> Cameras <span class="ct">42</span></label>
-                            <label><input type="checkbox"> Headphones &amp; Buds <span class="ct">35</span></label>
-                            <label><input type="checkbox"> Gaming <span class="ct">31</span></label>
-                            <label><input type="checkbox"> Accessories <span class="ct">112</span></label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Smartphones">
+                                Smartphones
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Laptops">
+                                Laptops &amp; Desktops
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Smart Watches">
+                                Smart Watches
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Cameras">
+                                Cameras
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Headphones">
+                                Headphones &amp; Buds
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Gaming">
+                                Gaming
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Accessories">
+                                Accessories
+                            </label>
                         </div>
+
+                        <!-- Price -->
                         <div class="filter-block">
-                            <h3>Price range</h3>
-                            <div
-                                    style="display:flex; justify-content:space-between; font-family:var(--ff-mono); font-size:11px; color:var(--fg-mute)">
-                                <span>$120</span><span>$3,400</span></div>
-                            <div class="range-bar" aria-hidden="true"></div>
-                            <div
-                                    style="display:flex; justify-content:space-between; font-family:var(--ff-mono); font-size:var(--text-xs); font-weight:600; color:var(--ink); margin-top:var(--s2)">
-                                <span>$420</span><span>$2,380</span></div>
+                            <h3>Price Range</h3>
+
+                            <input
+                                    type="number"
+                                    name="min_price"
+                                    placeholder="Minimum Price">
+
+                            <br><br>
+
+                            <input
+                                    type="number"
+                                    name="max_price"
+                                    placeholder="Maximum Price">
                         </div>
+
+                        <!-- Brand -->
                         <div class="filter-block">
                             <h3>Brand</h3>
-                            <label><input type="checkbox"> Apple <span class="ct">84</span></label>
-                            <label><input type="checkbox" checked> Samsung <span class="ct">72</span></label>
-                            <label><input type="checkbox"> Sony <span class="ct">36</span></label>
-                            <label><input type="checkbox"> Canon <span class="ct">22</span></label>
-                            <label><input type="checkbox"> HP <span class="ct">28</span></label>
-                            <label><input type="checkbox"> Huawei <span class="ct">19</span></label>
-                            <label><input type="checkbox"> Logitech <span class="ct">31</span></label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Apple">
+                                Apple
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Samsung">
+                                Samsung
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Sony">
+                                Sony
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Canon">
+                                Canon
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="HP">
+                                HP
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Huawei">
+                                Huawei
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Logitech">
+                                Logitech
+                            </label>
                         </div>
+
+                        <!-- Rating -->
                         <div class="filter-block">
                             <h3>Rating</h3>
-                            <label><input type="checkbox"> ★★★★★ &amp; up <span class="ct">186</span></label>
-                            <label><input type="checkbox"> ★★★★☆ &amp; up <span class="ct">242</span></label>
-                            <label><input type="checkbox"> ★★★☆☆ &amp; up <span class="ct">296</span></label>
+
+                            <label>
+                                <input type="radio" name="rating" value="5">
+                                ★★★★★ &amp; up
+                            </label>
+
+                            <label>
+                                <input type="radio" name="rating" value="4">
+                                ★★★★☆ &amp; up
+                            </label>
+
+                            <label>
+                                <input type="radio" name="rating" value="3">
+                                ★★★☆☆ &amp; up
+                            </label>
                         </div>
+
+                        <!-- Availability -->
                         <div class="filter-block">
                             <h3>Availability</h3>
-                            <label><input type="checkbox" checked> In stock <span class="ct">298</span></label>
-                            <label><input type="checkbox"> On sale <span class="ct">64</span></label>
-                            <label><input type="checkbox"> New arrivals <span class="ct">28</span></label>
-                        </div>
-                        <a href="#" class="btn btn--indigo btn--block">Apply filters</a>
-                    </aside>
 
+                            <label>
+                                <input type="checkbox" name="availability" value="instock">
+                                In Stock
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="availability" value="sale">
+                                On Sale
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="availability" value="new">
+                                New Arrivals
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--indigo btn--block">
+                            Apply Filters
+                        </button>
+
+                    </form>
                     <div>
                         <div class="shop-toolbar">
                             <span class="count">Showing 1 – 12 of 314 products</span>
