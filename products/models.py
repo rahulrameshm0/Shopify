@@ -13,3 +13,6 @@ class Products(models.Model):
 
     def __str__(self):
         return  self.name
+
+class Specification(models.Model):
+    product = models.ForeignKey(Products, on_delete=models.CASCADE, related_name="specification")
