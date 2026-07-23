@@ -20,7 +20,7 @@ def product_details(request, id):
         "product": product
     }
 
-    return render(request, "shop/shopping.html", context)
+    return render(request, "products/products-details.html", context)
 
 def shopping(request):
     products = Products.objects.all()

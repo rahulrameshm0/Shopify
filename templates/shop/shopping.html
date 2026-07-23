@@ -195,7 +195,7 @@
                                         In stock · {{ product.stock }} items
                                     </div>
 
-                                    <a href="#" class="name">
+                                    <a href="{% url 'product_details' product.id %}" class="name">
                                         {{ product.name }}
                                     </a>
 
