@@ -8,33 +8,32 @@
           href="shop.html">Shop</a> <span class="sep">›</span> <span>Speakers</span></div>
 
       <section class="product-detail">
-
         <div class="gallery">
           <div class="gallery-thumbs">
             <button class="is-active"><img
-                src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=200&q=80&auto=format&fit=crop"
+                src="{{ product.image.url }}"
                 alt="" /></button>
-            <button><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&q=80&auto=format&fit=crop"
-                alt="" /></button>
-            <button><img
-                src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=200&q=80&auto=format&fit=crop"
+            <button><img src="{{ product.image.url }}"
                 alt="" /></button>
             <button><img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&q=80&auto=format&fit=crop"
+                src="{{ product.image.url }}"
                 alt="" /></button>
             <button><img
-                src="https://images.unsplash.com/photo-1574920162043-b872873f19c8?w=200&q=80&auto=format&fit=crop"
+                src="{{ product.image.url }}"
+                alt="" /></button>
+            <button><img
+                src="{{ product.image.url }}"
                 alt="" /></button>
           </div>
           <figure class="gallery-main">
-            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=900&q=80&auto=format&fit=crop"
+            <img src="{{ product.image.url }}"
               alt="HomePod 2nd Gen speaker" />
           </figure>
         </div>
 
         <div class="pdp-info">
-          <span class="pdp-cat">⚡ Audio · Featured</span>
-          <h1>Apple HomePod 2nd Gen Speaker</h1>
+          <span class="pdp-cat">{{ product.brand }}</span>
+          <h1>{{ product.name }}</h1>
           <div class="rating-row">
             <span style="color: var(--amber); font-size: 16px">★★★★★</span>
             <span>4.9 / 5 · 312 reviews</span>
@@ -43,12 +42,10 @@
                 style="width:6px;height:6px;background:var(--emerald);border-radius:999px;display:inline-block"></span>
               In stock · 22 items</span>
           </div>
-          <p class="desc">Spatial audio, room-sensing tech, and the centrepiece of your Apple ecosystem. Built-in S7
-            chip, dynamic computational audio, and seamless handoff from iPhone. The new HomePod is designed to
-            disappear into your room and fill it with sound.</p>
+          <p class="desc">{{ product.description }}</p>
 
           <div class="price-row">
-            <span class="now">$280</span>
+            <span class="now">{{ product.price }}</span>
             <span class="was">$320</span>
             <span class="save">Save 12%</span>
           </div>
@@ -66,16 +63,13 @@
           </div>
 
           <div class="option-block">
-            <div class="label">Configuration</div>
             <div class="option-pills">
               <button>Single</button>
-              <button class="is-active">Stereo pair · save $40</button>
-              <button>3-pack · save $120</button>
             </div>
           </div>
 
           <div class="option-block">
-            <div class="label">AppleCare+</div>
+            <div class="label">{{ product.name }}</div>
             <div class="option-pills">
               <button class="is-active">No coverage</button>
               <button>2 years · $39</button>
