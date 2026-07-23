@@ -104,51 +104,17 @@
 
           <div>
             <h2 style="font-size: var(--text-2xl); margin-bottom: var(--s5)">Specifications</h2>
+
             <table style="width:100%; border-collapse: collapse; font-size: var(--text-sm)">
               <tbody>
+              {% for spec in product.specification.all %}
                 <tr style="border-bottom: 1px solid var(--rule)">
                   <td
                     style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase; width: 40%">
-                    Chip</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">Apple S7 SiP</td>
+                      {{spec.name}}</td>
+                  <td style="padding: var(--s4) 0; font-weight: 600">{{spec.value}}</td>
                 </tr>
-                <tr style="border-bottom: 1px solid var(--rule)">
-                  <td
-                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase">
-                    Drivers</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">4-inch high-excursion woofer, 5 beam-forming
-                    tweeters</td>
-                </tr>
-                <tr style="border-bottom: 1px solid var(--rule)">
-                  <td
-                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase">
-                    Connectivity</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">Wi-Fi 4, Bluetooth 5.0, Thread, U1</td>
-                </tr>
-                <tr style="border-bottom: 1px solid var(--rule)">
-                  <td
-                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase">
-                    Spatial audio</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">Yes, with dynamic head tracking</td>
-                </tr>
-                <tr style="border-bottom: 1px solid var(--rule)">
-                  <td
-                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase">
-                    Dimensions</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">168 × 142 mm · 2.3 kg</td>
-                </tr>
-                <tr style="border-bottom: 1px solid var(--rule)">
-                  <td
-                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase">
-                    In the box</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">HomePod, power cable (1.8 m), documentation</td>
-                </tr>
-                <tr>
-                  <td
-                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase">
-                    Warranty</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">2-year limited</td>
-                </tr>
+              {% endfor %}
               </tbody>
             </table>
           </div>
