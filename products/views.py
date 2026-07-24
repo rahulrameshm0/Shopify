@@ -17,11 +17,8 @@ def product_list(request):
 
 def product_details(request, id):
     product = get_object_or_404(Products, id=id)
-
-     # Get the product first
-    product = get_object_or_404(Products, id=id)
     
-        # Get all reviews for this product
+    # Get all reviews for this product
     reviews = product.reviews.all()
     total_reviews = reviews.count()
     
