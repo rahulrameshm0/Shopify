@@ -41,7 +41,7 @@
             <span style="color: var(--rule-strong)">|</span>
             <span style="color: var(--emerald); display:inline-flex; align-items:center; gap:6px"><span
                 style="width:6px;height:6px;background:var(--emerald);border-radius:999px;display:inline-block"></span>
-              In stock · 22 items</span>
+              In Stock {{ product.stock }}</span>
           </div>
           <p class="desc">{{ product.description }}</p>
 
@@ -60,12 +60,6 @@
               <button style="background: #0F172A" aria-label="Midnight"></button>
               <button style="background: #F97316" aria-label="Orange"></button>
               <button style="background: #4F46E5" aria-label="Indigo"></button>
-            </div>
-          </div>
-
-          <div class="option-block">
-            <div class="option-pills">
-              <button>Single</button>
             </div>
           </div>
 
