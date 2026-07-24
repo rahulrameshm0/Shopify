@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from . models import Products
 from django.core.paginator import Paginator
 from categories.models import Category
+from django.db.models import Count
+from django.db.models import Avg
 
 # Create your views here.
 
@@ -16,9 +18,34 @@ def product_list(request):
 def product_details(request, id):
     product = get_object_or_404(Products, id=id)
 
-    context = {
-        "product": product
-    }
+     # Get the product first
+    product = get_object_or_404(Products, id=id)
+    
+        # Get all reviews for this product
+    reviews = product.reviews.all()
+    total_reviews = reviews.count()
+    
+    average_rating = reviews.aggregate(avg=Avg("rating"))["avg"] or 0
+    
+    star_counts = {}
+    
+    for star in range(1, 6):
+        count = reviews.filter(rating=star).count()
+    
+        if total_reviews > 0:
+            percentage = round((count / total_reviews) * 100)
+        else:
+            percentage = 0
+            star_counts[star] = {
+                "count": count,
+                "percentage": percentage
+            }
+    
+        context = {
+            "product": product,
+            "star_counts": star_counts,
+            "average_rating": round(average_rating, 1)
+        }
 
     return render(request, "products/products-details.html", context)
 
