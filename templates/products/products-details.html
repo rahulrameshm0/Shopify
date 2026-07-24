@@ -126,7 +126,7 @@
                             </div>
                             <div style="color: var(--amber); font-size: 18px">
                                   {% for i in "12345" %}
-                            {% if forloop.counter <= review.rating %}
+                            {% if forloop.counter <= average_rating %}
                             ★
                             {% else %}
                             ☆
@@ -143,28 +143,28 @@
                             <div style="display:flex; align-items:center; gap:8px"><span
                                     style="width: 16px">5</span><span
                                     style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                                    style="display:block; width: {{ star_counts.5.percentage }}%; height:100%; background: var(--amber)"></span></span><span
+                                    style="display:block; width:{{ star_counts.5.percentage }}%; height:100%; background: var(--amber)"></span></span><span
                                     style="width: 28px; text-align:right">{{ star_counts.5.percentage }}%</span></div>
                             <div style="display:flex; align-items:center; gap:8px"><span
                                     style="width: 16px">4</span><span
                                     style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                                    style="display:block; width:{{ star_counts.5.percentage }}%; height:100%; background: var(--amber)"></span></span><span
-                                    style="width: 28px; text-align:right">{{ star_counts.5.percentage }}%</span></div>
+                                    style="display:block; width:{{ star_counts.4.percentage }}%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">{{ star_counts.4.percentage }}%</span></div>
                             <div style="display:flex; align-items:center; gap:8px"><span
                                     style="width: 16px">3</span><span
                                     style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                                    style="display:block; width:{{ star_counts.5.percentage }}%; height:100%; background: var(--amber)"></span></span><span
-                                    style="width: 28px; text-align:right">{{ star_counts.5.percentage }}%</span></div>
+                                    style="display:block; width:{{ star_counts.3.percentage }}%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">{{ star_counts.3.percentage }}%</span></div>
                             <div style="display:flex; align-items:center; gap:8px"><span
                                     style="width: 16px">2</span><span
                                     style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                                    style="display:block; width:{{ star_counts.5.percentage }}%; height:100%; background: var(--amber)"></span></span><span
-                                    style="width: 28px; text-align:right">{{ star_counts.5.percentage }}%</span></div>
+                                    style="display:block; width:{{ star_counts.2.percentage }}%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">{{ star_counts.2.percentage }}%</span></div>
                             <div style="display:flex; align-items:center; gap:8px"><span
                                     style="width: 16px">1</span><span
                                     style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                                    style="display:block; width:{{ star_counts.5.percentage }}%; height:100%; background: var(--amber)"></span></span><span
-                                    style="width: 28px; text-align:right">{{ star_counts.5.percentage }}%</span></div>
+                                    style="display:block; width:{{ star_counts.1.percentage }}%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">{{ star_counts.1.percentage }}%</span></div>
                         </div>
                     </div>
 

@@ -33,11 +33,12 @@ def product_details(request, id):
             percentage = round((count / total_reviews) * 100)
         else:
             percentage = 0
-            star_counts[star] = {
-                "count": count,
-                "percentage": percentage
-            }
-    
+
+        star_counts[star] = {
+            "count": count,
+            "percentage": percentage
+        }
+        
         context = {
             "product": product,
             "star_counts": star_counts,
