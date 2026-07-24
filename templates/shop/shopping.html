@@ -204,7 +204,13 @@
                                     </div>
 
                                     <div class="stars">
-                                        ★★★★★
+                                        {% for i in "12345" %}
+                                            {% if forloop.counter <= product.rating %}
+                                                ★
+                                            {% else %}
+                                                ☆
+                                            {% endif %}
+                                        {% endfor %}
                                     </div>
 
                                     <a href="#" class="btn">

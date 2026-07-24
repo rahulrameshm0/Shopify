@@ -2,189 +2,197 @@
 {% load static %}
 
 {% block content %}
-  <main id="main">
+<main id="main">
     <div class="container">
-      <div class="crumbs" style="padding-top: var(--s5)"><a href="index.html">Home</a> <span class="sep">›</span> <a
-          href="shop.html">Shop</a> <span class="sep">›</span> <span>{{ product.name }}</span></div>
+        <div class="crumbs" style="padding-top: var(--s5)"><a href="index.html">Home</a> <span class="sep">›</span> <a
+                href="shop.html">Shop</a> <span class="sep">›</span> <span>{{ product.name }}</span></div>
 
-      <section class="product-detail">
-          {% if product %}
-        <div class="gallery">
-          <div class="gallery-thumbs">
-            <button class="is-active"><img
-                src="{{ product.image.url }}"
-                alt="" /></button>
-            <button><img src="{{ product.image.url }}"
-                alt="" /></button>
-            <button><img
-                src="{{ product.image.url }}"
-                alt="" /></button>
-            <button><img
-                src="{{ product.image.url }}"
-                alt="" /></button>
-            <button><img
-                src="{{ product.image.url }}"
-                alt="" /></button>
-          </div>
-          <figure class="gallery-main">
-            <img src="{{ product.image.url }}"
-              alt="HomePod 2nd Gen speaker" />
-          </figure>
-        </div>
+        <section class="product-detail">
+            {% if product %}
+            <div class="gallery">
+                <div class="gallery-thumbs">
+                    <button class="is-active"><img
+                            src="{{ product.image.url }}"
+                            alt=""/></button>
+                    <button><img src="{{ product.image.url }}"
+                                 alt=""/></button>
+                    <button><img
+                            src="{{ product.image.url }}"
+                            alt=""/></button>
+                    <button><img
+                            src="{{ product.image.url }}"
+                            alt=""/></button>
+                    <button><img
+                            src="{{ product.image.url }}"
+                            alt=""/></button>
+                </div>
+                <figure class="gallery-main">
+                    <img src="{{ product.image.url }}"
+                         alt="HomePod 2nd Gen speaker"/>
+                </figure>
+            </div>
 
-        <div class="pdp-info">
-          <span class="pdp-cat">{{ product.brand }}</span>
-          <h1>{{ product.name }}</h1>
-          <div class="rating-row">
-            <span style="color: var(--amber); font-size: 16px">★★★★★</span>
-            <span>4.9 / 5 · 312 reviews</span>
-            <span style="color: var(--rule-strong)">|</span>
-            <span style="color: var(--emerald); display:inline-flex; align-items:center; gap:6px"><span
-                style="width:6px;height:6px;background:var(--emerald);border-radius:999px;display:inline-block"></span>
+            <div class="pdp-info">
+                <span class="pdp-cat">{{ product.brand }}</span>
+                <h1>{{ product.name }}</h1>
+                <div class="rating-row">
+                <span style="color: var(--amber); font-size: 16px">  {% for i in "12345" %}
+                    {% if forloop.counter <= product.rating %}★{% else %}☆{% endif %}{% endfor %}</span>
+                    <span>{{ product.rating }} / 5 · {{product.review.count}} reviews</span>
+                    <span style="color: var(--rule-strong)">|</span>
+                    <span style="color: var(--emerald); display:inline-flex; align-items:center; gap:6px"><span
+                            style="width:6px;height:6px;background:var(--emerald);border-radius:999px;display:inline-block"></span>
               In Stock {{ product.stock }}</span>
-          </div>
-          <p class="desc">{{ product.description }}</p>
+                </div>
+                <p class="desc">{{ product.description }}</p>
 
-          <div class="price-row">
-            <span class="now">{{ product.price }}</span>
-            <span class="was">$320</span>
-            <span class="save">Save 12%</span>
-          </div>
+                <div class="price-row">
+                    <span class="now">{{ product.price }}</span>
+                    <span class="was">$320</span>
+                    <span class="save">Save 12%</span>
+                </div>
 
-          <div class="option-block">
-            <div class="label">Color</div>
-            <div class="color-swatches">
-              <button class="is-active"
-                style="background: #FFFFFF; border-radius: 999px; outline-color: var(--rule-strong)"
-                aria-label="White"></button>
-              <button style="background: #0F172A" aria-label="Midnight"></button>
-              <button style="background: #F97316" aria-label="Orange"></button>
-              <button style="background: #4F46E5" aria-label="Indigo"></button>
+                <div class="option-block">
+                    <div class="label">Color</div>
+                    <div class="color-swatches">
+                        <button class="is-active"
+                                style="background: #FFFFFF; border-radius: 999px; outline-color: var(--rule-strong)"
+                                aria-label="White"></button>
+                        <button style="background: #0F172A" aria-label="Midnight"></button>
+                        <button style="background: #F97316" aria-label="Orange"></button>
+                        <button style="background: #4F46E5" aria-label="Indigo"></button>
+                    </div>
+                </div>
+
+                <div class="option-block">
+                    <div class="label">{{ product.name }}</div>
+                    <div class="option-pills">
+                        <button class="is-active">No coverage</button>
+                        <button>2 years · $39</button>
+                        <button>3 years · $59</button>
+                    </div>
+                </div>
+
+                <div class="pdp-cta">
+                    <div class="qty">
+                        <button type="button" data-act="-" aria-label="Decrease">−</button>
+                        <input type="text" value="1" inputmode="numeric" aria-label="Quantity"/>
+                        <button type="button" data-act="+" aria-label="Increase">+</button>
+                    </div>
+                    <a href="cart.html" class="btn btn--indigo" style="flex:1; min-width:160px">Add to cart →</a>
+                    <a href="cart.html" class="btn btn--ink">Buy now</a>
+                    <button class="icon-btn" aria-label="Add to wishlist" style="background: var(--bg)">♡</button>
+                </div>
+
+                <div class="pdp-features">
+                    <div class="pf"><span class="ic">⚡</span><span>Free shipping over $50</span></div>
+                    <div class="pf"><span class="ic">↺</span><span>30-day free returns</span></div>
+                    <div class="pf"><span class="ic">★</span><span>2-year limited warranty</span></div>
+                    <div class="pf"><span class="ic">✓</span><span>Authentic Apple product</span></div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="option-block">
-            <div class="label">{{ product.name }}</div>
-            <div class="option-pills">
-              <button class="is-active">No coverage</button>
-              <button>2 years · $39</button>
-              <button>3 years · $59</button>
+        <!-- Specs + reviews split -->
+        <section class="section" style="padding-top: 0;">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--s8)">
+
+                <div>
+                    <h2 style="font-size: var(--text-2xl); margin-bottom: var(--s5)">Specifications</h2>
+
+                    <table style="width:100%; border-collapse: collapse; font-size: var(--text-sm)">
+                        <tbody>
+                        {% for spec in product.specification.all %}
+                        <tr style="border-bottom: 1px solid var(--rule)">
+                            <td
+                                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase; width: 40%">
+                                {{spec.name}}
+                            </td>
+                            <td style="padding: var(--s4) 0; font-weight: 600">{{spec.value}}</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h2 style="font-size: var(--text-2xl); margin-bottom: var(--s5)">Reviews</h2>
+                    <div
+                            style="display:grid; grid-template-columns: auto 1fr; gap: var(--s5); align-items:center; padding: var(--s5); background: var(--bg); border-radius: var(--r); margin-bottom: var(--s5)">
+                        <div style="text-align:center">
+                            <div
+                                    style="font-family: var(--ff-display); font-size: 48px; font-weight: 800; color: var(--ink); line-height: 1">
+                                4.9
+                            </div>
+                            <div style="color: var(--amber); font-size: 18px">★★★★★</div>
+                            <div style="font-family: var(--ff-mono); font-size: 11px; color: var(--fg-mute); margin-top: 4px">
+                                {{ product.review.count }}
+                                reviews
+                            </div>
+                        </div>
+                        <div
+                                style="display:grid; gap:6px; font-family: var(--ff-mono); font-size: var(--text-xs); color: var(--fg-soft)">
+                            <div style="display:flex; align-items:center; gap:8px"><span
+                                    style="width: 16px">5</span><span
+                                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
+                                    style="display:block; width:82%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">82%</span></div>
+                            <div style="display:flex; align-items:center; gap:8px"><span
+                                    style="width: 16px">4</span><span
+                                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
+                                    style="display:block; width:14%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">14%</span></div>
+                            <div style="display:flex; align-items:center; gap:8px"><span
+                                    style="width: 16px">3</span><span
+                                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
+                                    style="display:block; width:3%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">3%</span></div>
+                            <div style="display:flex; align-items:center; gap:8px"><span
+                                    style="width: 16px">2</span><span
+                                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
+                                    style="display:block; width:1%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">1%</span></div>
+                            <div style="display:flex; align-items:center; gap:8px"><span
+                                    style="width: 16px">1</span><span
+                                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
+                                    style="display:block; width:0%; height:100%; background: var(--amber)"></span></span><span
+                                    style="width: 28px; text-align:right">0%</span></div>
+                        </div>
+                    </div>
+
+                    <article
+                            style="border-bottom: 1px solid var(--rule); padding-bottom: var(--s5); margin-bottom: var(--s5)">
+                        {% for review in product.reviews.all %}
+
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px">
+                            <strong style="font-family: var(--ff-display); font-weight: 700">{{review.user.username}}</strong>
+                            <span style="font-family: var(--ff-mono); font-size: 11px; color: var(--fg-mute)">{{ review.created_at|date:"M d, Y" }}</span>
+                        </div>
+                        <div style="color: var(--amber); font-size: 14px; margin-bottom: 6px">
+                            {% for i in "12345" %}
+                            {% if forloop.counter <= review.rating %}
+                            ★
+                            {% else %}
+                            ☆
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                        <p style="font-size: var(--text-sm); color: var(--fg-soft); line-height: 1.6">{{ review.comment }}</p>
+                        {% endfor %}
+                    </article>
+                    <!--                    <a href="#" class="btn btn&#45;&#45;ghost btn&#45;&#45;block">Read all 312 reviews →</a>-->
+                </div>
+
             </div>
-          </div>
-
-          <div class="pdp-cta">
-            <div class="qty">
-              <button type="button" data-act="-" aria-label="Decrease">−</button>
-              <input type="text" value="1" inputmode="numeric" aria-label="Quantity" />
-              <button type="button" data-act="+" aria-label="Increase">+</button>
-            </div>
-            <a href="cart.html" class="btn btn--indigo" style="flex:1; min-width:160px">Add to cart →</a>
-            <a href="cart.html" class="btn btn--ink">Buy now</a>
-            <button class="icon-btn" aria-label="Add to wishlist" style="background: var(--bg)">♡</button>
-          </div>
-
-          <div class="pdp-features">
-            <div class="pf"><span class="ic">⚡</span><span>Free shipping over $50</span></div>
-            <div class="pf"><span class="ic">↺</span><span>30-day free returns</span></div>
-            <div class="pf"><span class="ic">★</span><span>2-year limited warranty</span></div>
-            <div class="pf"><span class="ic">✓</span><span>Authentic Apple product</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Specs + reviews split -->
-      <section class="section" style="padding-top: 0;">
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--s8)">
-
-          <div>
-            <h2 style="font-size: var(--text-2xl); margin-bottom: var(--s5)">Specifications</h2>
-
-            <table style="width:100%; border-collapse: collapse; font-size: var(--text-sm)">
-              <tbody>
-              {% for spec in product.specification.all %}
-                <tr style="border-bottom: 1px solid var(--rule)">
-                  <td
-                    style="padding: var(--s4) 0; color: var(--fg-mute); font-family: var(--ff-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase; width: 40%">
-                      {{spec.name}}</td>
-                  <td style="padding: var(--s4) 0; font-weight: 600">{{spec.value}}</td>
-                </tr>
-              {% endfor %}
-              </tbody>
-            </table>
-          </div>
-
-          <div>
-            <h2 style="font-size: var(--text-2xl); margin-bottom: var(--s5)">Reviews</h2>
-            <div
-              style="display:grid; grid-template-columns: auto 1fr; gap: var(--s5); align-items:center; padding: var(--s5); background: var(--bg); border-radius: var(--r); margin-bottom: var(--s5)">
-              <div style="text-align:center">
-                <div
-                  style="font-family: var(--ff-display); font-size: 48px; font-weight: 800; color: var(--ink); line-height: 1">
-                  4.9</div>
-                <div style="color: var(--amber); font-size: 18px">★★★★★</div>
-                <div style="font-family: var(--ff-mono); font-size: 11px; color: var(--fg-mute); margin-top: 4px">312
-                  reviews</div>
-              </div>
-              <div
-                style="display:grid; gap:6px; font-family: var(--ff-mono); font-size: var(--text-xs); color: var(--fg-soft)">
-                <div style="display:flex; align-items:center; gap:8px"><span style="width: 16px">5</span><span
-                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                      style="display:block; width:82%; height:100%; background: var(--amber)"></span></span><span
-                    style="width: 28px; text-align:right">82%</span></div>
-                <div style="display:flex; align-items:center; gap:8px"><span style="width: 16px">4</span><span
-                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                      style="display:block; width:14%; height:100%; background: var(--amber)"></span></span><span
-                    style="width: 28px; text-align:right">14%</span></div>
-                <div style="display:flex; align-items:center; gap:8px"><span style="width: 16px">3</span><span
-                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                      style="display:block; width:3%; height:100%; background: var(--amber)"></span></span><span
-                    style="width: 28px; text-align:right">3%</span></div>
-                <div style="display:flex; align-items:center; gap:8px"><span style="width: 16px">2</span><span
-                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                      style="display:block; width:1%; height:100%; background: var(--amber)"></span></span><span
-                    style="width: 28px; text-align:right">1%</span></div>
-                <div style="display:flex; align-items:center; gap:8px"><span style="width: 16px">1</span><span
-                    style="flex:1; height:6px; background:var(--rule); border-radius:999px; overflow:hidden"><span
-                      style="display:block; width:0%; height:100%; background: var(--amber)"></span></span><span
-                    style="width: 28px; text-align:right">0%</span></div>
-              </div>
-            </div>
-
-            <article style="border-bottom: 1px solid var(--rule); padding-bottom: var(--s5); margin-bottom: var(--s5)">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px">
-                <strong style="font-family: var(--ff-display); font-weight: 700">Mira K.</strong>
-                <span style="font-family: var(--ff-mono); font-size: 11px; color: var(--fg-mute)">2 days ago</span>
-              </div>
-              <div style="color: var(--amber); font-size: 14px; margin-bottom: 6px">★★★★★</div>
-              <p style="font-size: var(--text-sm); color: var(--fg-soft); line-height: 1.6">Bought a stereo pair for the
-                living room. The room-sensing makes a real difference — they adapt to where you put them. Setup was 90
-                seconds with the iPhone handoff.</p>
-            </article>
-
-            <article style="border-bottom: 1px solid var(--rule); padding-bottom: var(--s5); margin-bottom: var(--s5)">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px">
-                <strong style="font-family: var(--ff-display); font-weight: 700">Devan R.</strong>
-                <span style="font-family: var(--ff-mono); font-size: 11px; color: var(--fg-mute)">1 week ago</span>
-              </div>
-              <div style="color: var(--amber); font-size: 14px; margin-bottom: 6px">★★★★★</div>
-              <p style="font-size: var(--text-sm); color: var(--fg-soft); line-height: 1.6">Replaced my old Sonos with
-                this. Spatial audio is genuinely impressive on Atmos tracks. Build quality is excellent. Only wish it
-                had a 3.5 mm jack for guests.</p>
-            </article>
-
-            <a href="#" class="btn btn--ghost btn--block">Read all 312 reviews →</a>
-          </div>
-
-        </div>
-      </section>
+        </section>
 
         {% else %}
         <p>No Product Found</p>
-    {% endif %}
+        {% endif %}
 
     </div>
 
-      {% include "home/footer-layout.html" %}
-  </main>
+    {% include "home/footer-layout.html" %}
+</main>
 {% endblock content %}
 
