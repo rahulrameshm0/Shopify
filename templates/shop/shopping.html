@@ -1,10 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Shopping</h1>
-</body>
-</html>
+{% extends "home/navbar-layout.html" %}
+{% load static %}
+
+{% block content %}
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <div class="shop-layout">
+                    <form method="GET" class="filters" aria-label="Filters">
+                        <!-- Category -->
+                        <div class="filter-block">
+                            <h3>Category</h3>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Smartphones">
+                                Smartphones
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Laptops">
+                                Laptops &amp; Desktops
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Smart Watches">
+                                Smart Watches
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Cameras">
+                                Cameras
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Headphones">
+                                Headphones &amp; Buds
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Gaming">
+                                Gaming
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="category" value="Accessories">
+                                Accessories
+                            </label>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="filter-block">
+                            <h3>Price Range</h3>
+
+                            <input
+                                    type="number"
+                                    name="min_price"
+                                    placeholder="Minimum Price">
+
+                            <br><br>
+
+                            <input
+                                    type="number"
+                                    name="max_price"
+                                    placeholder="Maximum Price">
+                        </div>
+
+                        <!-- Brand -->
+                        <div class="filter-block">
+                            <h3>Brand</h3>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Apple">
+                                Apple
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Samsung">
+                                Samsung
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Sony">
+                                Sony
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Canon">
+                                Canon
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="HP">
+                                HP
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Huawei">
+                                Huawei
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="brand" value="Logitech">
+                                Logitech
+                            </label>
+                        </div>
+
+                        <!-- Rating -->
+                        <div class="filter-block">
+                            <h3>Rating</h3>
+
+                            <label>
+                                <input type="radio" name="rating" value="5">
+                                ★★★★★ &amp; up
+                            </label>
+
+                            <label>
+                                <input type="radio" name="rating" value="4">
+                                ★★★★☆ &amp; up
+                            </label>
+
+                            <label>
+                                <input type="radio" name="rating" value="3">
+                                ★★★☆☆ &amp; up
+                            </label>
+                        </div>
+
+                        <!-- Availability -->
+                        <div class="filter-block">
+                            <h3>Availability</h3>
+
+                            <label>
+                                <input type="checkbox" name="availability" value="instock">
+                                In Stock
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="availability" value="sale">
+                                On Sale
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="availability" value="new">
+                                New Arrivals
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--indigo btn--block">
+                            Apply Filters
+                        </button>
+
+                    </form>
+                    <div>
+                        <div class="shop-toolbar">
+                            <span class="count">Showing 1 – 12 of 314 products</span>
+                            <div style="display:flex; gap:var(--s3); align-items:center">
+                                <span style="font-size:var(--text-xs); color:var(--fg-mute); font-family:var(--ff-mono)">SORT</span>
+                                <select>
+                                    <option>Most popular</option>
+                                    <option>Price: low to high</option>
+                                    <option>Price: high to low</option>
+                                    <option>Newest first</option>
+                                    <option>Highest rated</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="shop-grid">
+
+                            {% for product in page_obj %}
+
+                                <article class="product-card">
+
+                                    <div class="img-wrap">
+
+                                        {% if product.is_new %}
+                                            <span class="badge">New</span>
+                                        {% endif %}
+
+                                        {% if product.is_sale %}
+                                            <span class="badge badge--sale">Sale</span>
+                                        {% endif %}
+
+                                        <button class="wishlist">♡</button>
+
+                                        {% if product.image %}
+                                            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                                        {% else %}
+                                            <img src="{% static 'images/no-image.png' %}" alt="{{ product.name }}">
+                                        {% endif %}
+
+                                    </div>
+
+                                    <div class="stock">
+                                        <span class="dot"></span>
+                                        In stock · {{ product.stock }} items
+                                    </div>
+
+                                    <a href="{% url 'product_details' product.id %}" class="name">
+                                        {{ product.name }}
+                                    </a>
+
+                                    <div class="price">
+                                        <span class="now">${{ product.price }}</span>
+                                    </div>
+
+                                    <div class="stars">
+                                        {% for i in "12345" %}
+                                            {% if forloop.counter <= product.rating %}
+                                                ★
+                                            {% else %}
+                                                ☆
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+
+                                    <a href="#" class="btn">
+                                        Order now →
+                                    </a>
+
+                                </article>
+                            {% empty %}
+                                <h2>No products found.</h2>
+                            {% endfor %}
+
+                        </div>
+
+                        <div class="pagination">
+                            {% if page_obj.has_previous %}
+                                <a href="?page={{ page_obj.previous_page_number }}" class="pg">‹</a>
+                            {% endif %}
+
+                            {% for page in page_obj.paginator.page_range %}
+
+                                {% if page == page_obj.number %}
+                                    <a href="?page={{ page }}" class="pg is-active">
+                                        {{ page }}
+                                    </a>
+                                {% else %}
+                                    <a href="?page={{ page }}" class="pg">
+                                        {{ page }}
+                                    </a>
+                                {% endif %}
+
+                            {% endfor %}
+
+                            {% if page_obj.has_next %}
+                                <a href="?page={{ page_obj.next_page_number }}" class="pg">›</a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="brands">
+            <div class="container">
+                <div class="brand-row">
+                    <a href="#" class="brand-logo">HP</a><a href="#" class="brand-logo">Huawei</a>
+                    <a href="#" class="brand-logo">Nokia</a><a href="#" class="brand-logo">Samsung</a>
+                    <a href="#" class="brand-logo">Canon</a><a href="#" class="brand-logo">Sony</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="{% static 'js/homeFunctionality.js' %}" defer></script>
+
+    {% include "home/footer-layout.html" %}
+{% endblock content %}
+
