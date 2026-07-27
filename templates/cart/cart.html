@@ -1,7 +1,6 @@
 {% extends "home/navbar-layout.html" %}
 {% load static %}
 
-
 {% block content %}
 <main id="main">
 
@@ -9,7 +8,12 @@
     <div class="container">
       <div class="crumbs"><a href="{% url 'home' %}">Home</a> <span class="sep">›</span> <span>Shopping cart</span></div>
       <h1>Your cart</h1>
-      <p>{{ quantity }} items · ready to ship. Free delivery on this order. Estimated arrival 21 – 23 May.</p>
+
+      {% if quantity %}
+        <p>{{ quantity }} items · ready to ship. Free delivery on this order. Estimated arrival 21 – 23 May.</p>
+      {% else %}
+        <p>Currenty there is no items added into your cart.</p>
+      {% endif %}
     </div>
   </section>
 
