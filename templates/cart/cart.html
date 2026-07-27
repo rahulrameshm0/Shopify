@@ -52,7 +52,7 @@
 
           <div style="margin-top: var(--s5); display: flex; gap: var(--s3); flex-wrap: wrap">
             <a href="{% url 'shop' %}" class="btn btn--ghost">← Continue shopping</a>
-            <button class="btn btn--ghost">Update cart</button>
+            <!-- <button class="btn btn--ghost">Update cart</button> -->
           </div>
 
           <!-- Trust strip -->
@@ -136,8 +136,8 @@
       </div>
     </div>
   </section>
-
 </main>
-
 {% include "home/footer-layout.html" %}
+
+<script src="{% static 'js/homeFunctionality.js' %}" defer></script>
 {% endblock content %}  
