@@ -79,8 +79,8 @@
                         <input type="text" value="1" inputmode="numeric" aria-label="Quantity"/>
                         <button type="button" data-act="+" aria-label="Increase">+</button>
                     </div>
-                    <a href="{% url 'cart' %}" class="btn btn--indigo" style="flex:1; min-width:160px">Add to cart →</a>
-                    <a href="{% url 'cart' %}" class="btn btn--ink">Buy now</a>
+                    <a href="{% url 'add_to_cart' product.id %}" class="btn btn--indigo" style="flex:1; min-width:160px">Add to cart →</a>
+                    <a href="{% url 'add_to_cart' product.id %}" class="btn btn--ink">Buy now</a>
                     <button class="icon-btn" aria-label="Add to wishlist" style="background: var(--bg)">♡</button>
                 </div>
 
