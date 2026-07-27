@@ -9,7 +9,7 @@
     <div class="container">
       <div class="crumbs"><a href="{% url 'home' %}">Home</a> <span class="sep">›</span> <span>Shopping cart</span></div>
       <h1>Your cart</h1>
-      <p>3 items · ready to ship. Free delivery on this order. Estimated arrival 21 – 23 May.</p>
+      <p>{{ quantity }} items · ready to ship. Free delivery on this order. Estimated arrival 21 – 23 May.</p>
     </div>
   </section>
 
@@ -97,7 +97,7 @@
             <button>Apply</button>
           </div>
 
-          <div class="cart-line"><span>Subtotal · {{quantity}} items</span><span
+          <div class="cart-line"><span>Subtotal · {{ quantity }} item{{ quantity|pluralize }}</span><span
               style="font-family:var(--ff-display); font-weight:600; color:var(--ink)">${{total|floatformat:2}}</span></div>
           <div class="cart-line"><span>Shipping</span><span
               style="color: var(--emerald); font-weight: 600">Free</span></div>

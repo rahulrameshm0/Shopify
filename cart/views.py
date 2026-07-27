@@ -21,13 +21,16 @@ def add_to_cart(request, id):
 def cart(request):
     cart_items = Cart.objects.filter(user=request.user)
     total = 0
+    quantity = 0
 
     for item in cart_items:
         total += item.product.price * item.quantity
+        quantity += item.quantity
 
     return render(request, "cart/cart.html", {
         "cart_items": cart_items,
-        "total": total
+        "total": total,
+        "quantity": quantity
     })
 
 
