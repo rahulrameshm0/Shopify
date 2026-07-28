@@ -4,17 +4,13 @@ from products.models import Products
 # Create your views here.
 
 def home(request):
-    featured = Products.objects.all()[:6]
-    context = {
-        "phone": featured[0],
-        "watch": featured[1],
-        "camera": featured[2],
-        "homepod": featured[3],
-        "earbuds": featured[4],
-        "dslr": featured[5],
+    hero_products = {
+        product.hero_position: product
+        for product in Products.objects.exclude(hero_position__isnull=True)
     }
-
-    return render(request, "home/home.html", context)
+    print(hero_products)
+    
+    return render(request, "home/home.html", {"hero_products": hero_products})
 
 def products(request):
     return render(request, "products/products-details.html")
