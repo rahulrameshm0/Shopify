@@ -34,29 +34,29 @@
                         <div class="sparkle"></div>
                         <span class="eyebrow">Wearables</span>
                         <h3 style="font-size:var(--text-xl); line-height:1.15">Explore<br/>{{watch.name}}</h3>
-                        <a href="{% url 'product_details' watch.id %}" class="shop-now">Shop Now
+                        <a href="{% url 'product_details' hero_products.watch.id %}" class="shop-now">Shop Now
                             <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                 <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                       stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
                         <img class="product"
-                             src="{{watch.image.url}}"
+                             src="{{ hero_products.watch.image.url }}"
                              alt="Apple Watch"/>
                     </article>
 
                     <article class="bento-card bento-card--teal">
                         <div class="sparkle"></div>
                         <span class="eyebrow">Latest Phones</span>
-                        <h3 style="font-size:var(--text-xl); line-height:1.15">{{phone.name}}<br/> 5G</h3>
-                        <a href="{% url 'product_details' phone.id %}" class="shop-now">Shop Now
+                        <h3 style="font-size:var(--text-xl); line-height:1.15">{{hero_products.phone.name}}<br/> 5G</h3>
+                        <a href="{% url 'product_details' hero_products.phone.id %}" class="shop-now">Shop Now
                             <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                 <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                       stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
                         <img class="product"
-                             src="{{ phone.image.url }}"
+                             src="{{ hero_products.phone.image.url}}"
                              alt="Samsung Galaxy phone"/>
                     </article>
 
@@ -95,14 +95,14 @@
                             <div class="sparkle"></div>
                             <span class="eyebrow">DSLR</span>
                             <h3 style="font-size:var(--text-lg); line-height:1.2">{{ camera.name }}<br/>X-Series</h3>
-                            <a href="{% url 'product_details' camera.id %}" class="shop-now">Shop Now
+                            <a href="{% url 'product_details' hero_products.camera.id %}" class="shop-now">Shop Now
                                 <svg width="12" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
                                     <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6"
                                           stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
                             <img class="product"
-                                 src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=500&q=80&auto=format&fit=crop"
+                                 src="{{hero_products.camera.image.url}}"
                                  alt="DSLR camera"/>
                         </article>
                     </div>

@@ -13,6 +13,22 @@ class Products(models.Model):
     description = models.TextField()
     rating = models.DecimalField(max_digits=2, decimal_places=1, default=0, validators=[MinValueValidator(0),
                                                                                         MaxValueValidator(5)])
+    HERO_CHOICES = [
+        ("homepod", "HomePod"),
+        ("watch", "Watch"),
+        ("phone", "Phone"),
+        ("camera", "Camera"),
+        ("earbuds", "Earbuds"),
+        ("dslr", "DSLR"),
+    ]
+
+    hero_position = models.CharField(
+        max_length=20,
+        choices=HERO_CHOICES,
+        blank=True,
+        null=True,
+    )
+    
     def __str__(self):
         return  self.name
 
