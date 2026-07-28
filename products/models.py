@@ -20,6 +20,7 @@ class Products(models.Model):
         ("camera", "Camera"),
         ("earbuds", "Earbuds"),
         ("dslr", "DSLR"),
+        ("keyboard", "Keyboard"),
     ]
 
     hero_position = models.CharField(
