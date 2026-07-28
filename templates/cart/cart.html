@@ -1,15 +1,19 @@
 {% extends "home/navbar-layout.html" %}
 {% load static %}
 
-
 {% block content %}
 <main id="main">
 
   <section class="page-head">
     <div class="container">
-      <div class="crumbs"><a href="index.html">Home</a> <span class="sep">›</span> <span>Shopping cart</span></div>
+      <div class="crumbs"><a href="{% url 'home' %}">Home</a> <span class="sep">›</span> <span>Shopping cart</span></div>
       <h1>Your cart</h1>
-      <p>3 items · ready to ship. Free delivery on this order. Estimated arrival 21 – 23 May.</p>
+
+      {% if quantity %}
+        <p>{{ quantity }} items · ready to ship. Free delivery on this order. Estimated arrival 21 – 23 May.</p>
+      {% else %}
+        <p>Currenty there is no items added into your cart.</p>
+      {% endif %}
     </div>
   </section>
 
@@ -19,61 +23,36 @@
 
         <div>
           <div class="cart-list">
+            {% for item in cart_items %}
             <article class="cart-row">
               <div class="pic"><img
-                  src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=200&q=80&auto=format&fit=crop"
-                  alt="" /></div>
-              <div class="info">
-                <div class="name">Apple HomePod 2nd Gen Speaker</div>
-                <div class="variant">White · Stereo pair · No AppleCare</div>
+                src="{{item.product.image.url}}"
+                alt="" /></div>
+                <div class="info">
+                  <div class="name">{{item.product.name}}</div>
+                <!-- <div class="variant">White · Stereo pair · No AppleCare</div> -->
               </div>
               <div class="qty">
-                <button data-act="-" aria-label="Decrease">−</button>
-                <input type="text" value="1" inputmode="numeric" aria-label="Quantity" />
-                <button data-act="+" aria-label="Increase">+</button>
+                 <a href="{% url 'decrease_quantity' item.id %}">
+                   <button data-act="-" aria-label="Decrease">−</button>
+                </a>
+                <input type="text" value="{{ item.quantity }}" inputmode="numeric" aria-label="Quantity" />
+                 <a href="{% url 'increase_quantity' item.id %}">
+                   <button data-act="+" aria-label="Increase">+</button>
+                </a>
               </div>
-              <span class="subtotal">$280</span>
-              <button class="remove" aria-label="Remove">✕</button>
+              <span class="subtotal">{{ item.subtotal|floatformat:2 }}</span>
+              <form action="{% url 'delete_item' item.id %}" method="POST">
+                {% csrf_token %}
+                <button type="submit" class="remove" aria-label="Remove">✕</button>
+              </form>
             </article>
-
-            <article class="cart-row">
-              <div class="pic"><img
-                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&q=80&auto=format&fit=crop"
-                  alt="" /></div>
-              <div class="info">
-                <div class="name">Apple Watch Series 9</div>
-                <div class="variant">41mm · Midnight aluminum · Sport band M/L</div>
-              </div>
-              <div class="qty">
-                <button data-act="-" aria-label="Decrease">−</button>
-                <input type="text" value="1" inputmode="numeric" aria-label="Quantity" />
-                <button data-act="+" aria-label="Increase">+</button>
-              </div>
-              <span class="subtotal">$680</span>
-              <button class="remove" aria-label="Remove">✕</button>
-            </article>
-
-            <article class="cart-row">
-              <div class="pic"><img
-                  src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=200&q=80&auto=format&fit=crop"
-                  alt="" /></div>
-              <div class="info">
-                <div class="name">Beats Studio Buds Pro</div>
-                <div class="variant">Black · Active noise cancelling</div>
-              </div>
-              <div class="qty">
-                <button data-act="-" aria-label="Decrease">−</button>
-                <input type="text" value="2" inputmode="numeric" aria-label="Quantity" />
-                <button data-act="+" aria-label="Increase">+</button>
-              </div>
-              <span class="subtotal">$560</span>
-              <button class="remove" aria-label="Remove">✕</button>
-            </article>
+          {% endfor %}
           </div>
 
           <div style="margin-top: var(--s5); display: flex; gap: var(--s3); flex-wrap: wrap">
-            <a href="shop.html" class="btn btn--ghost">← Continue shopping</a>
-            <button class="btn btn--ghost">Update cart</button>
+            <a href="{% url 'shop' %}" class="btn btn--ghost">← Continue shopping</a>
+            <!-- <button class="btn btn--ghost">Update cart</button> -->
           </div>
 
           <!-- Trust strip -->
@@ -122,8 +101,8 @@
             <button>Apply</button>
           </div>
 
-          <div class="cart-line"><span>Subtotal · 3 items</span><span
-              style="font-family:var(--ff-display); font-weight:600; color:var(--ink)">$1,520.00</span></div>
+          <div class="cart-line"><span>Subtotal · {{ quantity }} item{{ quantity|pluralize }}</span><span
+              style="font-family:var(--ff-display); font-weight:600; color:var(--ink)">${{total|floatformat:2}}</span></div>
           <div class="cart-line"><span>Shipping</span><span
               style="color: var(--emerald); font-weight: 600">Free</span></div>
           <div class="cart-line"><span>Estimated tax</span><span
@@ -131,7 +110,7 @@
           <div class="cart-line"><span>Promo · WELCOME20</span><span
               style="color: var(--rose); font-family:var(--ff-display); font-weight:600">−$56.00</span></div>
 
-          <div class="cart-line is-total"><span>Total</span><span>$1,585.60</span></div>
+          <div class="cart-line is-total"><span>Total</span><span>${{total}}</span></div>
 
           <a href="#" class="btn btn--indigo btn--block">Proceed to checkout →</a>
 
@@ -157,8 +136,8 @@
       </div>
     </div>
   </section>
-
 </main>
-
 {% include "home/footer-layout.html" %}
+
+<script src="{% static 'js/homeFunctionality.js' %}" defer></script>
 {% endblock content %}  

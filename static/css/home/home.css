@@ -337,7 +337,7 @@ input, select, textarea {
 
 .main-nav a {
     font-weight: 500;
-    font-size: var(--text-sm);
+    font-size: 1.2rem;
     color: var(--fg-soft);
     display: inline-flex;
     align-items: center;
