@@ -1521,3 +1521,22 @@ input, select, textarea {
     place-items: center;
     font-size: 16px;
 }
+
+.tabs {
+  display: flex; gap: var(--s6);
+  margin-bottom: var(--s6);
+  border-bottom: 1px solid var(--rule);
+}
+.tab {
+  font-weight: 600; font-size: var(--text-sm);
+  color: var(--fg-mute);
+  padding: 12px 0;
+  position: relative;
+  cursor: pointer;
+}
+.tab.is-active { color: var(--indigo); }
+.tab.is-active::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: -1px;
+  height: 2px; background: var(--indigo); border-radius: 2px;
+}
