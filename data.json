@@ -1,0 +1,1113 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ogBze9cIUlm3xLxvRlYPov$TkdFSeCHEinYvXfFNbeOiNxzgc9mNpkjNBQWDWZKm2A=",
+    "last_login": "2026-06-30T15:28:35.793Z",
+    "is_superuser": false,
+    "username": "rahulrameshm0",
+    "first_name": "",
+    "last_name": "",
+    "email": "rahulrameshm23@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T15:28:26.791Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$XjUrAKSTn5oCQG5ERUkGw3$o77NEmKqBLmoqdsTrTGI3nBXCvBPtlIeeFa15NVe/0o=",
+    "last_login": "2026-07-15T22:06:34.171Z",
+    "is_superuser": true,
+    "username": "rahul",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-15T22:06:16.325Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3wak9954553p8voqywhw13sf0e22d6hr",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1weaO3:iXoGKDRyb4en0_qSq-XYuPXWG1ZPkB8MwULqB4rqUwU",
+    "expire_date": "2026-07-14T15:28:35.794Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9gbgqoyrws5r6llg4ealy3m7oeo3chm8",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSGU8igu3fsNZGYYpGogKe3K-O_apAvd3nPOfYkI21ri1nmJcxJnocXpd0OgB9cdpDvUW5PU6rrMKHdFHrTLa0v8vBzu30GBXr61d240wU4DaJutIc9u8MhkkdJoczKsTMLJB-V1UGRQATmVs2JEMEzi_QHWpjhf:1wk7kQ:PA3hlsKz9BLPVReIkKnDZfYv7dUzI7oWkP-0bWoweI8",
+    "expire_date": "2026-07-29T22:06:34.172Z"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 4,
+  "fields": {
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": 1,
+    "brand": "Samsung",
+    "price": "2000.00",
+    "stock": 3,
+    "image": "products/S24_Ultra_7s9omCK.jpg",
+    "description": "Samsung Galaxy S24 Ultra",
+    "rating": "3.8",
+    "hero_position": "phone"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 5,
+  "fields": {
+    "name": "Apple Watch",
+    "category": 4,
+    "brand": "Apple",
+    "price": "2000.00",
+    "stock": 4,
+    "image": "products/daniel-korpai-hbTKIbuMmBI-unsplash.jpg",
+    "description": "Apple Watch",
+    "rating": "3.6",
+    "hero_position": "watch"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 6,
+  "fields": {
+    "name": "Canon Camera",
+    "category": 5,
+    "brand": "Canon",
+    "price": "3999.00",
+    "stock": 6,
+    "image": "products/andrew-hutchings-W2Dta_Yiwfw-unsplash.jpg",
+    "description": "Canon Camera",
+    "rating": "3.5",
+    "hero_position": "camera"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 7,
+  "fields": {
+    "name": "Sony Wireless Headphone",
+    "category": 6,
+    "brand": "Sony",
+    "price": "2999.00",
+    "stock": 25,
+    "image": "products/luke-peterson-lUMj2Zv5HUE-unsplash.jpg",
+    "description": "Sony Wireless",
+    "rating": "4.3",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 8,
+  "fields": {
+    "name": "SONY, ILCE-6000",
+    "category": 6,
+    "brand": "Sony",
+    "price": "1999.00",
+    "stock": 56,
+    "image": "products/frank-septillion-Qrspubmx6kE-unsplash.jpg",
+    "description": "SONY, ILCE-6000",
+    "rating": "4.0",
+    "hero_position": "dslr"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 9,
+  "fields": {
+    "name": "Apple Headphones",
+    "category": 6,
+    "brand": "Apple",
+    "price": "3599.00",
+    "stock": 56,
+    "image": "products/ravi-palwe-ax23KYiUdJc-unsplash.jpg",
+    "description": "Apple Headphones",
+    "rating": "3.4",
+    "hero_position": "earbuds"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 10,
+  "fields": {
+    "name": "Ant Esports GM100 V2 Optical Gaming Mouse,7 Button Wired USB Mouse, 4000 FPS Sensor, 3600 DPI, RGB Lighting,1.5m PVC Cable, Ergonomic Design, for Windows PC, Laptop,Gaming & Office Use- Black & White",
+    "category": 7,
+    "brand": "Kreo Swarm",
+    "price": "3999.00",
+    "stock": 8,
+    "image": "products/gaming-keyboard.jpg",
+    "description": "Ant Esports GM100 V2 Optical Gaming Mouse,7 Button Wired USB Mouse, 4000 FPS Sensor, 3600 DPI, RGB Lighting,1.5m PVC Cable, Ergonomic Design, for Windows PC, Laptop,Gaming & Office Use- Black & White",
+    "rating": "3.0",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 11,
+  "fields": {
+    "name": "Apple HomePod",
+    "category": 6,
+    "brand": "Apple HomePod  (2nd Generation) - Midnight",
+    "price": "500.00",
+    "stock": 50,
+    "image": "products/apple-homepod-webp.webp",
+    "description": "HomePod is a powerhouse of a speaker. Apple‑engineered\r\naudio technology and advanced software deliver high‑fidelity\r\nsound throughout the room. It intelligently adapts to whatever it’s\r\nplaying — or wherever it’s playing — and surrounds you in immersive audio that makes everything you listen to sound incredible",
+    "rating": "4.0",
+    "hero_position": "homepod"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 1,
+  "fields": {
+    "product": 4,
+    "name": "Brand",
+    "value": "Samsung"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 2,
+  "fields": {
+    "product": 4,
+    "name": "Model",
+    "value": "Galaxy S24 Ultra"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 3,
+  "fields": {
+    "product": 4,
+    "name": "Operating System",
+    "value": "Android 14 (Upgradeable to newer versions), One UI"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 4,
+  "fields": {
+    "product": 4,
+    "name": "Processor",
+    "value": "Qualcomm Snapdragon 8 Gen 3 for Galaxy"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 5,
+  "fields": {
+    "product": 4,
+    "name": "CPU",
+    "value": "Octa-core"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 6,
+  "fields": {
+    "product": 4,
+    "name": "GPU",
+    "value": "Adreno 750"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 7,
+  "fields": {
+    "product": 4,
+    "name": "RAM",
+    "value": "12 GB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 8,
+  "fields": {
+    "product": 4,
+    "name": "Storage",
+    "value": "256 GB / 512 GB / 1 TB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 9,
+  "fields": {
+    "product": 4,
+    "name": "Resolution",
+    "value": "3120 × 1440 pixels (QHD+)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 10,
+  "fields": {
+    "product": 4,
+    "name": "Refresh Rate",
+    "value": "1–120 Hz Adaptive"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 11,
+  "fields": {
+    "product": 4,
+    "name": "Peak Brightness",
+    "value": "2600 nits"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 12,
+  "fields": {
+    "product": 4,
+    "name": "Screen Protection",
+    "value": "Corning Gorilla Glass Armor"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 13,
+  "fields": {
+    "product": 4,
+    "name": "Rear Camera",
+    "value": "200 MP (Wide) + 50 MP (Periscope Telephoto, 5× Optical Zoom) + 10 MP (Telephoto, 3× Optical Zoom) + 12 MP (Ultra-wide)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 14,
+  "fields": {
+    "product": 4,
+    "name": "Battery",
+    "value": "5000 mAh"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 15,
+  "fields": {
+    "product": 4,
+    "name": "SIM",
+    "value": "Dual SIM (Nano-SIM + eSIM)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 16,
+  "fields": {
+    "product": 4,
+    "name": "Frame",
+    "value": "Material Titanium"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 17,
+  "fields": {
+    "product": 5,
+    "name": "Brand",
+    "value": "Apple"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 18,
+  "fields": {
+    "product": 5,
+    "name": "Model",
+    "value": "Apple Watch Series 10"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 19,
+  "fields": {
+    "product": 5,
+    "name": "Chip",
+    "value": "Apple S10 SiP"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 20,
+  "fields": {
+    "product": 5,
+    "name": "Display",
+    "value": "Always-On Retina OLED"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 21,
+  "fields": {
+    "product": 5,
+    "name": "Storage",
+    "value": "64 GB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 22,
+  "fields": {
+    "product": 5,
+    "name": "Connectivity",
+    "value": "GPS, Wi-Fi, Bluetooth 5.3"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 23,
+  "fields": {
+    "product": 5,
+    "name": "Battery Life",
+    "value": "Up to 18 hours"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 24,
+  "fields": {
+    "product": 5,
+    "name": "Water",
+    "value": "Resistance 50 m"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 25,
+  "fields": {
+    "product": 5,
+    "name": "Health Features",
+    "value": "Heart Rate, ECG, Blood Oxygen, Sleep Tracking"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 26,
+  "fields": {
+    "product": 5,
+    "name": "Sensors",
+    "value": "Heart Rate, Accelerometer, Gyroscope"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 27,
+  "fields": {
+    "product": 5,
+    "name": "Operating System",
+    "value": "watchOS 11"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 28,
+  "fields": {
+    "product": 5,
+    "name": "Material",
+    "value": "Aluminum"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 29,
+  "fields": {
+    "product": 5,
+    "name": "Colors",
+    "value": "Jet Black, Rose Gold, Silver"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 30,
+  "fields": {
+    "product": 5,
+    "name": "Warranty",
+    "value": "1 Year"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 31,
+  "fields": {
+    "product": 6,
+    "name": "Brand",
+    "value": "Canon"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 32,
+  "fields": {
+    "product": 6,
+    "name": "Model",
+    "value": "EOS Rebel T5i (EOS 700D)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 34,
+  "fields": {
+    "product": 6,
+    "name": "Camera Type",
+    "value": "18 MP APS-C CMOS"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 35,
+  "fields": {
+    "product": 6,
+    "name": "Sensor",
+    "value": "18 MP APS-C CMOS"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 36,
+  "fields": {
+    "product": 6,
+    "name": "Image Processor",
+    "value": "DIGIC 5"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 37,
+  "fields": {
+    "product": 6,
+    "name": "ISO Range",
+    "value": "100–12800 (Expandable to 25600)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 38,
+  "fields": {
+    "product": 6,
+    "name": "Autofocus",
+    "value": "9-Point AF System"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 39,
+  "fields": {
+    "product": 6,
+    "name": "Continuous",
+    "value": "Shooting Up to 5 fps"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 40,
+  "fields": {
+    "product": 6,
+    "name": "Video",
+    "value": "Recording Full HD 1080p"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 41,
+  "fields": {
+    "product": 6,
+    "name": "Display",
+    "value": "3.0-inch Vari-Angle Touchscreen LCD"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 42,
+  "fields": {
+    "product": 6,
+    "name": "Lens Mount",
+    "value": "Canon EF / EF-S"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 43,
+  "fields": {
+    "product": 6,
+    "name": "Viewfinder",
+    "value": "Optical"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 44,
+  "fields": {
+    "product": 6,
+    "name": "Connectivity",
+    "value": "USB, HDMI"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 45,
+  "fields": {
+    "product": 6,
+    "name": "Storage",
+    "value": "SD / SDHC / SDXC Memory Card"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 46,
+  "fields": {
+    "product": 6,
+    "name": "Battery",
+    "value": "LP-E8 Rechargeable Battery"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 47,
+  "fields": {
+    "product": 6,
+    "name": "Weight",
+    "value": "Approx. 580 g"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 48,
+  "fields": {
+    "product": 6,
+    "name": "Color",
+    "value": "Black"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 49,
+  "fields": {
+    "product": 6,
+    "name": "Brand",
+    "value": "Sony"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 50,
+  "fields": {
+    "product": 7,
+    "name": "Connectivity",
+    "value": "Bluetooth 5.2"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 51,
+  "fields": {
+    "product": 7,
+    "name": "Battery Life",
+    "value": "Up to 30 hours"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 52,
+  "fields": {
+    "product": 7,
+    "name": "Noise Cancellation",
+    "value": "Active Noise Cancellation (ANC)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 53,
+  "fields": {
+    "product": 7,
+    "name": "Driver Size",
+    "value": "40 mm"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 54,
+  "fields": {
+    "product": 7,
+    "name": "Charging Port",
+    "value": "USB Type-C"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 55,
+  "fields": {
+    "product": 7,
+    "name": "Built-in Microphone",
+    "value": "Yes"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 56,
+  "fields": {
+    "product": 7,
+    "name": "Warranty",
+    "value": "1 Year"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 57,
+  "fields": {
+    "product": 8,
+    "name": "Brand",
+    "value": "Sony"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 58,
+  "fields": {
+    "product": 6,
+    "name": "Model",
+    "value": "ILCE-6000"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 59,
+  "fields": {
+    "product": 8,
+    "name": "Sensor",
+    "value": "24.3 MP APS-C CMOS"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 60,
+  "fields": {
+    "product": 8,
+    "name": "Video Recording",
+    "value": "Full HD 1080p"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 61,
+  "fields": {
+    "product": 8,
+    "name": "Display",
+    "value": "3-inch Tilting LCD"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 62,
+  "fields": {
+    "product": 8,
+    "name": "Connectivity",
+    "value": "Wi-Fi & NFC"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 63,
+  "fields": {
+    "product": 8,
+    "name": "Connectivity",
+    "value": "Wi-Fi & NFC"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 64,
+  "fields": {
+    "product": 8,
+    "name": "Autofocus",
+    "value": "179-Point Fast Hybrid AF"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 65,
+  "fields": {
+    "product": 8,
+    "name": "Battery Life",
+    "value": "Up to 360 Shots"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 66,
+  "fields": {
+    "product": 9,
+    "name": "Brand",
+    "value": "Apple"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 67,
+  "fields": {
+    "product": 9,
+    "name": "Connectivity",
+    "value": "Bluetooth 5.0"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 68,
+  "fields": {
+    "product": 9,
+    "name": "Noise Cancellation",
+    "value": "Active Noise Cancellation"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 69,
+  "fields": {
+    "product": 9,
+    "name": "Spatial Audio",
+    "value": "Supported"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 70,
+  "fields": {
+    "product": 9,
+    "name": "Battery Life",
+    "value": "Up to 20 Hours"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 71,
+  "fields": {
+    "product": 9,
+    "name": "Charging Port",
+    "value": "Lightning / USB-C (depending on model)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 72,
+  "fields": {
+    "product": 9,
+    "name": "Built-in Microphone",
+    "value": "Yes"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 73,
+  "fields": {
+    "product": 9,
+    "name": "Compatibility",
+    "value": "iPhone, iPad, Mac"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 74,
+  "fields": {
+    "product": 10,
+    "name": "Brand",
+    "value": "Ant Esports"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 75,
+  "fields": {
+    "product": 10,
+    "name": "DPI",
+    "value": "Up to 3600 DPI"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 76,
+  "fields": {
+    "product": 10,
+    "name": "Buttons",
+    "value": "7 Programmable Buttons"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 77,
+  "fields": {
+    "product": 10,
+    "name": "Connectivity",
+    "value": "Wired USB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 78,
+  "fields": {
+    "product": 9,
+    "name": "RGB Lighting",
+    "value": "Yes"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 79,
+  "fields": {
+    "product": 10,
+    "name": "Cable Length",
+    "value": "1.5 m PVC Cable"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 80,
+  "fields": {
+    "product": 10,
+    "name": "Compatibility",
+    "value": "Windows, macOS, Linux"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 81,
+  "fields": {
+    "product": 10,
+    "name": "Weight",
+    "value": "Lightweight Ergonomic Design"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 82,
+  "fields": {
+    "product": 11,
+    "name": "Brand",
+    "value": "Apple"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 83,
+  "fields": {
+    "product": 11,
+    "name": "Model",
+    "value": "HomePod (2nd Generation)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 84,
+  "fields": {
+    "product": 11,
+    "name": "Speaker Type",
+    "value": "Smart Speaker"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 85,
+  "fields": {
+    "product": 11,
+    "name": "Connectivity",
+    "value": "Wi-Fi & Bluetooth 5.0"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 86,
+  "fields": {
+    "product": 11,
+    "name": "Voice Assistant",
+    "value": "Siri"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 87,
+  "fields": {
+    "product": 11,
+    "name": "Audio Features",
+    "value": "Spatial Audio with Dolby Atmos"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 88,
+  "fields": {
+    "product": 11,
+    "name": "Smart Home Support",
+    "value": "Apple HomeKit & Matter"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 89,
+  "fields": {
+    "product": 11,
+    "name": "Power Source",
+    "value": "AC Power Adapter"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 15,
+  "fields": {
+    "user": 2,
+    "product": 4,
+    "quantity": 1,
+    "created_at": "2026-07-29T05:46:01.188Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 1,
+  "fields": {
+    "product": 4,
+    "user": 1,
+    "rating": 2,
+    "comment": "The Product is so good, I like the UI , this is far better than Iphone, just try one.",
+    "created_at": "2026-07-24T10:44:03.487Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 2,
+  "fields": {
+    "product": 4,
+    "user": 2,
+    "rating": 3,
+    "comment": "The product is fine",
+    "created_at": "2026-07-24T18:31:25.337Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 3,
+  "fields": {
+    "product": 5,
+    "user": 2,
+    "rating": 5,
+    "comment": "I like the watch, this is fine",
+    "created_at": "2026-07-24T18:35:39.164Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 4,
+  "fields": {
+    "product": 6,
+    "user": 1,
+    "rating": 4,
+    "comment": "I like the sensor of that camera, nice photos",
+    "created_at": "2026-07-24T18:37:03.390Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 5,
+  "fields": {
+    "product": 7,
+    "user": 2,
+    "rating": 3,
+    "comment": "Not good Enough",
+    "created_at": "2026-07-24T18:37:26.644Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 6,
+  "fields": {
+    "product": 8,
+    "user": 1,
+    "rating": 3,
+    "comment": "So, smooth an clear",
+    "created_at": "2026-07-24T18:37:48.564Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 7,
+  "fields": {
+    "product": 9,
+    "user": 1,
+    "rating": 3,
+    "comment": "It's okay okay",
+    "created_at": "2026-07-24T18:38:43.116Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 8,
+  "fields": {
+    "product": 10,
+    "user": 1,
+    "rating": 3,
+    "comment": "I like the Keyboard, especially the smoothness of typing, it so great, though the amount is bit high, I think you can buy better products than this, but still it's good enough.",
+    "created_at": "2026-07-24T18:40:25.998Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 1,
+  "fields": {
+    "name": "Smartphones"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 3,
+  "fields": {
+    "name": "Laptops"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 4,
+  "fields": {
+    "name": "Smart Watches"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 5,
+  "fields": {
+    "name": "Cameras"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 6,
+  "fields": {
+    "name": "Headphones"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 7,
+  "fields": {
+    "name": "Gaming"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 8,
+  "fields": {
+    "name": "Accessories"
+  }
+}
+]
