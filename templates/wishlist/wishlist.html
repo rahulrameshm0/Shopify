@@ -1,10 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Wish List</h1>
-</body>
-</html>
+{% extends "home/navbar-layout.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="wishlist">
+
+    <div class="container">
+
+        <div class="wishlist-header">
+            <div>
+                <h1>My Wishlist</h1>
+                <p>3 Saved Products</p>
+            </div>
+
+            <button class="clear-btn">
+                Clear Wishlist
+            </button>
+        </div>
+
+        <div class="wishlist-items">
+
+            <!-- Product -->
+
+            <div class="wishlist-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h2>iPhone 16 Pro Max</h2>
+
+                    <p class="category">
+                        Apple Smartphone
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(4.9)</span>
+                    </div>
+
+                    <div class="price">
+                        $1,299
+                    </div>
+
+                    <span class="stock in-stock">
+                        In Stock
+                    </span>
+
+                </div>
+
+                <div class="actions">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="wishlist-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h2>Nike Air Max</h2>
+
+                    <p class="category">
+                        Running Shoes
+                    </p>
+
+                    <div class="rating">
+                        ★★★★☆
+                        <span>(4.6)</span>
+                    </div>
+
+                    <div class="price">
+                        $199
+                    </div>
+
+                    <span class="stock">
+                        Only 3 Left
+                    </span>
+
+                </div>
+
+                <div class="actions">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="wishlist-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500" alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h2>Apple Watch Ultra</h2>
+
+                    <p class="category">
+                        Smart Watch
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(5.0)</span>
+                    </div>
+
+                    <div class="price">
+                        $799
+                    </div>
+
+                    <span class="stock out-stock">
+                        Out of Stock
+                    </span>
+
+                </div>
+
+                <div class="actions">
+
+                    <button class="cart-btn disabled">
+                        Out of Stock
+                    </button>
+
+                    <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% include "home/footer-layout.html" %}
+{% endblock content %}
