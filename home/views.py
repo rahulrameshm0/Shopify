@@ -8,7 +8,7 @@ def home(request):
         product.hero_position: product
         for product in Products.objects.exclude(hero_position__isnull=True)
     }
-    print(hero_products)
+    
     
     return render(request, "home/home.html", {"hero_products": hero_products})
 

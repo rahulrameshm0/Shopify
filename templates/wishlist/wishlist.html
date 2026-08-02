@@ -12,9 +12,9 @@
                 <p>There are {{ quantity }} items in you Wishlist that you would like to buy</p>
             </div>
 
-            <button class="clear-btn">
+            <a href="{% url 'clear_wishlist' %}" class="clear-btn">
                 Clear Wishlist
-            </button>
+            </a>
         </div>
 
         <div class="wishlist-items">

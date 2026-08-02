@@ -31,3 +31,7 @@ def delete_wishlist_item(request, id):
     wishlist_item = get_object_or_404(Wishlist, id=id, user=request.user)
     wishlist_item.delete()
     return redirect("wishlist")
+
+def clear_wishlist(request):
+    Wishlist.objects.filter(user=request.user).delete()
+    return redirect("wishlist")
