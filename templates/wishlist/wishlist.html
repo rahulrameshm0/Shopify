@@ -55,14 +55,14 @@
 
                         <div class="actions">
 
-                            <button class="cart-btn">
+                            <a class="cart-btn" href="{% url 'add_to_cart' item.products.id %}">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 Add to Cart
-                            </button>
+                            </a>
 
-                            <button class="delete-btn">
+                            <a class="delete-btn" href="{% url 'delete_wishlist' item.id %}" ">
                                 Delete
-                            </button>
+                            </a>
 
                         </div>
 

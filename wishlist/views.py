@@ -10,15 +10,11 @@ def wishlist(request):
         Wishlist.objects.filter(user=request.user).select_related("products")
     )
 
-    print("Logged in user:", request.user)
-    print("Wishlist count:", wishlist_items.count())
-
-    for item in wishlist_items:
-        print(item.user, item.products.name)
+    wishlist_count = wishlist_items.count()
 
     context ={
         "wishlist_items": wishlist_items,
-        "quantity": wishlist_items.count()
+        "wishlist_count": wishlist_count
     }
 
     return render(request, "wishlist/wishlist.html", context)
@@ -33,3 +29,8 @@ def add_to_wishlist(request, id):
     )
 
     return redirect(request.META.get("HTTP_REFERER", "/"))
+
+def delete_wishlist_item(request, id):
+    wishlist_item = get_object_or_404(Wishlist, id=id, user=request.user)
+    wishlist_item.delete()
+    return redirect("wishlist")

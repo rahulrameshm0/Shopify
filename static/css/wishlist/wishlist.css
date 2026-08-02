@@ -146,9 +146,11 @@ body{
     font-size:15px;
     cursor:pointer;
     transition:.3s;
+    text-align: center;
 }
 
 .cart-btn:hover{
+    color:white;
     background:#333;
 }
 
@@ -165,6 +167,7 @@ body{
     border-radius:14px;
     cursor:pointer;
     transition:.3s;
+    text-align: center;
 }
 
 .delete-btn:hover{
