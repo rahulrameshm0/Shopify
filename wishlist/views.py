@@ -10,11 +10,8 @@ def wishlist(request):
         Wishlist.objects.filter(user=request.user).select_related("products")
     )
 
-    wishlist_count = wishlist_items.count()
-
     context ={
         "wishlist_items": wishlist_items,
-        "wishlist_count": wishlist_count
     }
 
     return render(request, "wishlist/wishlist.html", context)
