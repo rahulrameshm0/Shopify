@@ -81,7 +81,10 @@
                     </div>
                     <a href="{% url 'add_to_cart' product.id %}" class="btn btn--indigo" style="flex:1; min-width:160px">Add to cart →</a>
                     <a href="{% url 'add_to_cart' product.id %}" class="btn btn--ink">Buy now</a>
-                    <button class="icon-btn" aria-label="Add to wishlist" style="background: var(--bg)">♡</button>
+                    <form action="{% url 'add_to_wishlist' product.id %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit" class="icon-btn" aria-label="Add to wishlist" style="background: var(--bg)">♡</button>
+                    </form>
                 </div>
 
                 <div class="pdp-features">
@@ -126,12 +129,12 @@
                             </div>
                             <div style="color: var(--amber); font-size: 18px">
                                   {% for i in "12345" %}
-                            {% if forloop.counter <= average_rating %}
-                            ★
-                            {% else %}
-                            ☆
-                            {% endif %}
-                            {% endfor %}
+                                    {% if forloop.counter <= average_rating %}
+                                        ★
+                                    {% else %}
+                                        ☆
+                                    {% endif %}
+                                {% endfor %}
                             </div>
                             <div style="font-family: var(--ff-mono); font-size: 11px; color: var(--fg-mute); margin-top: 4px">
                                 {{ product.reviews.count }}
