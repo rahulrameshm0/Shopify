@@ -7,6 +7,8 @@ urlpatterns = [
     path('signin/', views.signin, name="signin"),
     path('register/', views.register, name="register"),
     path('', views.dashboard, name="dashboard"),
+    path('user_profile', views.user_profile, name="profile"),
+    path('user_profile/edit', views.edit_profile, name="edit_profile"),
 
     # password  reset
     path('email_varification/',

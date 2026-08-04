@@ -1,0 +1,123 @@
+{% extends "home/navbar-layout.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="profile-page">
+    <div class="container">
+
+        <!-- Identity card -->
+        <section class="profile-card">
+            <div class="avatar">
+                {% if profile.image %}
+                    <img class="avatar-img" src="{{ profile.image.url }}" alt="Profile photo of {{ request.user.username }}">
+                {% else %}
+                    {{ request.user.first_name|default:request.user.username|slice:":1"|upper }}
+                {% endif %}
+            </div>
+
+            <div class="profile-info">
+                <h1 class="profile-name">{{ request.user.first_name }} {{ request.user.last_name }}</h1>
+                <p class="profile-username">@{{ request.user.username }}</p>
+
+                {% if profile.bio %}
+                    <p class="profile-bio">{{ profile.bio }}</p>
+                {% endif %}
+
+                <p class="profile-meta">
+                    {% if profile.phone %}<span><i class="fa-solid fa-phone"></i> {{ profile.phone }}</span>{% endif %}
+                    {% if profile.city %}<span><i class="fa-solid fa-location-dot"></i> {{ profile.city }}{% if profile.country %}, {{ profile.country }}{% endif %}</span>{% endif %}
+                </p>
+            </div>
+
+            <div class="profile-actions">
+                <a href="{% url 'edit_profile' %}" class="btn btn--primary"><i class="fa-solid fa-pen"></i> Edit Profile</a>
+                <a href="{% url 'home' %}" class="btn btn--ghost">Logout</a>
+            </div>
+        </section>
+
+        <!-- Quick stats -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-heart"></i>
+                <div class="stat-meta">
+                    <strong class="stat-value">{{ wishlist_count }}</strong>
+                    <span class="stat-label">Wishlist Items</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="stat-meta">
+                    <strong class="stat-value">{{ cart_count }}</strong>
+                    <span class="stat-label">Cart Items</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-star"></i>
+                <div class="stat-meta">
+                    <strong class="stat-value">{{ reviews_count }}</strong>
+                    <span class="stat-label">My Reviews</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Details -->
+        <section class="panel">
+            <h2 class="panel-title">My Details</h2>
+            <p class="panel-sub">Your account information</p>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Full Name</span>
+                    <span class="detail-value">{{ request.user.first_name }} {{ request.user.last_name }}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Username</span>
+                    <span class="detail-value">@{{ request.user.username }}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">{{ request.user.email }}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-value">{{ profile.phone|default:"—" }}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Date of Birth</span>
+                    <span class="detail-value">{{ profile.date_of_birth|date:"F j, Y"|default:"—" }}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">{{ profile.city }}{% if profile.city and profile.country %}, {% endif %}{{ profile.country|default:"—" }}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Member Since</span>
+                    <span class="detail-value">{{ request.user.date_joined|date:"F j, Y" }}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Last Login</span>
+                    <span class="detail-value">{{ request.user.last_login|date:"F j, Y"|default:"—" }}</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Account links -->
+        <section class="panel">
+            <h2 class="panel-title">Account</h2>
+            <p class="panel-sub">Quick access to your shopping activity</p>
+
+            <nav class="links" aria-label="Account links">
+                <a href="{% url 'wishlist' %}" class="link"><i class="fa-solid fa-heart"></i> My Wishlist</a>
+                <a href="{% url 'cart' %}" class="link"><i class="fa-solid fa-bag-shopping"></i> My Cart</a>
+                <a href="{% url 'edit_profile' %}" class="link"><i class="fa-solid fa-user-pen"></i> Edit Profile</a>
+                <a href="{% url 'home' %}" class="link link--danger"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </nav>
+        </section>
+
+    </div>
+</div>
+
+{% include "home/footer-layout.html" %}
+
+{% endblock %}

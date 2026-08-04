@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Shopify — Tech &amp; Gadgets Ecommerce HTML Template</title>
+    <title>Shopify — Tech &amp; Ecommerce Platform</title>
     <link rel="icon" href="{% static 'images/shopping-cart.png' %}">
     <meta name="description"
           content="Sprylo is a free modern HTML template for tech and electronics stores — multi-color bento hero, indigo primary palette, Plus Jakarta + Outfit + Roboto Mono pair, 5 fully responsive pages, no framework, no build step."/>
@@ -21,11 +21,10 @@
     <link rel="stylesheet" href="{% static 'css/contact/styles.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/home/responsive.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/wishlist/wishlist.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/user-profile/user-profile.css' %}"/>
 </head>
 
 <body>
-
-
 
 <!-- Mobile drawer -->
 <div class="drawer" id="drawer" aria-hidden="true">
@@ -59,7 +58,7 @@
         </div>
 
         <div class="icon-row">
-            <a href="#" class="icon-btn" aria-label="Account">
+            <a href="{% url 'profile' %}" class="icon-btn" aria-label="Account">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                      stroke-linecap="round">
                     <circle cx="12" cy="8" r="4"/>

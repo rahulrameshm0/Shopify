@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from  django.contrib.auth.models import User
+
+from .models import Profile
+from .forms import ProfileForm
 # Create your views here.
 
 def signin(request):
@@ -62,3 +65,28 @@ def email_verification(request):
 
 def dashboard(request):
     return render(request, 'dashboard/dashboard.html')
+
+def user_profile(request):
+    from reviews.models import Reviews
+    profile, _ = Profile.objects.get_or_create(user=request.user)
+    reviews_count = Reviews.objects.filter(user=request.user).count()
+    context = {
+        "profile": profile,
+        "reviews_count": reviews_count,
+    }
+    return render(request, "user-profile/profile.html", context)
+
+
+def edit_profile(request):
+    profile, _ = Profile.objects.get_or_create(user=request.user)
+
+    if request.method == "POST":
+        form = ProfileForm(request.POST, request.FILES, instance=profile, user=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your profile has been updated.")
+            return redirect("profile")
+    else:
+        form = ProfileForm(instance=profile, user=request.user)
+
+    return render(request, "user-profile/edit-profile.html", {"form": form})
