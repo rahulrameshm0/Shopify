@@ -3,17 +3,34 @@
 
 {% block content %}
 
-<div class="profile-page">
-    <div class="container">
+<div class="profile-page edit-page">
 
-        <section class="panel edit-panel">
-            <div class="edit-head">
-                <div>
-                    <h1 class="edit-title">Edit Profile</h1>
-                    <p class="edit-sub">Update your personal details</p>
+    <!-- Hero -->
+    <div class="edit-hero">
+        <div class="hero__blob hero__blob--one"></div>
+        <div class="hero__blob hero__blob--two"></div>
+        <div class="hero__dots" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="edit-hero-head">
+                <div class="edit-avatar">
+                    {% if profile.image %}
+                        <img src="{{ profile.image.url }}" alt="Current profile photo">
+                    {% else %}
+                        {{ request.user.first_name|default:request.user.username|slice:":1"|upper }}
+                    {% endif %}
                 </div>
-                <a href="{% url 'profile' %}" class="btn btn--ghost">Cancel</a>
+                <div>
+                    <h1 class="edit-hero-title">Edit Profile</h1>
+                    <p class="edit-hero-sub">Update your personal details</p>
+                </div>
+                <a href="{% url 'profile' %}" class="btn btn--ghost edit-hero-actions">Cancel</a>
             </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="panel edit-panel">
 
             {% if messages %}
                 {% for message in messages %}
@@ -87,12 +104,14 @@
                 </div>
 
                 <div class="edit-actions">
-                    <button type="submit" class="btn btn--primary">Save Changes</button>
+                    <button type="submit" class="btn btn--primary">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                        Save Changes
+                    </button>
                     <a href="{% url 'profile' %}" class="btn btn--ghost">Cancel</a>
                 </div>
             </form>
         </section>
-
     </div>
 </div>
 
