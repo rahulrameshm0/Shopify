@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from  django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 from .models import Profile
 from .forms import ProfileForm
@@ -69,6 +70,7 @@ def dashboard(request):
 # def home(request):
 #     return render(request, "home/home.html")
 
+@login_required(login_url="signin")
 def user_profile(request):
     from reviews.models import Reviews
     profile, _ = Profile.objects.get_or_create(user=request.user)
