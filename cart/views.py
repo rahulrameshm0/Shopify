@@ -20,6 +20,7 @@ def add_to_cart(request, id):
 
     return redirect("cart")
 
+@login_required(login_url="signin")
 def cart(request):
     cart_items = Cart.objects.filter(user=request.user)
     total = 0

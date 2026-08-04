@@ -89,3 +89,4 @@ def shopping(request):
     page_obj = paginator.get_page(page_number)
 
     return render(request, "shop/shopping.html", {"page_obj": page_obj, "categories": Category.objects.all(), }, )
+    

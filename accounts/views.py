@@ -16,7 +16,7 @@ def signin(request):
 
         if user is not None:
             login(request, user)
-            return redirect('dashboard')
+            return redirect('home')
         else:
             messages.error(request, "Username or Password is incorrect")
             return redirect('signin')
@@ -66,6 +66,9 @@ def email_verification(request):
 def dashboard(request):
     return render(request, 'dashboard/dashboard.html')
 
+# def home(request):
+#     return render(request, "home/home.html")
+
 def user_profile(request):
     from reviews.models import Reviews
     profile, _ = Profile.objects.get_or_create(user=request.user)
@@ -75,7 +78,6 @@ def user_profile(request):
         "reviews_count": reviews_count,
     }
     return render(request, "user-profile/profile.html", context)
-
 
 def edit_profile(request):
     profile, _ = Profile.objects.get_or_create(user=request.user)
