@@ -20,6 +20,19 @@ class LoginTest(TestCase):
         self.assertEqual(response.status_code, 302)
 
 
+    def test_login_with_invalid_password(self):
+        User.objects.create_user(
+            username = "testuser",
+            password = "testpassword"
+        )
+
+        response = self.client.post(
+            "signin",
+            {"username": "rahulrameshm0", "password":"wrongpassword"}
+        )
+
+        self.assertFalse(response.wsgi_request.user.is_authenticated)
+
 class RegisterTest(TestCase):
     def test_register_page_loads(self):
         response = self.client.get("/register/")
