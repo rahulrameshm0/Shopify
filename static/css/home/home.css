@@ -1540,3 +1540,20 @@ input, select, textarea {
   position: absolute; left: 0; right: 0; bottom: -1px;
   height: 2px; background: var(--indigo); border-radius: 2px;
 }
+
+/* SEARCH BAR */
+
+.search{
+    border: none;
+    outline: none;
+    background-color: #c8d0d1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.search-btn{
+    background-color: #378350;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}

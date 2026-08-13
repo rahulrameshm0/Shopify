@@ -82,6 +82,12 @@
                 <span class="count">{{ cart_count }}</span>
             </a>
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">≡</button>
+
+            <form action="" method="GET">
+                {% csrf_token %}
+                <input type="text" class="search" id="search" placeholder="search">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
         </div>
     </div>
 </header>
