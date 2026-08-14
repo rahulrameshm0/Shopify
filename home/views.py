@@ -25,3 +25,6 @@ def contacts(request):
 
 def wishlist(request):
     return render(request, "wishlist/wishlist.html")
+
+def about(request):
+    return render(request, "about/about.html")

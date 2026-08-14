@@ -1,0 +1,316 @@
+/* =============================================================
+   About Page Styles
+   ============================================================= */
+
+.about-hero {
+    padding: var(--s7) 0 var(--s6);
+    border-bottom: 1px solid var(--rule);
+}
+
+.about-hero .crumbs {
+    margin-bottom: var(--s3);
+}
+
+.about-hero h1 {
+    font-size: var(--text-3xl);
+    letter-spacing: -0.025em;
+    max-width: 24ch;
+}
+
+.about-hero p {
+    font-size: var(--text-md);
+    color: var(--fg-soft);
+    max-width: 60ch;
+    margin-top: var(--s3);
+    line-height: 1.6;
+}
+
+.about-story {
+    padding: var(--s9) 0;
+}
+
+.about-story-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--s8);
+    align-items: start;
+}
+
+.about-story-content p {
+    line-height: 1.7;
+    margin-bottom: var(--s5);
+}
+
+.about-story-content .lead {
+    font-size: var(--text-lg);
+    color: var(--fg-soft);
+}
+
+.about-story-content .body-text {
+    font-size: var(--text-base);
+    color: var(--fg);
+}
+
+.about-story-content em {
+    font-style: italic;
+}
+
+.about-stats {
+    background: var(--indigo-soft);
+    border: 1px solid var(--indigo-line);
+    border-radius: var(--r-lg);
+    padding: var(--s7);
+}
+
+.about-stats h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--s4);
+    color: var(--indigo-deep);
+}
+
+.about-stats dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--s3) var(--s5);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+.about-stats dt {
+    color: var(--fg-mute);
+    font-family: var(--ff-mono);
+}
+
+.about-stats dd {
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0;
+}
+
+.about-differences {
+    padding: var(--s9) 0;
+    background: var(--bg);
+}
+
+.differences-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s5);
+}
+
+.difference-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: var(--r);
+    padding: var(--s6);
+    transition: border-color 200ms var(--ease), transform 200ms var(--ease);
+}
+
+.difference-card:hover {
+    border-color: var(--indigo-line);
+    transform: translateY(-2px);
+}
+
+.difference-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--indigo-soft);
+    color: var(--indigo);
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    margin-bottom: var(--s4);
+}
+
+.difference-card h3 {
+    font-size: var(--text-md);
+    margin-bottom: var(--s2);
+}
+
+.difference-card p {
+    color: var(--fg-soft);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+.about-leadership {
+    padding: var(--s9) 0;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--s5);
+}
+
+.leader-card {
+    text-align: center;
+}
+
+.leader-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+    margin: 0 auto var(--s4);
+    display: grid;
+    place-items: center;
+    color: var(--paper);
+    font-family: var(--ff-display);
+    font-weight: 800;
+    font-size: 36px;
+    box-shadow: var(--shadow-indigo);
+}
+
+.leader-avatar--blue {
+    background: linear-gradient(135deg, var(--card-blue), var(--card-blue-2));
+}
+
+.leader-avatar--purple {
+    background: linear-gradient(135deg, var(--card-purple), var(--card-purple-2));
+}
+
+.leader-avatar--orange {
+    background: linear-gradient(135deg, var(--card-orange), var(--card-orange-2));
+}
+
+.leader-avatar--green {
+    background: linear-gradient(135deg, var(--card-green), var(--card-green-2));
+}
+
+.leader-card h3 {
+    font-size: var(--text-md);
+    margin-bottom: var(--s1);
+}
+
+.leader-role {
+    font-family: var(--ff-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--indigo);
+    margin-bottom: var(--s2);
+}
+
+.leader-card p {
+    font-size: var(--text-sm);
+    color: var(--fg-soft);
+    line-height: 1.6;
+}
+
+.about-commitments {
+    padding: var(--s9) 0;
+    background: var(--bg);
+}
+
+.commitments-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--s5);
+}
+
+.commitment-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: var(--r);
+    padding: var(--s6);
+}
+
+.commitment-card h3 {
+    font-size: var(--text-md);
+    margin-bottom: var(--s3);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s2);
+}
+
+.commitment-number {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: var(--indigo-soft);
+    color: var(--indigo);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.commitment-card p {
+    color: var(--fg-soft);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+.about-cta {
+    padding: var(--s9) 0;
+}
+
+.cta-banner {
+    background: linear-gradient(135deg, var(--indigo), var(--indigo-deep));
+    color: var(--paper);
+    border-radius: var(--r-xl);
+    padding: var(--s9) var(--s7);
+    text-align: center;
+}
+
+.cta-banner h2 {
+    font-size: var(--text-3xl);
+    letter-spacing: -0.025em;
+    margin-bottom: var(--s3);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-banner p {
+    font-size: var(--text-lg);
+    opacity: 0.9;
+    max-width: 56ch;
+    margin: 0 auto var(--s6);
+    line-height: 1.6;
+}
+
+.cta-banner .btn {
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 16px 28px;
+    font-size: var(--text-base);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .about-story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .differences-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .differences-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .commitments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-banner h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .cta-banner p {
+        font-size: var(--text-md);
+    }
+}

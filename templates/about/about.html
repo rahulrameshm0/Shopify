@@ -1,0 +1,173 @@
+{% extends "home/navbar-layout.html" %}
+{% load static %}
+{% block content %}
+<main id="main">
+
+  <section class="page-head about-hero">
+    <div class="container">
+      <div class="crumbs"><a href="{% url 'home' %}">Home</a> <span class="sep">›</span> <span>About Shopify</span>
+      </div>
+      <h1>Building India's most trusted tech store — one honest order at a time.</h1>
+      <p>Started in 2023 from a garage in Bangalore. We're a small team obsessed with fixing what's broken about buying electronics online in India: fake warranties, swapped components, and support that disappears after the sale.</p>
+    </div>
+  </section>
+
+  <section class="section about-story">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why we exist</h2>
+      </div>
+      <div class="about-story-grid">
+        <div class="about-story-content">
+          <p class="lead">
+            Last year, our founder Rahul ordered a "brand new" GPU from a major marketplace. It arrived with bent pins, a scratched backplate, and a warranty card that had already been registered to someone else in 2021. The seller ghosted. The platform said "contact the seller." The manufacturer said "not our problem — unauthorized reseller."
+          </p>
+          <p class="body-text">
+            That's the story of almost every tech buyer in India. You either pay a premium at offline stores with limited stock, or you gamble on marketplaces where "new" is a suggestion, not a promise.
+          </p>
+          <p class="body-text">
+            We started Shopify because that gamble shouldn't exist. We buy directly from brand-authorized distributors — Ingram, Redington, Rashi, Savex, Supertron. Every unit is inspected on camera before it leaves our Bangalore facility. Serial numbers are recorded and matched to your invoice. The warranty starts the day you receive it, not the day it left a warehouse in 2021.
+          </p>
+          <p class="body-text">
+            We're bootstrapped, profitable from month three, and growing because customers come back. No VC pressure to chase GMV at the cost of trust.
+          </p>
+        </div>
+        <div class="about-stats">
+          <h3>Where we are today</h3>
+          <dl>
+            <dt>Launched</dt>
+            <dd>March 2023</dd>
+            <dt>Team</dt>
+            <dd>12 (Bangalore)</dd>
+            <dt>Brands authorized</dt>
+            <dd>40+</dd>
+            <dt>Orders shipped</dt>
+            <dd>3,800+</dd>
+            <dt>Pincodes served</dt>
+            <dd>19,000+</dd>
+            <dt>Avg. reply time</dt>
+            <dd>< 2 hours (business hrs)</dd>
+            <dt>Return rate</dt>
+            <dd>1.2%</dd>
+            <dt>Warranty claims honored</dt>
+            <dd>100%</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-differences">
+    <div class="container">
+      <div class="section-head">
+        <h2>What we do differently</h2>
+      </div>
+      <div class="differences-grid">
+        <article class="difference-card">
+          <div class="difference-icon">📦</div>
+          <h3>Open-box inspection on camera</h3>
+          <p>Every high-value item (₹15,000+) is unboxed, powered on, stress-tested, and recorded on video. You get the video link with your tracking number. No swapped GPUs, no used SSDs sold as new.</p>
+        </article>
+        <article class="difference-card">
+          <div class="difference-icon">🛡</div>
+          <h3>Warranty that actually works</h3>
+          <p>We're an authorized service partner for every brand we carry. If something fails, you email us — we arrange pickup, repair at the brand's service center, and delivery back. No "send it to the manufacturer yourself" runaround.</p>
+        </article>
+        <article class="difference-card">
+          <div class="difference-icon">🤝</div>
+          <h3>Direct distributor relationships</h3>
+          <p>We buy from Ingram Micro, Redington, Rashi Peripherals, Savex, Supertron — the same distributors that supply Croma, Reliance Digital, and Vijay Sales. Valid serials, honored firmware updates, eligible for every manufacturer promo.</p>
+        </article>
+        <article class="difference-card">
+          <div class="difference-icon">⚡</div>
+          <h3>Same-day dispatch from Bangalore</h3>
+          <p>Orders before 1 PM IST ship the same day via Blue Dart / Delhivery. Free shipping on orders above ₹2,999. COD available on select pin codes (we verify high-value COD orders with a quick call).</p>
+        </article>
+        <article class="difference-card">
+          <div class="difference-icon">🔄</div>
+          <h3>14-day no-questions returns</h3>
+          <p>Changed your mind? Initiate from your account — we send a pickup. Refund to original payment method within 3–5 business days after we receive it at our facility. No restocking fees.</p>
+        </article>
+        <article class="difference-card">
+          <div class="difference-icon">📞</div>
+          <h3>Real humans, not chatbots</h3>
+          <p>Support is WhatsApp, email, and phone — answered by our team in Bangalore who know the products because they test them. Average first reply: under 2 hours during business hours. No ticket numbers, no "we'll get back to you."</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-leadership">
+    <div class="container">
+      <div class="section-head">
+        <h2>The team</h2>
+      </div>
+      <div class="leadership-grid">
+        <article class="leader-card">
+          <div class="leader-avatar leader-avatar--blue">RR</div>
+          <h3>Rahul Ramesh</h3>
+          <p class="leader-role">Founder</p>
+          <p>Ex-Flipkart (catalog ops), built the inspection & fulfillment workflow from scratch. Still packs the first box of every new brand we onboard.</p>
+        </article>
+        <article class="leader-card">
+          <div class="leader-avatar leader-avatar--purple">PK</div>
+          <h3>Priya Krishnan</h3>
+          <p class="leader-role">Operations Lead</p>
+          <p>Ex-Amazon India (last-mile). Runs the Bangalore facility, vendor compliance, and the WhatsApp support queue. Knows every Blue Dart hub code by heart.</p>
+        </article>
+        <article class="leader-card">
+          <div class="leader-avatar leader-avatar--orange">AS</div>
+          <h3>Arjun Shetty</h3>
+          <p class="leader-role">Tech Lead</p>
+          <p>Ex-Razorpay, built the order-to-invoice pipeline, real-time stock sync with distributors, and the warranty claim tracker customers actually use.</p>
+        </article>
+        <article class="leader-card">
+          <div class="leader-avatar leader-avatar--green">SN</div>
+          <h3>Sneha Nair</h3>
+          <p class="leader-role">Brand & Community</p>
+          <p>Ex-Boat, owns vendor onboarding, product curation, and the Discord community where customers actually help each other pick the right gear.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-commitments">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our non-negotiables</h2>
+      </div>
+      <div class="commitments-grid">
+        <article class="commitment-card">
+          <h3><span class="commitment-number">1</span> No gray market, ever</h3>
+          <p>If we can't get it from an authorized distributor, we don't sell it. Period. That means some popular models go out of stock — we'd rather lose the sale than sell you a unit with a void warranty.</p>
+        </article>
+        <article class="commitment-card">
+          <h3><span class="commitment-number">2</span> Invoice = warranty proof</h3>
+          <p>Every order gets a proper GST invoice with serial numbers listed. That invoice is your warranty proof with the brand — no separate registration, no "warranty card" that gets lost.</p>
+        </article>
+        <article class="commitment-card">
+          <h3><span class="commitment-number">3</span> Right to repair respected</h3>
+          <p>We stock genuine spares for the brands we carry (batteries, screens, fans, charging ports). Opening your laptop to add RAM or swap an SSD doesn't void your warranty with us.</p>
+        </article>
+        <article class="commitment-card">
+          <h3><span class="commitment-number">4</span> No fake discounts</h3>
+          <p>No "MRP ₹99,999 — our price ₹59,999" theater. We price at distributor cost + sustainable margin. If a brand drops prices, we drop ours the same day. No coupon codes, no flash sale pressure.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-cta">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to buy tech without the anxiety?</h2>
+        <p>40+ authorized brands, inspected on camera, warranted by us, supported by humans in Bangalore. Your next upgrade ships today.</p>
+        <a href="{% url 'shop' %}" class="btn btn--paper">Browse the store →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="{% static 'js/homeFunctionality.js' %}" defer></script>
+{% endblock content %}
