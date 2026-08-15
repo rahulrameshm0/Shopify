@@ -251,6 +251,7 @@
     border: 1px solid transparent;
     cursor: pointer;
     transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+    width: 100%;
 }
 
 .btn:active {
@@ -500,6 +501,7 @@
 .link-text strong {
     font-weight: 600;
     font-size: .9rem;
+    text-align: left;
 }
 
 .link-text small {

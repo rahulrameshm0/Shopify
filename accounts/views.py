@@ -94,3 +94,8 @@ def edit_profile(request):
         form = ProfileForm(instance=profile, user=request.user)
 
     return render(request, "user-profile/edit-profile.html", {"form": form, "profile": profile})
+
+def signout(request):
+    logout(request)
+
+    return redirect("home")

@@ -9,6 +9,7 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name="dashboard"),
     path('user_profile', views.user_profile, name="profile"),
     path('user_profile/edit', views.edit_profile, name="edit_profile"),
+    path('logout', views.signout, name="logout"),
 
     # password  reset
     path('email_varification/',
