@@ -8,8 +8,10 @@ def home(request):
         product.hero_position: product
         for product in Products.objects.exclude(hero_position__isnull=True)
     }
-    # print(hero_products.keys())
-    return render(request, "home/home.html", {"hero_products": hero_products})
+
+    laptop = Products.objects.filter(category__name="Laptops").first()
+
+    return render(request, "home/home.html", {"hero_products": hero_products, "laptop":laptop})
 
 def products(request):
     return render(request, "products/products-details.html")
