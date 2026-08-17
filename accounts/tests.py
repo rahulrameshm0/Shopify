@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-# Create your tests here.
+
+# Testing Login Section
 class LoginTest(TestCase):
 
     def test_login_page_loads(self):
@@ -32,6 +33,9 @@ class LoginTest(TestCase):
         )
 
         self.assertFalse(response.wsgi_request.user.is_authenticated)
+
+    def test_login_btn(self):
+        pass
 
 class RegisterTest(TestCase):
     def test_register_page_loads(self):
