@@ -1,7 +1,9 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.urls import reverse
+from products.models import Products
+from categories.models import Category
 
-# Testing Login Section
 class LoginTest(TestCase):
 
     def test_login_page_loads(self):
@@ -28,14 +30,46 @@ class LoginTest(TestCase):
         )
 
         response = self.client.post(
-            "signin",
-            {"username": "rahulrameshm0", "password":"wrongpassword"}
+            "/signin/",
+            {"username": "testuser", "password":"wrongpassword"}
         )
 
         self.assertFalse(response.wsgi_request.user.is_authenticated)
 
-    def test_login_btn(self):
+    def test_Correct_password_with_nonexistent_username(self):
+
+        response = self.client.post(
+            "/signin/",
+            {
+                "username": "nonexisting",
+                "password": "testpassword",
+            }
+        )
+
+        self.assertEqual(response.status_code, 302)
+        self.assertFalse(response.wsgi_request.user.is_authenticated)
+
+    def empty_username_valid_password(self):
+        response = self.client.post(
+            "/signin/",
+            {
+                "username":"",
+                "passowrd": "testpassword"
+            }
+        )
+
+        self.assertEqual(response.status_code, 302)
+        self.assertFalse(response.wsgi_request.user.is_authenticated)
+
+    def test_Eepty_password(self):
         pass
+
+    def test_logout(self):
+        pass
+
+    def teest_without_login(self):
+        pass
+
 
 class RegisterTest(TestCase):
     def test_register_page_loads(self):
@@ -51,3 +85,5 @@ class PasswordResetTest(TestCase):
     def test_password_reset_page_loads(self):
         response = self.client.get("/password_reset_sent/")
         self.assertEqual(response.status_code, 200)
+
+
