@@ -21,6 +21,7 @@ class LoginTest(TestCase):
                                 "password":"724850"}
                                     )
         self.assertEqual(response.status_code, 302)
+        self.assertTrue(response.wsgi_request.user.is_authenticated)
 
 
     def test_login_with_invalid_password(self):
@@ -88,7 +89,6 @@ class RegisterTest(TestCase):
         self.assertEqual(response.status_code, 200) 
 
     def test_user_registration_working(self):
-
         response = self.client.post(
 
             "/register/",
