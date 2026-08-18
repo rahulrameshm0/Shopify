@@ -36,7 +36,7 @@ class LoginTest(TestCase):
 
         self.assertFalse(response.wsgi_request.user.is_authenticated)
 
-    def test_Correct_password_with_nonexistent_username(self):
+    def test_login_with_nonexistent_username(self):
 
         response = self.client.post(
             "/signin/",
@@ -49,26 +49,35 @@ class LoginTest(TestCase):
         self.assertEqual(response.status_code, 302)
         self.assertFalse(response.wsgi_request.user.is_authenticated)
 
-    def empty_username_valid_password(self):
+    def test_empty_username_valid_password(self):
         response = self.client.post(
             "/signin/",
             {
                 "username":"",
-                "passowrd": "testpassword"
+                "password": "testpassword"
             }
         )
 
         self.assertEqual(response.status_code, 302)
         self.assertFalse(response.wsgi_request.user.is_authenticated)
 
-    def test_Eepty_password(self):
-        pass
+    def test_empty_password(self):
+        User.objects.create_user(
+            username="testusername",
+            password="testpassword"
+        )
 
-    def test_logout(self):
-        pass
+        response = self.client.post(
+            '/signin/',
+            {
+                "username": "testusername",
+                "passowrd": ""
+            }
+        )
 
-    def teest_without_login(self):
-        pass
+        self.assertEqual(response.status_code, 302)
+        self.assertFalse(response.wsgi_request.user.is_authenticated)
+        
 
 
 class RegisterTest(TestCase):
