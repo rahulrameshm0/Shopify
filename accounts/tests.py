@@ -196,13 +196,11 @@ class RegisterTest(TestCase):
         )
         self.assertEqual(response.status_code, 302)
 
-
 class EmailVarificationTest(TestCase):
     def test_email_varification_page_loads(self):
         response = self.client.get("/email_varification/")
         self.assertEqual(response.status_code, 200)
 
-        
 class PasswordResetTest(TestCase):
     def test_password_reset_page_loads(self):
         response = self.client.get("/password_reset_sent/")
