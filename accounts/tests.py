@@ -206,4 +206,3 @@ class PasswordResetTest(TestCase):
         response = self.client.get("/password_reset_sent/")
         self.assertEqual(response.status_code, 200)
 
-
