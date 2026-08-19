@@ -70,6 +70,10 @@
                         <button class="is-active">No coverage</button>
                         <button>2 years · $39</button>
                         <button>3 years · $59</button>
+                        <form action="{% url 'add_to_wishlist' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" class="icon-btn" aria-label="Add to wishlist" style="background: var(--bg)">♡</button>
+                        </form>
                     </div>
                 </div>
 
@@ -81,10 +85,6 @@
                     </div>
                     <a href="{% url 'add_to_cart' product.id %}" class="btn btn--indigo" style="flex:1; min-width:160px">Add to cart →</a>
                     <a href="{% url 'add_to_cart' product.id %}" class="btn btn--ink">Buy now</a>
-                    <form action="{% url 'add_to_wishlist' product.id %}" method="POST">
-                        {% csrf_token %}
-                        <button type="submit" class="icon-btn" aria-label="Add to wishlist" style="background: var(--bg)">♡</button>
-                    </form>
                 </div>
 
                 <div class="pdp-features">
