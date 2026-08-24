@@ -5,6 +5,11 @@ from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 
+import json
+
+from django.http import JsonResponse
+from django.views.decorators.http import require_POST
+
 from cart.models import Cart
 from .models import Order, OrderItem
 from products.models import Products
@@ -128,3 +133,79 @@ def buy_now(request, product_id):
             "currency": "INR",
         }
     )
+
+@login_required(login_url="signin")
+@require_POST
+def verify_payment(request):
+
+    try:
+        data = json.loads(request.body)
+
+        razorpay_payment_id = data.get("razorpay_payment_id")
+        razorpay_order_id = data.get("razorpay_order_id")
+        razorpay_signature = data.get("razorpay_signature")
+
+        if not all([
+            razorpay_payment_id,
+            razorpay_order_id,
+            razorpay_signature
+        ]):
+            return JsonResponse(
+                {
+                    "success": False,
+                    "message": "Missing payment information."
+                },
+                status=400
+            )
+
+        # Get the order from OUR database
+        order = get_object_or_404(
+            Order,
+            razorpay_order_id=razorpay_order_id,
+            user=request.user
+        )
+
+        # Create Razorpay client
+        client = razorpay.Client(
+            auth=(
+                settings.RAZORPAY_KEY_ID,
+                settings.RAZORPAY_KEY_SECRET,
+            )
+        )
+
+        # Verify Razorpay signature
+        client.utility.verify_payment_signature({
+            "razorpay_order_id": order.razorpay_order_id,
+            "razorpay_payment_id": razorpay_payment_id,
+            "razorpay_signature": razorpay_signature,
+        })
+
+        # Payment is genuine
+        order.razorpay_payment_id = razorpay_payment_id
+        order.razorpay_signature = razorpay_signature
+        order.status = Order.OrderStatus.PAID
+        order.save()
+
+        return JsonResponse({
+            "success": True,
+            "message": "Payment verified successfully.",
+            "order_id": order.id,
+        })
+
+    except razorpay.errors.SignatureVerificationError:
+        return JsonResponse(
+            {
+                "success": False,
+                "message": "Payment verification failed."
+            },
+            status=400
+        )
+
+    except Exception as e:
+        return JsonResponse(
+            {
+                "success": False,
+                "message": "Something went wrong."
+            },
+            status=500
+        )

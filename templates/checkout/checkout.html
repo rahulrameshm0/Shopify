@@ -1,7 +1,6 @@
 {% extends "home/navbar-layout.html" %}
 {% load static %}
 
-
 {% block content %}
 
     <div class="checkout-container">
@@ -50,7 +49,7 @@
                     </span>
 
                     <span class="total-amount">
-                        ₹{{ order.total_amount }}
+                        ${{ order.total_amount }}
                     </span>
 
                 </div>
@@ -58,8 +57,15 @@
             </div>
 
 
-            <button id="pay-button">
-                Pay ₹{{ order.total_amount }}
+            <button id="pay-button"
+                    data-key="{{ razorpay_key_id }}"
+                    data-amount="{{ amount }}"
+                    data-currency="{{ currency }}"
+                    data-order-id="{{ razorpay_order_id }}"
+                    data-order-number="{{ order.id }}"
+                    data-verify-url="{% url 'verify_payment' %}"
+            >
+                Pay ${{ order.total_amount }}
             </button>
 
 
@@ -86,7 +92,7 @@
     </div>
 
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/checkoutfunctionality.js' %}"></script>
     
 {% endblock content %}
 
