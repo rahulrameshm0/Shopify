@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+
+<body>
+
+    <h1>Checkout</h1>
+
+    <p>Order ID: {{ order.id }}</p>
+
+    <p>Total: ₹{{ order.total_amount }}</p>
+
+    <button id="pay-button">
+        Pay ₹{{ order.total_amount }}
+    </button>
+
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script>
+        const options = {
+            key: "{{ razorpay_key_id }}",
+
+            amount: "{{ amount }}",
+
+            currency: "{{ currency }}",
+
+            name: "Your Store",
+
+            description: "Order #{{ order.id }}",
+
+            order_id: "{{ razorpay_order_id }}",
+
+            handler: function (response) {
+
+                console.log("Payment successful");
+
+                console.log(response);
+
+            },
+
+            theme: {
+                color: "#3399cc"
+            }
+        };
+
+        const razorpay = new Razorpay(options);
+
+        document.getElementById("pay-button").onclick = function(e) {
+            razorpay.open();
+            e.preventDefault();
+        };
+    </script>
+
+</body>
+</html>

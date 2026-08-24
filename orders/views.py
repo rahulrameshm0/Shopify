@@ -3,10 +3,11 @@ from decimal import Decimal
 import razorpay
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from cart.models import Cart
 from .models import Order, OrderItem
+from products.models import Products
 
 
 @login_required(login_url="signin")
@@ -68,3 +69,62 @@ def checkout(request):
         "amount": razorpay_amount,
         "currency": "INR",
     })
+
+
+
+@login_required(login_url="signin")
+def buy_now(request, product_id):
+
+    product = get_object_or_404(
+        Products,
+        id=product_id
+    )
+
+    quantity = int(
+        request.POST.get("quantity", 1)
+    )
+
+    total = product.price * quantity
+
+    order = Order.objects.create(
+        user=request.user,
+        total_amount=total,
+        status=Order.OrderStatus.PENDING,
+    )
+
+    OrderItem.objects.create(
+        order=order,
+        product=product,
+        quantity=quantity,
+        price=product.price,
+    )
+
+    client = razorpay.Client(
+        auth=(
+            settings.RAZORPAY_KEY_ID,
+            settings.RAZORPAY_KEY_SECRET,
+        )
+    )
+
+    razorpay_amount = int(total * 100)
+
+    razorpay_order = client.order.create({
+        "amount": razorpay_amount,
+        "currency": "INR",
+        "receipt": f"order_{order.id}",
+    })
+
+    order.razorpay_order_id = razorpay_order["id"]
+    order.save()
+
+    return render(
+        request,
+        "checkout/checkout.html",
+        {
+            "order": order,
+            "razorpay_order_id": razorpay_order["id"],
+            "razorpay_key_id": settings.RAZORPAY_KEY_ID,
+            "amount": razorpay_amount,
+            "currency": "INR",
+        }
+    )

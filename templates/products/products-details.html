@@ -86,9 +86,23 @@
                         <button type="button" data-act="+" aria-label="Increase">+</button>
                     </div>
                     <a><button type="submit" class="btn btn--indigo">Add to cart →</button></a>
-                    <a><button type="submit" class="btn btn--ink">Buy Now</button></a>
                     <!-- <a href="{% url 'add_to_cart' product.id %}" class="btn btn--indigo" style="flex:1; min-width:160px">Add to cart →</a> -->
                     <!-- <a href="{% url 'add_to_cart' product.id %}" class="btn btn--ink">Buy now</a> -->
+                </form>
+
+                <form method="POST" action="{% url 'buy_now' product.id %}">
+                    {% csrf_token %}
+
+                    <input
+                        type="hidden"
+                        name="quantity"
+                        value="1"
+                        id="buy-now-quantity"
+                    />
+
+                    <button type="submit" class="btn btn--ink">
+                        Buy Now
+                    </button>
                 </form>
                 </div>
 
