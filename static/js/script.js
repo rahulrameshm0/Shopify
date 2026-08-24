@@ -31,3 +31,39 @@ function toggleSidebar() {
         document.getElementById('sidebar').classList.toggle('open');
         document.getElementById('mainContent').classList.toggle('shifted');
     }
+
+
+// checkout section
+
+     const options = {
+            key: "{{ razorpay_key_id }}",
+
+            amount: "{{ amount }}",
+
+            currency: "{{ currency }}",
+
+            name: "Your Store",
+
+            description: "Order #{{ order.id }}",
+
+            order_id: "{{ razorpay_order_id }}",
+
+            handler: function (response) {
+
+                console.log("Payment successful");
+
+                console.log(response);
+
+            },
+
+            theme: {
+                color: "#3399cc"
+            }
+        };
+
+        const razorpay = new Razorpay(options);
+
+        document.getElementById("pay-button").onclick = function(e) {
+            razorpay.open();
+            e.preventDefault();
+        };

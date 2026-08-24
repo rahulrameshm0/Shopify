@@ -1,58 +1,93 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Checkout</title>
-</head>
+{% extends "home/navbar-layout.html" %}
+{% load static %}
 
-<body>
 
-    <h1>Checkout</h1>
+{% block content %}
 
-    <p>Order ID: {{ order.id }}</p>
+    <div class="checkout-container">
 
-    <p>Total: ₹{{ order.total_amount }}</p>
+        <div class="checkout-card">
 
-    <button id="pay-button">
-        Pay ₹{{ order.total_amount }}
-    </button>
+            <div class="checkout-header">
 
+                <span class="checkout-label">
+                    Secure Checkout
+                </span>
+
+                <h1>
+                    Complete your order
+                </h1>
+
+                <p>
+                    Review your order details before proceeding with payment.
+                </p>
+
+            </div>
+
+
+            <div class="order-summary">
+
+                <div class="summary-row">
+
+                    <span>
+                        Order ID
+                    </span>
+
+                    <strong>
+                        #{{ order.id }}
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-divider"></div>
+
+
+                <div class="summary-row total-row">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span class="total-amount">
+                        ₹{{ order.total_amount }}
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button id="pay-button">
+                Pay ₹{{ order.total_amount }}
+            </button>
+
+
+            <div class="secure-payment">
+
+                <span class="secure-icon">
+                    ✓
+                </span>
+
+                Secure payment powered by Razorpay
+
+            </div>
+
+
+            <div class="payment-note">
+
+                Your payment information is securely processed by Razorpay.
+                We never store your card details.
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    
+{% endblock content %}
 
-    <script>
-        const options = {
-            key: "{{ razorpay_key_id }}",
 
-            amount: "{{ amount }}",
-
-            currency: "{{ currency }}",
-
-            name: "Your Store",
-
-            description: "Order #{{ order.id }}",
-
-            order_id: "{{ razorpay_order_id }}",
-
-            handler: function (response) {
-
-                console.log("Payment successful");
-
-                console.log(response);
-
-            },
-
-            theme: {
-                color: "#3399cc"
-            }
-        };
-
-        const razorpay = new Razorpay(options);
-
-        document.getElementById("pay-button").onclick = function(e) {
-            razorpay.open();
-            e.preventDefault();
-        };
-    </script>
-
-</body>
-</html>

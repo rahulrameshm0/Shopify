@@ -412,7 +412,7 @@ input, select, textarea {
 }
 
 .btn--ink:hover {
-    background: var(--indigo);
+    background: var(--card-black);
     color: var(--paper);
 }
 
@@ -1485,7 +1485,6 @@ input, select, textarea {
     gap: var(--s3);
     flex-wrap: wrap;
     align-items: center;
-    margin-top: var(--s4);
 }
 
 .pdp-cta .btn {
