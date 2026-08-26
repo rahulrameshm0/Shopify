@@ -25,7 +25,7 @@ if (payButton) {
     alert("Payment successful!");
             // window.location.href = `/orders/payment-success/${response.razorpay_order_id}/`;
         },
-
+        
         theme: {
             color: "#4f46e5"
         }
