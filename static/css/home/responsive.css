@@ -196,6 +196,6 @@
 @media (max-width: 760px) {
     .search,
     .search-btn {
-        display: none;
+        display: none !important;
     }
 }
