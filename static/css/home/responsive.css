@@ -192,3 +192,10 @@
         scroll-behavior: auto;
     }
 }
+
+@media (max-width: 760px) {
+    .search,
+    .search-btn {
+        display: none;
+    }
+}
