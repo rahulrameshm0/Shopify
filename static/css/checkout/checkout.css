@@ -153,10 +153,7 @@
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 20px 14px;
-    }
-
+    
     .checkout-container {
         margin: 20px auto;
     }
