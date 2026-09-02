@@ -38,3 +38,12 @@ class Specification(models.Model):
     product = models.ForeignKey(Products, on_delete=models.CASCADE, related_name="specification")
     name = models.CharField(max_length=100)
     value = models.TextField()
+
+class TrendingProduct(models.Model):
+    product = models.ForeignKey(
+        Products,
+        on_delete=models.CASCADE
+    )
+    category = models.CharField(max_length=50)
+    order = models.PositiveIntegerField(default=0)
+    is_active = models.BooleanField(default=True)

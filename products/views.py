@@ -47,6 +47,9 @@ def product_details(request, id):
 
     return render(request, "products/products-details.html", context)
 
+def trending_products(request):
+    pass
+
 def shopping(request):
     products = Products.objects.all()
 
