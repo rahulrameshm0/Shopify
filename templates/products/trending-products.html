@@ -1,0 +1,76 @@
+{% extends "home/navbar-layout.html" %}
+
+{% block content %}
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-head">
+            <h2>Trending Products</h2>
+        </div>
+
+        <div class="products">
+
+            {% for item in trending_products %}
+
+                <article class="product-card">
+
+                    <div class="img-wrap">
+
+                        <button class="wishlist"
+                                aria-label="Wishlist">
+                            ♡
+                        </button>
+
+                        <a href="{% url 'product_details' item.product.id %}">
+                            <img
+                                src="{{ item.product.image.url }}"
+                                alt="{{ item.product.name }}"
+                            >
+                        </a>
+
+                    </div>
+
+                    <div class="stock">
+                        <span class="dot"></span>
+                        In stock · {{ item.product.stock }} items
+                    </div>
+
+                    <a
+                        href="{% url 'product_details' item.product.id %}"
+                        class="name"
+                    >
+                        {{ item.product.name }}
+                    </a>
+
+                    <div class="price">
+                        <span class="now">
+                            ₹{{ item.product.price }}
+                        </span>
+                    </div>
+
+                    <div class="stars">
+                        ★★★★★
+                        <span class="count">
+                            ({{ item.product.rating }})
+                        </span>
+                    </div>
+
+                    <a href="{% url 'cart' %}" class="btn">
+                        Order now →
+                    </a>
+
+                </article>
+
+            {% empty %}
+
+                <p>No trending products available.</p>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock content %}
