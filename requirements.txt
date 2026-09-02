@@ -6,6 +6,7 @@ Django==6.0.6
 django-categories==2.0.0
 django-js-asset==4.0.1
 django-mptt==0.18.0
+gunicorn==26.2.0
 idna==3.19
 numpy==2.5.1
 parts==2.1.0
