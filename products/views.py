@@ -4,6 +4,8 @@ from django.core.paginator import Paginator
 from categories.models import Category
 from django.db.models import Count
 from django.db.models import Avg
+from . models import TrendingProduct
+
 
 # Create your views here.
 
@@ -48,7 +50,27 @@ def product_details(request, id):
     return render(request, "products/products-details.html", context)
 
 def trending_products(request):
-    pass
+
+    selected_category = request.GET.get("category", "All")
+
+    if selected_category == "All":
+        trending_products = TrendingProduct.objects.filter(
+            is_active=True
+        ).select_related("product").order_by("order")
+    else:
+        trending_products = TrendingProduct.objects.filter(
+            is_active=True,
+            category__iexact=selected_category
+        ).select_related("product").order_by("order")
+
+    return render(
+        request,
+        "products/trending-products.html",
+        {
+            "trending_products": trending_products,
+            "selected_category": selected_category,
+        }
+    )
 
 def shopping(request):
     products = Products.objects.all()
