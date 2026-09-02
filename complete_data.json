@@ -1,0 +1,4137 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-08-16T06:02:51.929Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Lenovo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-08-16T06:03:59.483Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "90",
+    "object_repr": "Specification object (90)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-08-16T06:04:57.690Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "91",
+    "object_repr": "Specification object (91)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-08-16T06:05:35.924Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "92",
+    "object_repr": "Specification object (92)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-08-16T06:06:12.293Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "93",
+    "object_repr": "Specification object (93)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-08-16T06:07:26.566Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "94",
+    "object_repr": "Specification object (94)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-08-16T06:08:36.129Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "95",
+    "object_repr": "Specification object (95)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-08-16T06:16:46.868Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Lenovo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-08-16T06:19:00.716Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "96",
+    "object_repr": "Specification object (96)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-08-16T06:19:24.614Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "97",
+    "object_repr": "Specification object (97)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-08-16T06:20:28.331Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "98",
+    "object_repr": "Specification object (98)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-08-16T06:20:51.660Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "99",
+    "object_repr": "Specification object (99)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-08-16T06:21:18.421Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "100",
+    "object_repr": "Specification object (100)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-08-16T06:21:53.528Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "101",
+    "object_repr": "Specification object (101)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-08-16T06:22:17.974Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "ThinkPad P16s Gen 4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-08-16T06:22:51.733Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Ant Esports GM100 V2 Optical Gaming Mouse,7 Button Wired USB Mouse, 4000 FPS Sensor, 3600 DPI, RGB Lighting,1.5m PVC Cable, Ergonomic Design, for Windows PC, Laptop,Gaming & Office Use- Black & White",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-08-16T06:23:38.796Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Ant Esports GM100 V2 Optical Gaming Keyboard",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-08-16T06:25:00.515Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Ant Esports Optical Gaming Keyboard",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-08-16T06:39:01.995Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Lenovo ThinkPad P16s Gen 4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-08-16T07:04:40.430Z",
+    "user": 2,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Laptops",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-09-02T04:26:00.749Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "XIAOMI 17 Ultra (Black, 16GB+512GB)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-09-02T04:39:54.344Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "TrendingProduct object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-09-02T05:11:35.858Z",
+    "user": 2,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "Wired Cable",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-09-02T05:13:53.461Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Wired Cable",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-09-02T05:14:15.994Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "TrendingProduct object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-09-02T05:35:36.374Z",
+    "user": 2,
+    "content_type": 12,
+    "object_id": "10",
+    "object_repr": "Luggage",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-09-02T05:36:45.207Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Luggage Trolley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-09-02T05:37:14.107Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "3",
+    "object_repr": "TrendingProduct object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-09-02T06:25:29.919Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Silicone Back Scrubber",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-09-02T06:26:06.136Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "4",
+    "object_repr": "TrendingProduct object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-09-02T06:28:47.836Z",
+    "user": 2,
+    "content_type": 12,
+    "object_id": "11",
+    "object_repr": "Electronics",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-09-02T06:29:52.014Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Rainbow Metallic Cable Protector",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-09-02T06:30:26.499Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "5",
+    "object_repr": "TrendingProduct object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-09-02T07:05:45.546Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "TrendingProduct object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-09-02T07:12:46.930Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "6",
+    "object_repr": "TrendingProduct object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-09-02T07:20:08.306Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "5",
+    "object_repr": "TrendingProduct object (5)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-09-02T07:20:23.333Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "4",
+    "object_repr": "TrendingProduct object (4)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-09-02T07:20:28.682Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "4",
+    "object_repr": "TrendingProduct object (4)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-09-02T07:20:32.792Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "3",
+    "object_repr": "TrendingProduct object (3)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-09-02T07:20:38.385Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "TrendingProduct object (2)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-09-02T07:22:28.050Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "6",
+    "object_repr": "TrendingProduct object (6)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product\", \"Category\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add accounts",
+    "content_type": 7,
+    "codename": "add_accounts"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change accounts",
+    "content_type": 7,
+    "codename": "change_accounts"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete accounts",
+    "content_type": 7,
+    "codename": "delete_accounts"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view accounts",
+    "content_type": 7,
+    "codename": "view_accounts"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add products",
+    "content_type": 8,
+    "codename": "add_products"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change products",
+    "content_type": 8,
+    "codename": "change_products"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete products",
+    "content_type": 8,
+    "codename": "delete_products"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view products",
+    "content_type": 8,
+    "codename": "view_products"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add specification",
+    "content_type": 9,
+    "codename": "add_specification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change specification",
+    "content_type": 9,
+    "codename": "change_specification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete specification",
+    "content_type": 9,
+    "codename": "delete_specification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view specification",
+    "content_type": 9,
+    "codename": "view_specification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add cart",
+    "content_type": 10,
+    "codename": "add_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change cart",
+    "content_type": 10,
+    "codename": "change_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete cart",
+    "content_type": 10,
+    "codename": "delete_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view cart",
+    "content_type": 10,
+    "codename": "view_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add reviews",
+    "content_type": 11,
+    "codename": "add_reviews"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change reviews",
+    "content_type": 11,
+    "codename": "change_reviews"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete reviews",
+    "content_type": 11,
+    "codename": "delete_reviews"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view reviews",
+    "content_type": 11,
+    "codename": "view_reviews"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 12,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 12,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 12,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 12,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add wishlist",
+    "content_type": 13,
+    "codename": "add_wishlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change wishlist",
+    "content_type": 13,
+    "codename": "change_wishlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete wishlist",
+    "content_type": 13,
+    "codename": "delete_wishlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view wishlist",
+    "content_type": 13,
+    "codename": "view_wishlist"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add profile",
+    "content_type": 14,
+    "codename": "add_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change profile",
+    "content_type": 14,
+    "codename": "change_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete profile",
+    "content_type": 14,
+    "codename": "delete_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view profile",
+    "content_type": 14,
+    "codename": "view_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 15,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 15,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 15,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 15,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add order item",
+    "content_type": 16,
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change order item",
+    "content_type": 16,
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete order item",
+    "content_type": 16,
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view order item",
+    "content_type": 16,
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add trending product",
+    "content_type": 17,
+    "codename": "add_trendingproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change trending product",
+    "content_type": 17,
+    "codename": "change_trendingproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete trending product",
+    "content_type": 17,
+    "codename": "delete_trendingproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view trending product",
+    "content_type": 17,
+    "codename": "view_trendingproduct"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ogBze9cIUlm3xLxvRlYPov$TkdFSeCHEinYvXfFNbeOiNxzgc9mNpkjNBQWDWZKm2A=",
+    "last_login": "2026-09-02T03:58:41.523Z",
+    "is_superuser": false,
+    "username": "rahulrameshm0",
+    "first_name": "",
+    "last_name": "",
+    "email": "rahulrameshm23@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T15:28:26.791Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$XjUrAKSTn5oCQG5ERUkGw3$o77NEmKqBLmoqdsTrTGI3nBXCvBPtlIeeFa15NVe/0o=",
+    "last_login": "2026-09-02T04:05:51.685Z",
+    "is_superuser": true,
+    "username": "rahul",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-15T22:06:16.325Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$mmx1Sdj0e36UPBCCmX7Ems$tYxSqVS6vQ3t3CzhgZKq1jMZvT4R8f7xOsZtmnBu05Q=",
+    "last_login": "2026-08-15T08:10:21.123Z",
+    "is_superuser": false,
+    "username": "james@23",
+    "first_name": "",
+    "last_name": "",
+    "email": "jameshunt@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-08-15T08:09:54.629Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "accounts",
+    "model": "accounts"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "products",
+    "model": "products"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "products",
+    "model": "specification"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "cart",
+    "model": "cart"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "reviews",
+    "model": "reviews"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "categories",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "wishlist",
+    "model": "wishlist"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "accounts",
+    "model": "profile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "orders",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "orders",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "products",
+    "model": "trendingproduct"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "21rmctq3mot3ynzmy41kmj5uhdrghy8j",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln4s8ampOcM1u56gwPIkeKkQtwdIqWA9s3Me6mM61Lz2mXOY1Fn5dThdyPkh7QNlDu226R5ass8kt4UvdOur1OR52V3_w4q9vqtQ4jWBIuRg7iA4jyRdcFZ8iKDQUBOUODoU_E8GABjIImINzHiiVi9P9aTN9E:1wrDRK:szg2MpSHt7JkCSb8FGIV-f7HNr9GNPXR_iVWk3bP4W0",
+    "expire_date": "2026-08-18T11:36:10.455Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3w5votwj1g2gavp6toaiehp44t7xhg9f",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wrI9g:KcDItqizWLcX59EiUUcT6aPAGmwnyu_rRc8jVrQmqmU",
+    "expire_date": "2026-08-18T16:38:16.580Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3wak9954553p8voqywhw13sf0e22d6hr",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1weaO3:iXoGKDRyb4en0_qSq-XYuPXWG1ZPkB8MwULqB4rqUwU",
+    "expire_date": "2026-07-14T15:28:35.794Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7pbkrvabzk2wyek5sgo35fgc64sz3kg5",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wrBI1:emuoa8u1seHdEB_k03XyXllJsv6Doc3MDL4is0oBgM4",
+    "expire_date": "2026-08-18T09:18:25.364Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9blq76dzxb69933hj6ceibn2g1ahmib5",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wrALz:vkoz1cFjzhZi4-2aPuFhC4cYR-UdCEy83e_mBGBDeh8",
+    "expire_date": "2026-08-18T08:18:27.404Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9gbgqoyrws5r6llg4ealy3m7oeo3chm8",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSGU8igu3fsNZGYYpGogKe3K-O_apAvd3nPOfYkI21ri1nmJcxJnocXpd0OgB9cdpDvUW5PU6rrMKHdFHrTLa0v8vBzu30GBXr61d240wU4DaJutIc9u8MhkkdJoczKsTMLJB-V1UGRQATmVs2JEMEzi_QHWpjhf:1wk7kQ:PA3hlsKz9BLPVReIkKnDZfYv7dUzI7oWkP-0bWoweI8",
+    "expire_date": "2026-07-29T22:06:34.172Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f5r8h99wdckdnktfulrlpronvqhj039k",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wqQGv:ZjW22OhEV5_v7S7kVV1aKiZahweFh0xt93_4oJ-k4iA",
+    "expire_date": "2026-08-16T07:06:09.908Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i29d28d1gpurer116v6d8vy1jbpc7ioq",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wqWHx:y63C176QvArhPt-Y5dLL8r_CD5v3IEhsVqWoWMPF0wo",
+    "expire_date": "2026-08-16T13:31:37.794Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ldg8riclobch5f9500r8e9ys6mmpag9o",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wrH55:LVLOuUm6W73stpnJIB6JFOG1G4Zpb5fvKt2Yo9pBfXw",
+    "expire_date": "2026-08-18T15:29:27.692Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "t1q5vm3lrplfxfr4hxc6ojk4q8uza2ar",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wyVTk:93dfttW6lSz7jHDtQA42mvmZ4ddQrstTKHf3cI19Y8E",
+    "expire_date": "2026-09-07T14:16:48.726Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vqprls71tdc8c1zdlqu6iy701ijnyww2",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln4s8ampOcM1u56gwPIkeKkQtwdIqWA9s3Me6mM61Lz2mXOY1Fn5dThdyPkh7QNlDu226R5ass8kt4UvdOur1OR52V3_w4q9vqtQ4jWBIuRg7iA4jyRdcFZ8iKDQUBOUODoU_E8GABjIImINzHiiVi9P9aTN9E:1wrDQo:aR6vuTPmpMBsNwJCNidTHlAUG1FDaMybjfe3h5hOJYs",
+    "expire_date": "2026-08-18T11:35:38.641Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xazsniykzw5pqk0gsvl0w1i98aepxpgw",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSGU8igu3fsNZGYYpGogKe3K-O_apAvd3nPOfYkI21ri1nmJcxJnocXpd0OgB9cdpDvUW5PU6rrMKHdFHrTLa0v8vBzu30GBXr61d240wU4DaJutIc9u8MhkkdJoczKsTMLJB-V1UGRQATmVs2JEMEzi_QHWpjhf:1x1cER:0EdKs7wlko5Uz8q2cUBdtylKVSBu8IW-mv5RL3JQ-t0",
+    "expire_date": "2026-09-16T04:05:51.688Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ybot6jo0giz9eymk4abxir8murllumfy",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUWOW0jKyM4ZKttxSAElUtNOiLtDpQ6w_vfef5mR1iWPa9N5nKI5G2cOvxuTPLRsIN6p3KqVWpZ5YrspdqfNXmvU52V3_w4ytfytPSc_SOhAFGVwggzEEU9JoQdEcpDQhwCcSI89R3bYCbgEvTpJPJj3B_OQOGg:1wuCfk:ZcVtLYjEnnQbVgGCDnhfaiBac_z2lyTHSzjcnWZqP6Y",
+    "expire_date": "2026-08-26T17:23:24.908Z"
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "image": "",
+    "phone": "",
+    "gender": "",
+    "date_of_birth": null,
+    "country": "",
+    "city": "",
+    "bio": ""
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "image": "",
+    "phone": "",
+    "gender": "",
+    "date_of_birth": null,
+    "country": "",
+    "city": "",
+    "bio": ""
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "image": "",
+    "phone": "",
+    "gender": "",
+    "date_of_birth": null,
+    "country": "",
+    "city": "",
+    "bio": ""
+  }
+},
+{
+  "model": "products.products",
+  "pk": 4,
+  "fields": {
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": 1,
+    "brand": "Samsung",
+    "price": "2000.00",
+    "stock": 3,
+    "image": "products/S24_Ultra_7s9omCK.jpg",
+    "description": "Samsung Galaxy S24 Ultra",
+    "rating": "3.8",
+    "hero_position": "phone"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 5,
+  "fields": {
+    "name": "Apple Watch",
+    "category": 4,
+    "brand": "Apple",
+    "price": "2000.00",
+    "stock": 4,
+    "image": "products/daniel-korpai-hbTKIbuMmBI-unsplash.jpg",
+    "description": "Apple Watch",
+    "rating": "3.6",
+    "hero_position": "watch"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 6,
+  "fields": {
+    "name": "Canon Camera",
+    "category": 5,
+    "brand": "Canon",
+    "price": "3999.00",
+    "stock": 6,
+    "image": "products/andrew-hutchings-W2Dta_Yiwfw-unsplash.jpg",
+    "description": "Canon Camera",
+    "rating": "3.5",
+    "hero_position": "camera"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 7,
+  "fields": {
+    "name": "Sony Wireless Headphone",
+    "category": 6,
+    "brand": "Sony",
+    "price": "2999.00",
+    "stock": 25,
+    "image": "products/luke-peterson-lUMj2Zv5HUE-unsplash.jpg",
+    "description": "Sony Wireless",
+    "rating": "4.3",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 8,
+  "fields": {
+    "name": "SONY, ILCE-6000",
+    "category": 6,
+    "brand": "Sony",
+    "price": "1999.00",
+    "stock": 56,
+    "image": "products/frank-septillion-Qrspubmx6kE-unsplash.jpg",
+    "description": "SONY, ILCE-6000",
+    "rating": "4.0",
+    "hero_position": "dslr"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 9,
+  "fields": {
+    "name": "Apple Headphones",
+    "category": 6,
+    "brand": "Apple",
+    "price": "3599.00",
+    "stock": 56,
+    "image": "products/ravi-palwe-ax23KYiUdJc-unsplash.jpg",
+    "description": "Apple Headphones",
+    "rating": "3.4",
+    "hero_position": "earbuds"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 10,
+  "fields": {
+    "name": "Ant Esports Optical Gaming Keyboard",
+    "category": 7,
+    "brand": "Kreo Swarm",
+    "price": "3999.00",
+    "stock": 8,
+    "image": "products/gaming-keyboard.jpg",
+    "description": "Ant Esports GM100 V2 Optical Gaming Mouse,7 Button Wired USB Mouse, 4000 FPS Sensor, 3600 DPI, RGB Lighting,1.5m PVC Cable, Ergonomic Design, for Windows PC, Laptop,Gaming & Office Use- Black & White",
+    "rating": "3.0",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 11,
+  "fields": {
+    "name": "Apple HomePod",
+    "category": 6,
+    "brand": "Apple HomePod  (2nd Generation) - Midnight",
+    "price": "500.00",
+    "stock": 50,
+    "image": "products/apple-homepod-webp.webp",
+    "description": "HomePod is a powerhouse of a speaker. Apple‑engineered\r\naudio technology and advanced software deliver high‑fidelity\r\nsound throughout the room. It intelligently adapts to whatever it’s\r\nplaying — or wherever it’s playing — and surrounds you in immersive audio that makes everything you listen to sound incredible",
+    "rating": "4.0",
+    "hero_position": "homepod"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 12,
+  "fields": {
+    "name": "Lenovo ThinkPad P16s Gen 4",
+    "category": 3,
+    "brand": "Lenovo",
+    "price": "1999.00",
+    "stock": 55,
+    "image": "products/lenovo.avif",
+    "description": "Run your CAD, BIM, and creative apps with confidence, backed by independent software vendor (ISV)* certifications from ANSYS®, SOLIDWORKS®, AutoCAD®, and more. Delivering pro-level performance, the ThinkPad P16s Gen 4 mobile workstation amplifies work efficiency for smarter, more intuitive workflows.",
+    "rating": "4.7",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 13,
+  "fields": {
+    "name": "XIAOMI 17 Ultra (Black, 16GB+512GB)",
+    "category": 1,
+    "brand": "XIAOMI",
+    "price": "1499.00",
+    "stock": 150,
+    "image": "products/xiaomi.jpg",
+    "description": "XIAOMI 17 Ultra (Black, 16GB+512GB) |World's First Leica 1-Inch LOFIC Sensor |Snapdragon 8 Elite Gen 5 |2K AMOLED Display | 90W HyperCharge HyperOS 3 | HyperAI Flagship Experience",
+    "rating": "4.0",
+    "hero_position": "phone"
+  }
+},
+{
+  "model": "products.products",
+  "pk": 14,
+  "fields": {
+    "name": "Wired Cable",
+    "category": 9,
+    "brand": "Silicone Cable Protector",
+    "price": "2.00",
+    "stock": 250,
+    "image": "products/silcon_cable.webp",
+    "description": "4 in 1 Silicone Cable Protector – Durable Wire Saver for Charger & Earphone Cable (Random color- Pack of 1)",
+    "rating": "3.5",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 15,
+  "fields": {
+    "name": "Luggage Trolley",
+    "category": 10,
+    "brand": "Transparent Luggage",
+    "price": "1.50",
+    "stock": 206,
+    "image": "products/LuggageTrolley.webp",
+    "description": "Transparent Luggage Trolley Waterproof Cover – Dustproof & Scratch-Resistant Suitcase Protector",
+    "rating": "3.0",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 16,
+  "fields": {
+    "name": "Silicone Back Scrubber",
+    "category": 8,
+    "brand": "Silicone Back Scrubber",
+    "price": "1.00",
+    "stock": 25,
+    "image": "products/Untitled_design_32_7869ad7a-5c91-4508-b6dc-5738a664b7b3.webp",
+    "description": "Silicone Back Scrubber – Dual-Sided Exfoliating & Massage Body Brush | Quick-Drying, Hygienic Bath Scrubber for Deep Cleaning (Random Color – Pack of 1)",
+    "rating": "3.2",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.products",
+  "pk": 17,
+  "fields": {
+    "name": "Rainbow Metallic Cable Protector",
+    "category": 11,
+    "brand": "Cable Protector",
+    "price": "15.00",
+    "stock": 25,
+    "image": "products/100ml_2.webp",
+    "description": "Rainbow Metallic Cable Protector – 150 cm Spiral Wire Organizer for Charging Cables (Multicolor-Pack of 1)",
+    "rating": "5.0",
+    "hero_position": null
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 1,
+  "fields": {
+    "product": 4,
+    "name": "Brand",
+    "value": "Samsung"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 2,
+  "fields": {
+    "product": 4,
+    "name": "Model",
+    "value": "Galaxy S24 Ultra"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 3,
+  "fields": {
+    "product": 4,
+    "name": "Operating System",
+    "value": "Android 14 (Upgradeable to newer versions), One UI"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 4,
+  "fields": {
+    "product": 4,
+    "name": "Processor",
+    "value": "Qualcomm Snapdragon 8 Gen 3 for Galaxy"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 5,
+  "fields": {
+    "product": 4,
+    "name": "CPU",
+    "value": "Octa-core"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 6,
+  "fields": {
+    "product": 4,
+    "name": "GPU",
+    "value": "Adreno 750"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 7,
+  "fields": {
+    "product": 4,
+    "name": "RAM",
+    "value": "12 GB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 8,
+  "fields": {
+    "product": 4,
+    "name": "Storage",
+    "value": "256 GB / 512 GB / 1 TB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 9,
+  "fields": {
+    "product": 4,
+    "name": "Resolution",
+    "value": "3120 × 1440 pixels (QHD+)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 10,
+  "fields": {
+    "product": 4,
+    "name": "Refresh Rate",
+    "value": "1–120 Hz Adaptive"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 11,
+  "fields": {
+    "product": 4,
+    "name": "Peak Brightness",
+    "value": "2600 nits"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 12,
+  "fields": {
+    "product": 4,
+    "name": "Screen Protection",
+    "value": "Corning Gorilla Glass Armor"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 13,
+  "fields": {
+    "product": 4,
+    "name": "Rear Camera",
+    "value": "200 MP (Wide) + 50 MP (Periscope Telephoto, 5× Optical Zoom) + 10 MP (Telephoto, 3× Optical Zoom) + 12 MP (Ultra-wide)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 14,
+  "fields": {
+    "product": 4,
+    "name": "Battery",
+    "value": "5000 mAh"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 15,
+  "fields": {
+    "product": 4,
+    "name": "SIM",
+    "value": "Dual SIM (Nano-SIM + eSIM)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 16,
+  "fields": {
+    "product": 4,
+    "name": "Frame",
+    "value": "Material Titanium"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 17,
+  "fields": {
+    "product": 5,
+    "name": "Brand",
+    "value": "Apple"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 18,
+  "fields": {
+    "product": 5,
+    "name": "Model",
+    "value": "Apple Watch Series 10"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 19,
+  "fields": {
+    "product": 5,
+    "name": "Chip",
+    "value": "Apple S10 SiP"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 20,
+  "fields": {
+    "product": 5,
+    "name": "Display",
+    "value": "Always-On Retina OLED"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 21,
+  "fields": {
+    "product": 5,
+    "name": "Storage",
+    "value": "64 GB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 22,
+  "fields": {
+    "product": 5,
+    "name": "Connectivity",
+    "value": "GPS, Wi-Fi, Bluetooth 5.3"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 23,
+  "fields": {
+    "product": 5,
+    "name": "Battery Life",
+    "value": "Up to 18 hours"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 24,
+  "fields": {
+    "product": 5,
+    "name": "Water",
+    "value": "Resistance 50 m"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 25,
+  "fields": {
+    "product": 5,
+    "name": "Health Features",
+    "value": "Heart Rate, ECG, Blood Oxygen, Sleep Tracking"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 26,
+  "fields": {
+    "product": 5,
+    "name": "Sensors",
+    "value": "Heart Rate, Accelerometer, Gyroscope"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 27,
+  "fields": {
+    "product": 5,
+    "name": "Operating System",
+    "value": "watchOS 11"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 28,
+  "fields": {
+    "product": 5,
+    "name": "Material",
+    "value": "Aluminum"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 29,
+  "fields": {
+    "product": 5,
+    "name": "Colors",
+    "value": "Jet Black, Rose Gold, Silver"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 30,
+  "fields": {
+    "product": 5,
+    "name": "Warranty",
+    "value": "1 Year"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 31,
+  "fields": {
+    "product": 6,
+    "name": "Brand",
+    "value": "Canon"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 32,
+  "fields": {
+    "product": 6,
+    "name": "Model",
+    "value": "EOS Rebel T5i (EOS 700D)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 34,
+  "fields": {
+    "product": 6,
+    "name": "Camera Type",
+    "value": "18 MP APS-C CMOS"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 35,
+  "fields": {
+    "product": 6,
+    "name": "Sensor",
+    "value": "18 MP APS-C CMOS"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 36,
+  "fields": {
+    "product": 6,
+    "name": "Image Processor",
+    "value": "DIGIC 5"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 37,
+  "fields": {
+    "product": 6,
+    "name": "ISO Range",
+    "value": "100–12800 (Expandable to 25600)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 38,
+  "fields": {
+    "product": 6,
+    "name": "Autofocus",
+    "value": "9-Point AF System"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 39,
+  "fields": {
+    "product": 6,
+    "name": "Continuous",
+    "value": "Shooting Up to 5 fps"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 40,
+  "fields": {
+    "product": 6,
+    "name": "Video",
+    "value": "Recording Full HD 1080p"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 41,
+  "fields": {
+    "product": 6,
+    "name": "Display",
+    "value": "3.0-inch Vari-Angle Touchscreen LCD"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 42,
+  "fields": {
+    "product": 6,
+    "name": "Lens Mount",
+    "value": "Canon EF / EF-S"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 43,
+  "fields": {
+    "product": 6,
+    "name": "Viewfinder",
+    "value": "Optical"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 44,
+  "fields": {
+    "product": 6,
+    "name": "Connectivity",
+    "value": "USB, HDMI"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 45,
+  "fields": {
+    "product": 6,
+    "name": "Storage",
+    "value": "SD / SDHC / SDXC Memory Card"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 46,
+  "fields": {
+    "product": 6,
+    "name": "Battery",
+    "value": "LP-E8 Rechargeable Battery"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 47,
+  "fields": {
+    "product": 6,
+    "name": "Weight",
+    "value": "Approx. 580 g"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 48,
+  "fields": {
+    "product": 6,
+    "name": "Color",
+    "value": "Black"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 49,
+  "fields": {
+    "product": 6,
+    "name": "Brand",
+    "value": "Sony"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 50,
+  "fields": {
+    "product": 7,
+    "name": "Connectivity",
+    "value": "Bluetooth 5.2"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 51,
+  "fields": {
+    "product": 7,
+    "name": "Battery Life",
+    "value": "Up to 30 hours"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 52,
+  "fields": {
+    "product": 7,
+    "name": "Noise Cancellation",
+    "value": "Active Noise Cancellation (ANC)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 53,
+  "fields": {
+    "product": 7,
+    "name": "Driver Size",
+    "value": "40 mm"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 54,
+  "fields": {
+    "product": 7,
+    "name": "Charging Port",
+    "value": "USB Type-C"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 55,
+  "fields": {
+    "product": 7,
+    "name": "Built-in Microphone",
+    "value": "Yes"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 56,
+  "fields": {
+    "product": 7,
+    "name": "Warranty",
+    "value": "1 Year"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 57,
+  "fields": {
+    "product": 8,
+    "name": "Brand",
+    "value": "Sony"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 58,
+  "fields": {
+    "product": 6,
+    "name": "Model",
+    "value": "ILCE-6000"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 59,
+  "fields": {
+    "product": 8,
+    "name": "Sensor",
+    "value": "24.3 MP APS-C CMOS"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 60,
+  "fields": {
+    "product": 8,
+    "name": "Video Recording",
+    "value": "Full HD 1080p"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 61,
+  "fields": {
+    "product": 8,
+    "name": "Display",
+    "value": "3-inch Tilting LCD"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 62,
+  "fields": {
+    "product": 8,
+    "name": "Connectivity",
+    "value": "Wi-Fi & NFC"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 63,
+  "fields": {
+    "product": 8,
+    "name": "Connectivity",
+    "value": "Wi-Fi & NFC"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 64,
+  "fields": {
+    "product": 8,
+    "name": "Autofocus",
+    "value": "179-Point Fast Hybrid AF"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 65,
+  "fields": {
+    "product": 8,
+    "name": "Battery Life",
+    "value": "Up to 360 Shots"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 66,
+  "fields": {
+    "product": 9,
+    "name": "Brand",
+    "value": "Apple"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 67,
+  "fields": {
+    "product": 9,
+    "name": "Connectivity",
+    "value": "Bluetooth 5.0"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 68,
+  "fields": {
+    "product": 9,
+    "name": "Noise Cancellation",
+    "value": "Active Noise Cancellation"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 69,
+  "fields": {
+    "product": 9,
+    "name": "Spatial Audio",
+    "value": "Supported"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 70,
+  "fields": {
+    "product": 9,
+    "name": "Battery Life",
+    "value": "Up to 20 Hours"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 71,
+  "fields": {
+    "product": 9,
+    "name": "Charging Port",
+    "value": "Lightning / USB-C (depending on model)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 72,
+  "fields": {
+    "product": 9,
+    "name": "Built-in Microphone",
+    "value": "Yes"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 73,
+  "fields": {
+    "product": 9,
+    "name": "Compatibility",
+    "value": "iPhone, iPad, Mac"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 74,
+  "fields": {
+    "product": 10,
+    "name": "Brand",
+    "value": "Ant Esports"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 75,
+  "fields": {
+    "product": 10,
+    "name": "DPI",
+    "value": "Up to 3600 DPI"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 76,
+  "fields": {
+    "product": 10,
+    "name": "Buttons",
+    "value": "7 Programmable Buttons"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 77,
+  "fields": {
+    "product": 10,
+    "name": "Connectivity",
+    "value": "Wired USB"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 78,
+  "fields": {
+    "product": 9,
+    "name": "RGB Lighting",
+    "value": "Yes"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 79,
+  "fields": {
+    "product": 10,
+    "name": "Cable Length",
+    "value": "1.5 m PVC Cable"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 80,
+  "fields": {
+    "product": 10,
+    "name": "Compatibility",
+    "value": "Windows, macOS, Linux"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 81,
+  "fields": {
+    "product": 10,
+    "name": "Weight",
+    "value": "Lightweight Ergonomic Design"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 82,
+  "fields": {
+    "product": 11,
+    "name": "Brand",
+    "value": "Apple"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 83,
+  "fields": {
+    "product": 11,
+    "name": "Model",
+    "value": "HomePod (2nd Generation)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 84,
+  "fields": {
+    "product": 11,
+    "name": "Speaker Type",
+    "value": "Smart Speaker"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 85,
+  "fields": {
+    "product": 11,
+    "name": "Connectivity",
+    "value": "Wi-Fi & Bluetooth 5.0"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 86,
+  "fields": {
+    "product": 11,
+    "name": "Voice Assistant",
+    "value": "Siri"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 87,
+  "fields": {
+    "product": 11,
+    "name": "Audio Features",
+    "value": "Spatial Audio with Dolby Atmos"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 88,
+  "fields": {
+    "product": 11,
+    "name": "Smart Home Support",
+    "value": "Apple HomeKit & Matter"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 89,
+  "fields": {
+    "product": 11,
+    "name": "Power Source",
+    "value": "AC Power Adapter"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 90,
+  "fields": {
+    "product": 12,
+    "name": "Processor",
+    "value": "Intel® Core™ Ultra 7 255H Processor (E-cores up to 4.40 GHz P-cores up to 5.10 GHz)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 91,
+  "fields": {
+    "product": 12,
+    "name": "Graphic Card",
+    "value": "Integrated Graphics"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 92,
+  "fields": {
+    "product": 12,
+    "name": "Memory",
+    "value": "16 GB DDR5-5600MT/s (SODIMM)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 93,
+  "fields": {
+    "product": 12,
+    "name": "Storage",
+    "value": "512 GB SSD M.2 2280 PCIe Gen4 TLC Opal"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 94,
+  "fields": {
+    "product": 12,
+    "name": "Display",
+    "value": "40.64cms (16) WUXGA (1920 x 1200), IPS, Anti-Glare, Non-Touch, 45%NTSC, 400 nits, 60Hz"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 95,
+  "fields": {
+    "product": 12,
+    "name": "AC Adapter / Power Supply",
+    "value": "100W USB-C Slim 90% PCC 3pin AC Adapter - India"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 96,
+  "fields": {
+    "product": 12,
+    "name": "Keyboard",
+    "value": "Backlit, Black with Number Pad - English (US)"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 97,
+  "fields": {
+    "product": 12,
+    "name": "WIFI",
+    "value": "Intel® Wi-Fi 7 BE201 2x2 BE & Bluetooth® 5.4"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 98,
+  "fields": {
+    "product": 12,
+    "name": "Warranty",
+    "value": "3 Year On-site"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 99,
+  "fields": {
+    "product": 12,
+    "name": "Color",
+    "value": "Color"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 100,
+  "fields": {
+    "product": 12,
+    "name": "Color",
+    "value": "Black"
+  }
+},
+{
+  "model": "products.specification",
+  "pk": 101,
+  "fields": {
+    "product": 12,
+    "name": "Brand",
+    "value": "ThinkPad P16s Gen 4"
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 1,
+  "fields": {
+    "product": 13,
+    "category": "Mobile",
+    "order": 5,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 2,
+  "fields": {
+    "product": 14,
+    "category": "Accessories",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 3,
+  "fields": {
+    "product": 15,
+    "category": "Luggage",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 4,
+  "fields": {
+    "product": 16,
+    "category": "Acessories",
+    "order": 2,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 5,
+  "fields": {
+    "product": 17,
+    "category": "Accessories",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 6,
+  "fields": {
+    "product": 11,
+    "category": "Speaker",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 22,
+  "fields": {
+    "user": 1,
+    "product": 11,
+    "quantity": 1,
+    "created_at": "2026-08-15T06:31:19.596Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 49,
+  "fields": {
+    "user": 2,
+    "product": 11,
+    "quantity": 2,
+    "created_at": "2026-08-24T07:54:23.701Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTXroMBqAYGq7f",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T08:44:02.456Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTXtIY8yJbCoCB",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T08:45:26.902Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYPw7kRWJyvOf",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:16:20.485Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYPyP9lCfWVO3",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:16:22.905Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYTDm0pZH2aMX",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:19:27.208Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 6,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYTRyPgfbYJue",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:19:39.275Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 7,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYVQJdUBOm2gB",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:21:32.387Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 8,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYVTAVsQh3cbV",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:21:35.101Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 9,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYWNYkzjmwecO",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:22:26.633Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 10,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYXIukbMXPm1u",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:23:19.204Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 11,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYdbiB4HDYcvr",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:29:17.219Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 12,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYf6AWy0RPgFN",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:30:41.664Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 13,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYfwA3QKVRFJx",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:31:29.529Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 14,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYiJxKs44g9rN",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:33:44.887Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 15,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYiRFmZ2DCz5G",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:33:51.768Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 16,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYigDJ4k2KsNv",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:34:05.413Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 17,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYjCm4mFpGG6E",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:34:35.220Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 18,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYjPkO1EIZr1j",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:34:47.185Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 19,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYjeF3lc1yPUf",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:35:00.395Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 20,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYjkNraGUu2gE",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:35:05.790Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 21,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYnb4yXi2QVan",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:38:44.464Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 22,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYoaHJ40bJLIT",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:39:40.756Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 23,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYp5tudiaajff",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:40:09.476Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 24,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYraD074B7p90",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:42:31.017Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 25,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYsMomY5HPYSC",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:43:15.647Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 26,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTYucHvSvKX4ml",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T09:45:23.262Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 27,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTZHoQZQDAoQEs",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T10:07:20.776Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 28,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTZI1fr5I4AocU",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T10:07:33.044Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 29,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTZKoh2mxzEKZ4",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T10:10:11.366Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 30,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdRbZZcBO0hYJ",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:11:23.342Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 31,
+  "fields": {
+    "user": 2,
+    "total_amount": "500.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdWoxiTexHwBl",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:16:19.823Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 32,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdXlvLD5TyemB",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:17:13.940Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 33,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTde9LiZEfD6AQ",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:23:16.214Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 34,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdeFz8MtctvjI",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:23:22.311Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 35,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdfPv3myN6w1Z",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:24:28.171Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 36,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdh0i1e8rPFGc",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:25:58.711Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 37,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdhCCs4T4irue",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:26:09.235Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 38,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdr73nFvEuRqj",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:35:32.469Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 39,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdtp7xhVcrJw6",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:38:06.452Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 40,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTdtv7cgRDwpuz",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:38:11.965Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 41,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTe1Ym6AHluWnQ",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:45:25.822Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 42,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTe56wK75bLp5u",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:48:47.547Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 43,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTe5PvC8mFVCu4",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:49:04.866Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 44,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTe64bG3p5VE4O",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T14:49:42.222Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 45,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTeKiahrKF7ydO",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:03:34.056Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 46,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTeLC96uAmMPON",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:04:01.227Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 47,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTekJVvwyQUoja",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:27:47.922Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 48,
+  "fields": {
+    "user": 1,
+    "total_amount": "2000.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTeoYwBzQK0VhP",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:31:49.298Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 49,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTeyNE6LDDq6Bh",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:41:06.485Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 50,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTeyfnzerj7T19",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:41:23.562Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 51,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTeyixpCPZ07Rt",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:41:26.472Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 52,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTeynC54Z7L0s8",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:41:30.346Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 53,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTez3cHRwfjMxI",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:41:45.389Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 54,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTf1b0WT635Qgv",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T15:44:09.476Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 55,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTgFHZh30UkDud",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T16:55:48.491Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 56,
+  "fields": {
+    "user": 1,
+    "total_amount": "1999.00",
+    "status": "PENDING",
+    "razorpay_order_id": "order_TTgLRPus0qjFY2",
+    "razorpay_payment_id": null,
+    "razorpay_signature": null,
+    "created_at": "2026-08-24T17:01:38.407Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 9,
+  "fields": {
+    "order": 9,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 10,
+  "fields": {
+    "order": 10,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 11,
+  "fields": {
+    "order": 11,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 12,
+  "fields": {
+    "order": 12,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 13,
+  "fields": {
+    "order": 13,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 14,
+  "fields": {
+    "order": 14,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 15,
+  "fields": {
+    "order": 15,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 16,
+  "fields": {
+    "order": 16,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 17,
+  "fields": {
+    "order": 17,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 18,
+  "fields": {
+    "order": 18,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 19,
+  "fields": {
+    "order": 19,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 20,
+  "fields": {
+    "order": 20,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 21,
+  "fields": {
+    "order": 21,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 22,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 23,
+  "fields": {
+    "order": 23,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 24,
+  "fields": {
+    "order": 24,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 25,
+  "fields": {
+    "order": 25,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 26,
+  "fields": {
+    "order": 26,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 27,
+  "fields": {
+    "order": 27,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 28,
+  "fields": {
+    "order": 28,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 29,
+  "fields": {
+    "order": 29,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 30,
+  "fields": {
+    "order": 30,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 31,
+  "fields": {
+    "order": 31,
+    "product": 11,
+    "quantity": 1,
+    "price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 32,
+  "fields": {
+    "order": 32,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 33,
+  "fields": {
+    "order": 33,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 34,
+  "fields": {
+    "order": 34,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 35,
+  "fields": {
+    "order": 35,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 36,
+  "fields": {
+    "order": 36,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 37,
+  "fields": {
+    "order": 37,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 38,
+  "fields": {
+    "order": 38,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 39,
+  "fields": {
+    "order": 39,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 40,
+  "fields": {
+    "order": 40,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 41,
+  "fields": {
+    "order": 41,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 42,
+  "fields": {
+    "order": 42,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 43,
+  "fields": {
+    "order": 43,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 44,
+  "fields": {
+    "order": 44,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 45,
+  "fields": {
+    "order": 45,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 46,
+  "fields": {
+    "order": 46,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 47,
+  "fields": {
+    "order": 47,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 48,
+  "fields": {
+    "order": 48,
+    "product": 5,
+    "quantity": 1,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 49,
+  "fields": {
+    "order": 49,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 50,
+  "fields": {
+    "order": 50,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 51,
+  "fields": {
+    "order": 51,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 52,
+  "fields": {
+    "order": 52,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 53,
+  "fields": {
+    "order": 53,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 54,
+  "fields": {
+    "order": 54,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 55,
+  "fields": {
+    "order": 55,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 56,
+  "fields": {
+    "order": 56,
+    "product": 12,
+    "quantity": 1,
+    "price": "1999.00"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 1,
+  "fields": {
+    "product": 4,
+    "user": 1,
+    "rating": 2,
+    "comment": "The Product is so good, I like the UI , this is far better than Iphone, just try one.",
+    "created_at": "2026-07-24T10:44:03.487Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 2,
+  "fields": {
+    "product": 4,
+    "user": 2,
+    "rating": 3,
+    "comment": "The product is fine",
+    "created_at": "2026-07-24T18:31:25.337Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 3,
+  "fields": {
+    "product": 5,
+    "user": 2,
+    "rating": 5,
+    "comment": "I like the watch, this is fine",
+    "created_at": "2026-07-24T18:35:39.164Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 4,
+  "fields": {
+    "product": 6,
+    "user": 1,
+    "rating": 4,
+    "comment": "I like the sensor of that camera, nice photos",
+    "created_at": "2026-07-24T18:37:03.390Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 5,
+  "fields": {
+    "product": 7,
+    "user": 2,
+    "rating": 3,
+    "comment": "Not good Enough",
+    "created_at": "2026-07-24T18:37:26.644Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 6,
+  "fields": {
+    "product": 8,
+    "user": 1,
+    "rating": 3,
+    "comment": "So, smooth an clear",
+    "created_at": "2026-07-24T18:37:48.564Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 7,
+  "fields": {
+    "product": 9,
+    "user": 1,
+    "rating": 3,
+    "comment": "It's okay okay",
+    "created_at": "2026-07-24T18:38:43.116Z"
+  }
+},
+{
+  "model": "reviews.reviews",
+  "pk": 8,
+  "fields": {
+    "product": 10,
+    "user": 1,
+    "rating": 3,
+    "comment": "I like the Keyboard, especially the smoothness of typing, it so great, though the amount is bit high, I think you can buy better products than this, but still it's good enough.",
+    "created_at": "2026-07-24T18:40:25.998Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 1,
+  "fields": {
+    "name": "Smartphones"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 3,
+  "fields": {
+    "name": "Laptops"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 4,
+  "fields": {
+    "name": "Smart Watches"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 5,
+  "fields": {
+    "name": "Cameras"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 6,
+  "fields": {
+    "name": "Headphones"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 7,
+  "fields": {
+    "name": "Gaming"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 8,
+  "fields": {
+    "name": "Accessories"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 9,
+  "fields": {
+    "name": "Wired Cable"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 10,
+  "fields": {
+    "name": "Luggage"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 11,
+  "fields": {
+    "name": "Electronics"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "products": 11,
+    "created_at": "2026-08-15T06:31:26.319Z"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 14,
+  "fields": {
+    "user": 2,
+    "products": 4,
+    "created_at": "2026-08-19T09:17:15.121Z"
+  }
+}
+]

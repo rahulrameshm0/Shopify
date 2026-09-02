@@ -1,0 +1,62 @@
+[
+{
+  "model": "products.trendingproduct",
+  "pk": 1,
+  "fields": {
+    "product": 13,
+    "category": "Mobile",
+    "order": 5,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 2,
+  "fields": {
+    "product": 14,
+    "category": "Accessories",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 3,
+  "fields": {
+    "product": 15,
+    "category": "Luggage",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 4,
+  "fields": {
+    "product": 16,
+    "category": "Acessories",
+    "order": 2,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 5,
+  "fields": {
+    "product": 17,
+    "category": "Accessories",
+    "order": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "products.trendingproduct",
+  "pk": 6,
+  "fields": {
+    "product": 11,
+    "category": "Speaker",
+    "order": 0,
+    "is_active": true
+  }
+}
+]
