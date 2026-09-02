@@ -210,7 +210,7 @@
     </section>
 
     <!-- TRENDING PRODUCTS -->
-    <section class="section" style="padding-top: var(--s5)">
+    <section class="section" id="trending-products" style="padding-top: var(--s5)">
       <div class="container">
         <div class="section-head">
           <h2>Trending Products</h2>
@@ -229,19 +229,59 @@
         </div>
 
         <div class="tabs" role="tablist">
-          <button class="tab is-active" role="tab" aria-selected="true">
+          <a
+            href="?category=All#trending-products"
+            class="tab {% if selected_category == 'All' %}is-active{% endif %}"
+            role="tab"
+          >
+            All
+          </a>
+
+          <a
+            href="?category=Mobile#trending-products"
+            class="tab {% if selected_category == 'Mobile' %}is-active{% endif %}"
+            role="tab"
+          >
             Mobile
-          </button>
-          <button class="tab" role="tab">Watch</button>
-          <button class="tab" role="tab">Camera</button>
-          <button class="tab" role="tab">Accessories</button>
-          <button class="tab" role="tab">Speaker</button>
+          </a>
+
+          <a
+            href="?category=Watch#trending-products"
+            class="tab {% if selected_category == 'Watch' %}is-active{% endif %}"
+            role="tab"
+          >
+            Watch
+          </a>
+
+          <a
+            href="?category=Camera#trending-products"
+            class="tab {% if selected_category == 'Camera' %}is-active{% endif %}"
+            role="tab"
+          >
+            Camera
+          </a>
+
+          <a
+            href="?category=Accessories#trending-products"
+            class="tab {% if selected_category == 'Accessories' %}is-active{% endif %}"
+            role="tab"
+          >
+            Accessories
+          </a>
+
+          <a
+            href="?category=Speaker#trending-products"
+            class="tab {% if selected_category == 'Speaker' %}is-active{% endif %}"
+            role="tab"
+          >
+            Speaker
+          </a>
         </div>
 
         <div class="products">
           {% for item in trending_products %}
 
-          <article class="product-card">
+          <article class="product-card" data-category="{{ item.category }}">
             <div class="img-wrap">
               <button class="wishlist" aria-label="Wishlist">♡</button>
 
