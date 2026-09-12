@@ -949,7 +949,7 @@ input, select, textarea {
     gap: var(--s4);
 }
 
-.cat-tile {
+.cat-title {
     background: var(--paper);
     border: 1px solid var(--rule);
     border-radius: var(--r);
@@ -958,14 +958,14 @@ input, select, textarea {
     transition: border-color 200ms var(--ease), transform 200ms var(--ease), background 200ms var(--ease);
 }
 
-.cat-tile:hover {
+.cat-title:hover {
     border-color: var(--indigo-line);
     transform: translateY(-3px);
     background: var(--indigo-soft);
     color: var(--ink);
 }
 
-.cat-tile .pic {
+.cat-title .pic {
     width: 80px;
     height: 80px;
     margin: 0 auto var(--s3);
@@ -976,20 +976,20 @@ input, select, textarea {
     place-items: center;
 }
 
-.cat-tile .pic img {
+.cat-title .pic img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.cat-tile .name {
+.cat-title .name {
     font-family: var(--ff-display);
     font-weight: 700;
     font-size: var(--text-sm);
     color: var(--ink);
 }
 
-.cat-tile .count {
+.cat-title .count {
     font-family: var(--ff-mono);
     font-size: 11px;
     color: var(--fg-mute);
