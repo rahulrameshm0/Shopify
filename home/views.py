@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from products.models import Products, TrendingProduct
+from products.models import Products, TrendingProduct, Category
 
 # Create your views here.
 
@@ -11,6 +11,7 @@ def home(request):
 
     laptop = Products.objects.filter(category__name="Laptops").first()
     selected_category = request.GET.get("category", "Mobile")
+    categories = Category.objects.all()[:5]
 
     if selected_category == "All":
         trending_products = TrendingProduct.objects.filter(
@@ -19,7 +20,7 @@ def home(request):
     else:
         trending_products = TrendingProduct.objects.filter(is_active=True, category__iexact=selected_category).select_related("product").order_by("order")
 
-    return render(request, "home/home.html", {"hero_products": hero_products, "laptop":laptop, "trending_products":trending_products, "selected_category": selected_category})
+    return render(request, "home/home.html", {"hero_products": hero_products, "laptop":laptop, "trending_products":trending_products, "selected_category": selected_category, "categories": categories,})
 
 def products(request):
     return render(request, "products/products-details.html")

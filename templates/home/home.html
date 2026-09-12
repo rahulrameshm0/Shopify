@@ -210,7 +210,11 @@
     </section>
 
     <!-- TRENDING PRODUCTS -->
-    <section class="section" id="trending-products" style="padding-top: var(--s5)">
+    <section
+      class="section"
+      id="trending-products"
+      style="padding-top: var(--s5)"
+    >
       <div class="container">
         <div class="section-head">
           <h2>Trending Products</h2>
@@ -324,153 +328,30 @@
     </section>
 
     <!-- CATEGORIES grid -->
+
     <section class="section" style="padding-top: var(--s5)">
       <div class="container">
-        <div class="section-head">
-          <h2>Shop by category</h2>
-          <a href="{% url 'shop' %}" class="view-all"
-            >View all products
-            <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-              <path
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="cats-grid">
-          <a href="{% url 'shopping' %}" class="cat-tile">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div class="name">Watch</div>
-            <div class="count">28 Products</div>
-          </a>
-          <a href="{% url 'shopping' %}" class="cat-tile">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div class="name">Camera</div>
-            <div class="count">42 Products</div>
-          </a>
-          <a href="{% url 'shopping' %}" class="cat-tile">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div class="name">Smart Phone</div>
-            <div class="count">76 Products</div>
-          </a>
-          <a href="{% url 'shopping' %}" class="cat-tile">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div class="name">Accessories</div>
-            <div class="count">112 Products</div>
-          </a>
-          <a href="{% url 'shopping' %}" class="cat-tile">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div class="name">Smart Buds</div>
-            <div class="count">35 Products</div>
-          </a>
-        </div>
-      </div>
-    </section>
+        <h1>Shop by Category</h1>
 
-    <!-- COMPACT row (4 cards in 2x2 layout) -->
-    <section class="section" style="padding-top: 0">
-      <div class="container">
-        <div class="section-head">
-          <h2>Just for you</h2>
-          <a href="{% url 'shopping' %}" class="view-all"
-            >More picks
-            <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-              <path
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+        <div class="cats-grid">
+          {% for category in categories %}
+
+          <a
+            href="{% url 'shopping' %}?category={{ category.name }}"
+            class="cat-title"
+          >
+            <div class="pic">
+              {% with product=category.products_set.first %} {% if product %}
+              <img src="{{ product.image.url }}" alt="{{ category.name }}" />
+              {% endif %} {% endwith %}
+            </div>
+
+            <div class="name">{{ category.name }}</div>
+
+            <div class="count">{{ category.products_set.count }} Products</div>
           </a>
-        </div>
-        <div class="compact-row">
-          <article class="compact-card">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div>
-              <div class="stock">IN STOCK · 12</div>
-              <div class="name">Apple Airpods V57</div>
-              <div class="price">$680</div>
-              <a href="{% url 'cart' %}" class="btn">Order Now</a>
-            </div>
-          </article>
-          <article class="compact-card">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div>
-              <div class="stock">IN STOCK · 8</div>
-              <div class="name">Apple MacBook Pro</div>
-              <div class="price">$2,780</div>
-              <a href="{% url 'cart' %}" class="btn">Order Now</a>
-            </div>
-          </article>
-          <article class="compact-card">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div>
-              <div class="stock">IN STOCK · 24</div>
-              <div class="name">Power Wired Controller</div>
-              <div class="price">$190</div>
-              <a href="{% url 'cart' %}" class="btn">Order Now</a>
-            </div>
-          </article>
-          <article class="compact-card">
-            <div class="pic">
-              <img
-                src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=300&q=80&auto=format&fit=crop"
-                alt=""
-              />
-            </div>
-            <div>
-              <div class="stock">IN STOCK · 36</div>
-              <div class="name">Gaming Mouse Pro</div>
-              <div class="price">$190</div>
-              <a href="{% url 'cart' %}" class="btn">Order Now</a>
-            </div>
-          </article>
+
+          {% endfor %}
         </div>
       </div>
     </section>
