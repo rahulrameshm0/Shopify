@@ -6,3 +6,5 @@ __pycache__/
 .gitignore
 db.sqlite3
 .DS_Store
+node_modules/
+staticfiles/
